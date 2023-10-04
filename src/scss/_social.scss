@@ -71,6 +71,45 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        &__left {
+            width: 46.4rem;
+            margin-right: 19.626rem;
+
+            &-heading {
+                font-size: 7.2rem;
+                line-height: 140%; /* 10.08rem */
+                margin-bottom: 2rem;
+            }
+
+            &-subheading {
+                font-size: 3.2rem;
+                line-height: 140%;
+            }
+        }
+
+        &__list {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 12rem;
+                }
+
+                &__link {
+                    img {
+                        width: 19rem;
+                        height: 19rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    p {
+                        font-size: 3.4rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-top: 20rem;
         padding-bottom: 20rem;

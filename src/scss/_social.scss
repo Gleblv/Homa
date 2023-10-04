@@ -1,0 +1,131 @@
+.social {
+    padding-top: 9rem;
+    padding-bottom: 10.6rem;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        margin-right: 7rem;
+        width: 29rem;
+
+        &-heading {
+            margin-bottom: 1rem;
+            font-family: 'Circe';
+            font-weight: 350;
+            font-size: 4.5rem;
+            line-height: 1;
+            color: #000000;
+        }
+
+        &-subheading {
+            font-family: 'Circe';
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+            color: #000000;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: flex-start;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 10rem;
+            }
+
+            &__link {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                img {
+                    margin-bottom: 3.6rem;
+                    width: 10.6rem;
+                    height: 10.6rem;
+                    object-fit: contain;
+                }
+
+                p {
+                    font-family: 'Circe';
+                    font-weight: 700;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    color: #000000;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__left {
+            margin-right: 0;
+            margin-bottom: 6rem;
+            width: 100%;
+
+            &-heading {
+                margin-bottom: 4rem;
+                font-weight: 700;
+                font-size: 5.2rem;
+                line-height: 5.2rem;
+            }
+
+            &-subheading {
+                font-weight: 400;
+                font-size: 3.2rem;
+                line-height: 4.8rem;
+            }
+        }
+
+        &__list {
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            &-item {
+                flex: 0 0 26%;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+
+                &__link {
+
+                    img {
+                        margin-bottom: 2rem;
+                        width: 10.8rem;
+                        height: 10.8rem;
+                    }
+
+                    p {
+                        width: 15rem;
+                        font-size: 3.6rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}

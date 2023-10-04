@@ -1,0 +1,422 @@
+.footer {
+    padding-top: 11rem;
+    padding-bottom: 6.8rem;
+    background-color: #eff2f6;
+
+    &__top {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__left {
+        margin-right: 17rem;
+
+        &-logo {
+            display: inline-block;
+            margin-bottom: 1.2rem;
+
+            img {
+                width: 27.6rem;
+                height: 7.2rem;
+                object-fit: contain;
+            }
+        }
+
+        &-copyright {
+            margin-bottom: 4rem;
+            width: 20rem;
+            font-family: "Circe";
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: #9c9c9c;
+
+            .copy {
+                display: inline-block;
+                transform: translateY(-0.2rem);
+            }
+        }
+
+        &-policy {
+            width: 20rem;
+            display: inline-block;
+            font-family: "Circe";
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            text-decoration-line: underline;
+            color: #9c9c9c;
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+                color: #e30613;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__nav {
+        margin-right: 14.5rem;
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 2.7rem;
+            }
+
+            a {
+                font-family: "Circe";
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+                color: #000;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: #e30613;
+                }
+            }
+        }
+    }
+
+    &__list1-container {
+        margin-right: 5.4rem;
+    }
+
+    &__list1 {
+        &-heading {
+            margin-bottom: 2.6rem;
+            font-family: "Circe";
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: #000000;
+        }
+
+        &-item {
+            a {
+                font-family: "Circe";
+                font-weight: 350;
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+                color: #000000;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: #e30613;
+                }
+            }
+        }
+    }
+
+    &__list2 {
+        margin-top: 0.5rem;
+
+        &-heading {
+            margin-bottom: 2.6rem;
+            font-family: "Circe";
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            color: #000000;
+        }
+
+        &-item {
+            a {
+                font-family: "Circe";
+                font-weight: 350;
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+                color: #000000;
+                transition: color 0.2s ease-in-out;
+
+                &:hover {
+                    color: #e30613;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: flex-start;
+
+        &-designed {
+            margin-top: 3rem;
+            margin-right: 84.3rem;
+            display: flex;
+            align-items: center;
+
+            &__logo {
+                margin-right: 1.2rem;
+                width: 4.4rem;
+                height: 4.4rem;
+            }
+
+            &__developed {
+                font-family: "Circe";
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #000000;
+
+                .request {
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        &-list {
+            &__heading {
+                margin-bottom: 2.8rem;
+                font-family: "Circe";
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
+                color: #000000;
+            }
+
+            &__item {
+                &:not(:last-child) {
+                    margin-bottom: 1.4rem;
+                }
+
+                &-link {
+                    display: flex;
+                    align-items: center;
+                    font-family: "Circe";
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 1.8rem;
+                    line-height: 2.7rem;
+                    color: #000000;
+                    transition: color 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #e30613;
+                    }
+
+                    img {
+                        margin-right: 1.4rem;
+                        width: 2.4rem;
+                        height: 2.4rem;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+
+        &__top {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        &__left {
+            margin-right: 0;
+            margin-bottom: 6rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            order: 0;
+
+            &-logo {
+                margin-bottom: 0;
+
+                img {
+                    width: 33.4rem;
+                    height: 8.8rem;
+                }
+            }
+        }
+
+        &__nav {
+            margin: 0;
+            margin-bottom: 3rem;
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            order: 4;
+
+            &-item {
+                flex: 0 0 50%;
+
+                &:not(:last-child) {
+                    margin-bottom: 3rem;
+                }
+
+                a {
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
+            }
+        }
+
+        &__list1-container {
+            order: 1;
+        }
+
+        &__list2-container {
+            order: 2;
+        }
+        &__list3-container {
+            order: 3;
+        }
+
+        &__list1-container,
+        &__list2-container,
+        &__list3-container {
+            margin: 0;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        &__list1,
+        &__list2,
+        &__list3 {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            visibility: hidden;
+            transition-property: max-height, padding, opacity, visibility;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+
+            &.active {
+                padding-top: 2rem;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &-heading {
+                margin-bottom: 0;
+                font-weight: 700;
+                font-size: 3.2rem;
+                line-height: 4.8rem;
+                display: flex;
+                align-items: center;
+
+                span {
+                    margin-right: 2rem;
+                }
+
+                svg {
+                    width: 2.6rem;
+                    height: 1.6rem;
+                    object-fit: contain;
+                    transition: transform 0.3s ease-in-out;
+                }
+
+                &.active {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 2rem;
+                }
+
+                a {
+                    font-weight: 300;
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
+            }
+        }
+
+        &__bottom {
+            flex-direction: column-reverse;
+
+            &-designed {
+                margin-top: 0;
+                margin-right: 0;
+
+                &__logo {
+                    margin-right: 2.4rem;
+                    width: 8.8rem;
+                    height: 8.8rem;
+                }
+
+                &__developed {
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
+            }
+
+            &-text {
+                margin-bottom: 6rem;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 100%;
+
+                &__copyright {
+                    width: 33rem;
+                    font-family: "Circe";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                    color: #9c9c9c;
+
+                    .copy {
+                        display: inline-block;
+                        transform: translateY(-0.3rem);
+                    }
+                }
+
+                &__policy {
+                    width: 33rem;
+                    font-family: "Circe";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                    color: #9c9c9c;
+                    text-decoration: underline;
+                }
+            }
+
+            &-list {
+                margin-bottom: 6rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+
+                &__heading {
+                    margin-bottom: 3rem;
+                    width: 100%;
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
+
+                &__item {
+                    margin-bottom: 0;
+                    flex: 0 0 33rem;
+
+                    &-link {
+                        font-size: 3.2rem;
+                        line-height: 4.8rem;
+
+                        img {
+                            margin-right: 2rem;
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

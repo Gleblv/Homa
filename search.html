@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Поиск</title>
+</head>
+
+<body>
+    @@include('./templates/header.html')
+    <main>
+        <section class="search-hero hero">
+            <div class="container">
+                <ul class="hero__breadcrumbs">
+                    <li class="hero__breadcrumbs-item">
+                        <a href="./main.html" class="hero__breadcrumbs-item__link">Главная</a>
+                    </li>
+                    <li class="hero__breadcrumbs-item">
+                        <a href="#" class="hero__breadcrumbs-item__link">Поиск</a>
+                    </li>
+                </ul>
+                <p class="hero__heading">Поиск</p>
+                <form action="#" class="search-hero__form">
+                    <span class="search-hero__form-span">Вы искали:</span>
+                    <input type="search" value="Полимерные дисперсии" class="search-hero__form-input">
+                    <button type="submit" class="search-hero__form-button">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.7 11.1093C2.7 6.45029 6.40465 2.7 10.9421 2.7C15.4796 2.7 19.1842 6.45029 19.1842 11.1093C19.1842 13.3907 18.2958 15.4543 16.8563 16.9663C16.8256 16.9892 16.796 17.0145 16.7679 17.0421C16.7322 17.0771 16.7003 17.1145 16.6721 17.1538C15.1867 18.619 13.1643 19.5185 10.9421 19.5185C6.40465 19.5185 2.7 15.7682 2.7 11.1093ZM17.3453 18.8433C15.6175 20.3245 13.385 21.2185 10.9421 21.2185C5.43671 21.2185 1 16.6778 1 11.1093C1 5.54073 5.43671 1 10.9421 1C16.4475 1 20.8842 5.54073 20.8842 11.1093C20.8842 13.5913 20.0028 15.8691 18.5381 17.6317L22.9138 22.0878C23.2427 22.4227 23.2378 22.9609 22.9028 23.2898C22.5679 23.6187 22.0297 23.6138 21.7008 23.2789L17.3453 18.8433Z"
+                                fill="#313131" />
+                            <path
+                                d="M16.8563 16.9663L17.1551 17.3672C17.1778 17.3503 17.1989 17.3315 17.2184 17.3111L16.8563 16.9663ZM16.7679 17.0421L16.4176 16.6853V16.6853L16.7679 17.0421ZM16.6721 17.1538L17.0232 17.5098C17.0434 17.4899 17.0618 17.4683 17.0783 17.4453L16.6721 17.1538ZM17.3453 18.8433L17.7021 18.493C17.5178 18.3053 17.2196 18.2925 17.0199 18.4637L17.3453 18.8433ZM18.5381 17.6317L18.1536 17.3122C17.9896 17.5095 18.0016 17.7989 18.1814 17.982L18.5381 17.6317ZM22.9138 22.0878L22.557 22.4381L22.9138 22.0878ZM22.9028 23.2898L22.5525 22.933L22.5525 22.933L22.9028 23.2898ZM21.7008 23.2789L21.344 23.6292L21.7008 23.2789ZM10.9421 2.2C6.12022 2.2 2.2 6.18251 2.2 11.1093H3.2C3.2 6.71807 6.68908 3.2 10.9421 3.2V2.2ZM19.6842 11.1093C19.6842 6.18251 15.764 2.2 10.9421 2.2V3.2C15.1952 3.2 18.6842 6.71807 18.6842 11.1093H19.6842ZM17.2184 17.3111C18.7438 15.7089 19.6842 13.5229 19.6842 11.1093H18.6842C18.6842 13.2586 17.8479 15.1997 16.4942 16.6215L17.2184 17.3111ZM17.1182 17.3989C17.1301 17.3871 17.1425 17.3766 17.1551 17.3672L16.5575 16.5654C16.5087 16.6018 16.4619 16.6418 16.4176 16.6853L17.1182 17.3989ZM17.0783 17.4453C17.0899 17.4292 17.1031 17.4137 17.1182 17.3989L16.4176 16.6853C16.3613 16.7406 16.3107 16.7998 16.2658 16.8623L17.0783 17.4453ZM10.9421 20.0185C13.3023 20.0185 15.4491 19.0625 17.0232 17.5098L16.321 16.7979C14.9244 18.1755 13.0263 19.0185 10.9421 19.0185V20.0185ZM2.2 11.1093C2.2 16.036 6.12022 20.0185 10.9421 20.0185V19.0185C6.68908 19.0185 3.2 15.5004 3.2 11.1093H2.2ZM17.0199 18.4637C15.3786 19.8707 13.2603 20.7185 10.9421 20.7185V21.7185C13.5097 21.7185 15.8564 20.7782 17.6707 19.2229L17.0199 18.4637ZM10.9421 20.7185C5.72161 20.7185 1.5 16.4105 1.5 11.1093H0.5C0.5 16.9451 5.1518 21.7185 10.9421 21.7185V20.7185ZM1.5 11.1093C1.5 5.80803 5.72161 1.5 10.9421 1.5V0.5C5.1518 0.5 0.5 5.27344 0.5 11.1093H1.5ZM10.9421 1.5C16.1626 1.5 20.3842 5.80803 20.3842 11.1093H21.3842C21.3842 5.27344 16.7324 0.5 10.9421 0.5V1.5ZM20.3842 11.1093C20.3842 13.4712 19.5458 15.6367 18.1536 17.3122L18.9227 17.9513C20.4597 16.1016 21.3842 13.7114 21.3842 11.1093H20.3842ZM18.1814 17.982L22.557 22.4381L23.2705 21.7374L18.8949 17.2814L18.1814 17.982ZM22.557 22.4381C22.6924 22.576 22.6904 22.7976 22.5525 22.933L23.2531 23.6466C23.7851 23.1242 23.7929 22.2694 23.2705 21.7374L22.557 22.4381ZM22.5525 22.933C22.4146 23.0685 22.193 23.0665 22.0575 22.9285L21.344 23.6292C21.8664 24.1612 22.7211 24.1689 23.2531 23.6466L22.5525 22.933ZM22.0575 22.9285L17.7021 18.493L16.9885 19.1936L21.344 23.6292L22.0575 22.9285Z"
+                                fill="#313131" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="search-main">
+            <div class="container">
+                <p class="search-main__heading">Результаты поиска</p>
+                <ul class="search-main__list">
+                    <li class="search-main__list-item">
+                        <img src="./images/search-img1.png" alt="" class="search-main__list-item__img">
+                        <div class="search-main__list-item__text">
+                            <a href="#" class="search-main__list-item__link">Отдел полимерных дисперсий</a>
+                            <p class="search-main__list-item__description">Торочкин Антон Руководитель отдела продаж
+                                полимерных дисперсий e-mail:
+                                torochkin-a@homa.ru тел.: +7 (495) 781-66-82 , доб. 685 Шмакова Светлана Зам.
+                                руководителя отдела продаж полимерных дисперсий e-mail: shmakova-s@homa.ru тел....</p>
+                            <p class="search-main__list-item__notice">Изменен: 17.01.2020</p>
+                            <div class="search-main__list-item__bottom">
+                                <p>Путь:</p>
+                                <ul class="search-main__list-item__sublist">
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Наши адреса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-main__list-item">
+                        <img src="./images/search-img1.png" alt="" class="search-main__list-item__img">
+                        <div class="search-main__list-item__text">
+                            <a href="#" class="search-main__list-item__link">Отдел полимерных дисперсий</a>
+                            <p class="search-main__list-item__description">Торочкин Антон Руководитель отдела продаж
+                                полимерных дисперсий e-mail:
+                                torochkin-a@homa.ru тел.: +7 (495) 781-66-82 , доб. 685 Шмакова Светлана Зам.
+                                руководителя отдела продаж полимерных дисперсий e-mail: shmakova-s@homa.ru тел....</p>
+                            <p class="search-main__list-item__notice">Изменен: 17.01.2020</p>
+                            <div class="search-main__list-item__bottom">
+                                <p>Путь:</p>
+                                <ul class="search-main__list-item__sublist">
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Наши адреса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-main__list-item">
+                        <img src="./images/search-img1.png" alt="" class="search-main__list-item__img">
+                        <div class="search-main__list-item__text">
+                            <a href="#" class="search-main__list-item__link">Отдел полимерных дисперсий</a>
+                            <p class="search-main__list-item__description">Торочкин Антон Руководитель отдела продаж
+                                полимерных дисперсий e-mail:
+                                torochkin-a@homa.ru тел.: +7 (495) 781-66-82 , доб. 685 Шмакова Светлана Зам.
+                                руководителя отдела продаж полимерных дисперсий e-mail: shmakova-s@homa.ru тел....</p>
+                            <p class="search-main__list-item__notice">Изменен: 17.01.2020</p>
+                            <div class="search-main__list-item__bottom">
+                                <p>Путь:</p>
+                                <ul class="search-main__list-item__sublist">
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Наши адреса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-main__list-item">
+                        <img src="./images/search-img1.png" alt="" class="search-main__list-item__img">
+                        <div class="search-main__list-item__text">
+                            <a href="#" class="search-main__list-item__link">Отдел полимерных дисперсий</a>
+                            <p class="search-main__list-item__description">Торочкин Антон Руководитель отдела продаж
+                                полимерных дисперсий e-mail:
+                                torochkin-a@homa.ru тел.: +7 (495) 781-66-82 , доб. 685 Шмакова Светлана Зам.
+                                руководителя отдела продаж полимерных дисперсий e-mail: shmakova-s@homa.ru тел....</p>
+                            <p class="search-main__list-item__notice">Изменен: 17.01.2020</p>
+                            <div class="search-main__list-item__bottom">
+                                <p>Путь:</p>
+                                <ul class="search-main__list-item__sublist">
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Наши адреса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-main__list-item">
+                        <img src="./images/search-img1.png" alt="" class="search-main__list-item__img">
+                        <div class="search-main__list-item__text">
+                            <a href="#" class="search-main__list-item__link">Отдел полимерных дисперсий</a>
+                            <p class="search-main__list-item__description">Торочкин Антон Руководитель отдела продаж
+                                полимерных дисперсий e-mail:
+                                torochkin-a@homa.ru тел.: +7 (495) 781-66-82 , доб. 685 Шмакова Светлана Зам.
+                                руководителя отдела продаж полимерных дисперсий e-mail: shmakova-s@homa.ru тел....</p>
+                            <p class="search-main__list-item__notice">Изменен: 17.01.2020</p>
+                            <div class="search-main__list-item__bottom">
+                                <p>Путь:</p>
+                                <ul class="search-main__list-item__sublist">
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Наши адреса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-main__list-item">
+                        <img src="./images/search-img1.png" alt="" class="search-main__list-item__img">
+                        <div class="search-main__list-item__text">
+                            <a href="#" class="search-main__list-item__link">Отдел полимерных дисперсий</a>
+                            <p class="search-main__list-item__description">Торочкин Антон Руководитель отдела продаж
+                                полимерных дисперсий e-mail:
+                                torochkin-a@homa.ru тел.: +7 (495) 781-66-82 , доб. 685 Шмакова Светлана Зам.
+                                руководителя отдела продаж полимерных дисперсий e-mail: shmakova-s@homa.ru тел....</p>
+                            <p class="search-main__list-item__notice">Изменен: 17.01.2020</p>
+                            <div class="search-main__list-item__bottom">
+                                <p>Путь:</p>
+                                <ul class="search-main__list-item__sublist">
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Наши адреса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="search-main__list-item">
+                        <img src="./images/search-img1.png" alt="" class="search-main__list-item__img">
+                        <div class="search-main__list-item__text">
+                            <a href="#" class="search-main__list-item__link">Отдел полимерных дисперсий</a>
+                            <p class="search-main__list-item__description">Торочкин Антон Руководитель отдела продаж
+                                полимерных дисперсий e-mail:
+                                torochkin-a@homa.ru тел.: +7 (495) 781-66-82 , доб. 685 Шмакова Светлана Зам.
+                                руководителя отдела продаж полимерных дисперсий e-mail: shmakova-s@homa.ru тел....</p>
+                            <p class="search-main__list-item__notice">Изменен: 17.01.2020</p>
+                            <div class="search-main__list-item__bottom">
+                                <p>Путь:</p>
+                                <ul class="search-main__list-item__sublist">
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Главная</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li class="search-main__list-item__sublist-item">
+                                        <a href="#">Наши адреса</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="search-main__controls">
+                    <div class="search-main__controls__prev">
+                        <img src="./images/svg/black-arrow.svg" alt="">
+                    </div>
+                    <div class="search-main__controls__pagination">
+                        <div class="current">01</div>
+                        <div class="total">04</div>
+                    </div>
+                    <div class="search-main__controls__next">
+                        <img src="./images/svg/black-arrow.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('./templates/partners.html')
+    </main>
+    @@include('./templates/footer.html')
+</body>
+
+</html>

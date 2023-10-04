@@ -1,0 +1,283 @@
+.production-complex {
+    padding-bottom: 14.5rem;
+    overflow: hidden;
+
+    .container {
+        margin-left: 25rem;
+        margin-right: 26rem;
+        width: 141rem;
+    }
+
+    &__top {
+        display: flex;
+        align-items: stretch;
+
+        &-img {
+            width: 73rem;
+            height: 52.5rem;
+            object-fit: cover;
+        }
+
+        &-text {
+            padding-top: 6.5rem;
+            padding-left: 10rem;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 68rem;
+            height: auto;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -26rem;
+                height: 0;
+                width: 94rem;
+                height: 100%;
+                background-color: #EDF2F8;
+                z-index: -1;
+            }
+
+            &__title {
+                margin-bottom: 5.4rem;
+                position: relative;
+                font-weight: 800;
+                font-size: 5rem;
+                line-height: 6.5rem;
+                text-transform: uppercase;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -2.1rem;
+                    left: 0;
+                    width: 10rem;
+                    height: .4rem;
+                    background-color: #E30613;
+                }
+            }
+
+            &__subtitle {
+                margin-bottom: 4rem;
+                font-weight: 700;
+                font-size: 3rem;
+                line-height: 4.4rem;
+            }
+
+            &__description {
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+            }
+
+        }
+    }
+
+    &__block {
+        display: flex;
+        align-items: stretch;
+
+        &:first-child {
+
+            .production-complex__block-text {
+                padding-right: 10rem;
+                width: 73rem;
+            }
+
+            .production-complex__block-img {
+                width: 68rem;
+            }
+        }
+
+        &:nth-child(2) {
+            flex-direction: row-reverse;
+
+            .production-complex__block-text {
+                padding-left: 5.5rem;
+                width: 68rem;
+            }
+
+            .production-complex__block-img {
+                width: 73rem;
+            }
+        }
+
+        &-text {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            justify-content: center;
+            position: relative;
+
+            &__title {
+                margin-bottom: 4.7rem;
+                font-weight: 700;
+                font-size: 3rem;
+                line-height: 4.4rem;
+            }
+
+            &__description {
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+
+                &:not(:last-child) {
+                    margin-bottom: 2.7rem;
+                }
+            }
+
+            &__list {
+                &-item {
+                    padding-left: 1rem;
+                    position: relative;
+                    font-size: 1.8rem;
+                    line-height: 2.7rem;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: .7em;
+                        width: .2rem;
+                        height: .2rem;
+                        background-color: #313131;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        &-img {
+            height: 70rem;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-bottom: 34rem;
+
+        .container {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+
+        &__top {
+            flex-direction: column-reverse;
+            position: relative;
+
+            &-text {
+                margin-bottom: 3.6rem;
+                padding-top: 10rem;
+                padding-left: 0;
+                position: unset;
+                width: 100%;
+
+                &::after {
+                    top: 0;
+                    left: -3rem;
+                    right: auto;
+                    width: 75rem;
+                    height: 100%;
+                }
+
+                &__title {
+                    margin-bottom: 15.4rem;
+                    font-weight: 700;
+                    font-size: 6.6rem;
+                    line-height: 7.2rem;
+                    text-transform: none;
+
+                    &::after {
+                        bottom: -11.2rem;
+                        width: 14rem;
+                        height: 1px;
+                    }
+                }
+
+                &__subtitle {
+                    margin-bottom: 4rem;
+                    font-size: 5.2rem;
+                    line-height: 7.6rem;
+                }
+
+                &__description {
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
+            }
+
+            &-img {
+                width: 100%;
+                height: 53.4rem;
+            }
+        }
+
+        &__block {
+            align-items: flex-start;
+            flex-direction: column;
+
+            &:first-child {
+
+                .production-complex__block-img {
+                    width: 100%;
+                }
+
+                .production-complex__block-text {
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(2) {
+                flex-direction: column;
+
+                .production-complex__block-text {
+                    padding-left: 0;
+                    width: 100%;
+                }
+
+                .production-complex__block-img {
+                    width: 100%;
+                }
+            }
+
+            &-text {
+                margin-bottom: 3.6rem;
+                padding-top: 10rem;
+
+                &__title {
+                    margin-bottom: 1rem;
+                    font-size: 5.2rem;
+                    line-height: 7.6rem;
+                }
+
+                &__description {
+                    &:not(:last-child) {
+                        margin-bottom: 4.8rem;
+                    }
+
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
+
+                &__list {
+                    &-item {
+                        padding-left: 1.5rem;
+                        font-size: 3.2rem;
+                        line-height: 4.8rem;
+
+                        &::before {
+                            width: .5rem;
+                            height: .5rem;
+                        }
+                    }
+                }
+            }
+
+            &-img {
+                height: 55rem;
+            }
+        }
+
+    }
+}

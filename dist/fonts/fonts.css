@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Arial";
+    src: local('Arial'), url('Arial-Bold.woff2') format('woff2'),
+        url('Arial-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Arial";
+    src: local('Arial'), url('Arial-Regular.woff2') format('woff2'),
+        url('Arial-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: local('Circe'), url('Circe-Bold.woff2') format('woff2'),
+        url('Circe-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: local('Circe'), url('Circe-ExtraBold.woff2') format('woff2'),
+        url('Circe-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: local('Circe'), url('Circe-Light.woff2') format('woff2'),
+        url('Circe-Light.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Circe";
+    src: local('Circe'), url('Circe-Regular.woff2') format('woff2'),
+        url('Circe-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: local('Gilroy'), url('Gilroy-Bold.woff2') format('woff2'),
+        url('Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local('Montserrat'), url('Montserrat-Bold.woff2') format('woff2'),
+        url('Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

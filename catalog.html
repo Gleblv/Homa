@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Каталог</title>
+</head>
+
+<body>
+    @@include('./templates/header.html')
+    <main>
+        <section class="hero">
+            <div class="container">
+                <ul class="hero__breadcrumbs">
+                    <li class="hero__breadcrumbs-item">
+                        <a href="./main.html" class="hero__breadcrumbs-item__link">Главная</a>
+                    </li>
+                    <li class="hero__breadcrumbs-item">
+                        <a href="#" class="hero__breadcrumbs-item__link">Каталог</a>
+                    </li>
+                </ul>
+                <p class="hero__heading">Каталог</p>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="container">
+                @@include('./templates/catalog-categories.html')
+                <div class="catalog__right">
+                    <ul class="catalog__right-list">
+                        <li class="catalog__right-list__item">
+                            <span class="catalog__right-list__item-number mobile">01</span>
+                            <a href="#" class="catalog__right-list__item-heading">Полимерные дисперсии</a>
+                            <a href="#" class="catalog__right-list__item-link mobile">
+                                <span>Каталог</span>
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z"
+                                        fill="#313131" />
+                                </svg>
+                            </a>
+                            <img src="./images/catalog-img1.webp" alt="" class="catalog__right-list__item-img">
+                            <ul class="catalog__right-list__item-sublist desktop">
+                                <p class="catalog__right-list__item-sublist-heading">Категории:</p>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Дисперсии для ЛКМ</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеевые дисперсии</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Дисперсии для полиграфии и флексографии</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Дисперсии для текстильной</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Дисперсии для нетканых материалов</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Дисперсии для гибкого</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Дисперсии для отделки кож</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Дисперсии для производства бумаги и&nbsp;обоев</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Экологичные барьерные составы для бумаги и картона</a>
+                                </li>
+                            </ul>
+                            <ul class="catalog__right-list__item-accordion accordion mobile">
+                                <li class="catalog__right-list__item-accordion-section">
+                                    <div class="catalog__right-list__item-accordion-section-head">
+                                        <p>Категории</p>
+                                        <button>
+                                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12L6 6.5L1 1" stroke="#313131" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="catalog__right-list__item-accordion-section-content">
+                                        <ul class="catalog__right-list__item-sublist">
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Дисперсии для ЛКМ</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеевые дисперсии</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Дисперсии для полиграфии и флексографии</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Дисперсии для текстильной</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Дисперсии для нетканых материалов</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Дисперсии для гибкого</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Дисперсии для отделки кож</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Дисперсии для производства бумаги и&nbsp;обоев</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Экологичные барьерные составы для бумаги и картона</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__right-list__item">
+                            <span class="catalog__right-list__item-number mobile">02</span>
+                            <a href="#" class="catalog__right-list__item-heading">Строительная<br class="desktop"><span
+                                    class="mobile"> </span> химия</a>
+                            <a href="#" class="catalog__right-list__item-link mobile">
+                                <span>Каталог</span>
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z"
+                                        fill="#313131" />
+                                </svg>
+                            </a>
+                            <img src="./images/catalog-img2.webp" alt="" class="catalog__right-list__item-img">
+                            <ul class="catalog__right-list__item-sublist desktop">
+                                <p class="catalog__right-list__item-sublist-heading">Категории:</p>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Профессиональные материалы</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Паркетная химия</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">DIY направление</a>
+                                </li>
+                            </ul>
+                            <ul class="catalog__right-list__item-accordion accordion mobile">
+                                <li class="catalog__right-list__item-accordion-section">
+                                    <div class="catalog__right-list__item-accordion-section-head">
+                                        <p>Категории</p>
+                                        <button>
+                                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12L6 6.5L1 1" stroke="#313131" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="catalog__right-list__item-accordion-section-content">
+                                        <ul class="catalog__right-list__item-sublist">
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Профессиональные материалы</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Паркетная химия</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">DIY направление</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__right-list__item">
+                            <span class="catalog__right-list__item-number mobile">03</span>
+                            <a href="#" class="catalog__right-list__item-heading">Клеи для мебели
+                                и&nbsp;деревообработки</a>
+                            <a href="#" class="catalog__right-list__item-link mobile">
+                                <span>Каталог</span>
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z"
+                                        fill="#313131" />
+                                </svg>
+                            </a>
+                            <img src="./images/catalog-img3.webp" alt="" class="catalog__right-list__item-img">
+                            <ul class="catalog__right-list__item-sublist desktop">
+                                <p class="catalog__right-list__item-sublist-heading">Категории:</p>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для склеивания древесины</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для облицовывания ровных поверхностей</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для 3D облицовывания рельефных поверхностей</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для облицовывания кромок</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для облицовывания профильного погонажа</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для производства стеновых панелей</a>
+                                </li>
+                            </ul>
+                            <ul class="catalog__right-list__item-accordion accordion mobile">
+                                <li class="catalog__right-list__item-accordion-section">
+                                    <div class="catalog__right-list__item-accordion-section-head">
+                                        <p>Категории</p>
+                                        <button>
+                                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12L6 6.5L1 1" stroke="#313131" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="catalog__right-list__item-accordion-section-content">
+                                        <ul class="catalog__right-list__item-sublist">
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для склеивания древесины</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для облицовывания ровных поверхностей</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для 3D облицовывания рельефных поверхностей</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для облицовывания кромок</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для облицовывания профильного погонажа</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для производства стеновых панелей</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__right-list__item">
+                            <span class="catalog__right-list__item-number mobile">04</span>
+                            <a href="#" class="catalog__right-list__item-heading">Клеи для тары и&nbsp;упаковки</a>
+                            <a href="#" class="catalog__right-list__item-link mobile">
+                                <span>Каталог</span>
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z"
+                                        fill="#313131" />
+                                </svg>
+                            </a>
+                            <img src="./images/catalog-img4.webp" alt="" class="catalog__right-list__item-img">
+                            <ul class="catalog__right-list__item-sublist desktop">
+                                <p class="catalog__right-list__item-sublist-heading">Категории:</p>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для изготовления бумажных пакетов и крафт-мешков</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для изготовления картонных и гофрокоробов</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для картонной и бумажной втулки</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для каширования</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для фальцесклейки картонной упаковки</a>
+                                </li>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для этикеток</a>
+                                </li>
+                            </ul>
+                            <ul class="catalog__right-list__item-accordion accordion mobile">
+                                <li class="catalog__right-list__item-accordion-section">
+                                    <div class="catalog__right-list__item-accordion-section-head">
+                                        <p>Категории</p>
+                                        <button>
+                                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12L6 6.5L1 1" stroke="#313131" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="catalog__right-list__item-accordion-section-content">
+                                        <ul class="catalog__right-list__item-sublist">
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для изготовления бумажных пакетов и крафт-мешков</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для изготовления картонных и гофрокоробов</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для картонной и бумажной втулки</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для каширования</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для фальцесклейки картонной упаковки</a>
+                                            </li>
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для этикеток</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="catalog__right-list__item">
+                            <span class="catalog__right-list__item-number mobile">05</span>
+                            <a href="#" class="catalog__right-list__item-heading">Клеи для автопрома
+                                и&nbsp;машиностроения</a>
+                            <a href="#" class="catalog__right-list__item-link mobile">
+                                <span>Каталог</span>
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7H0V9Z"
+                                        fill="#313131" />
+                                </svg>
+                            </a>
+                            <img src="./images/catalog-img5.webp" alt="" class="catalog__right-list__item-img">
+                            <ul class="catalog__right-list__item-sublist desktop">
+                                <p class="catalog__right-list__item-sublist-heading">Категории:</p>
+                                <li class="catalog__right-list__item-sublist-item">
+                                    <a href="#">Клеи для коммерческого транпорта</a>
+                                </li>
+                            </ul>
+                            <ul class="catalog__right-list__item-accordion accordion mobile">
+                                <li class="catalog__right-list__item-accordion-section">
+                                    <div class="catalog__right-list__item-accordion-section-head">
+                                        <p>Категории</p>
+                                        <button>
+                                            <svg width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 12L6 6.5L1 1" stroke="#313131" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="catalog__right-list__item-accordion-section-content">
+                                        <ul class="catalog__right-list__item-sublist">
+                                            <li class="catalog__right-list__item-sublist-item">
+                                                <a href="#">Клеи для коммерческого транпорта</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        @@include('./templates/partners.html')
+    </main>
+    @@include('./templates/footer.html')
+</body>
+
+</html>

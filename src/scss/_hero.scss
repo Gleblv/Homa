@@ -1,0 +1,205 @@
+.hero {
+    padding-top: 1.4rem;
+    padding-bottom: 6rem;
+    background-color: #E8EDF5;
+
+    .container {
+        position: relative;
+    }
+
+    &__breadcrumbs {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+
+        &-item {
+            position: relative;
+
+            &:last-child {
+
+                .hero__breadcrumbs-item__link {
+                    color: #9FAABC;
+                    font-weight: 400;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+
+                &::after {
+                    content: '/';
+                    position: absolute;
+                    right: -.7rem;
+                    top: 50%;
+                    font-weight: 350;
+                    font-size: 1.6rem;
+                    line-height: 2.4rem;
+                    color: #000000;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &:hover {
+                .hero__breadcrumbs-item__link {
+                    color: #E30613;
+                }
+            }
+
+            &__link {
+                font-family: 'Circe';
+                font-style: normal;
+                font-weight: 350;
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: #000000;
+                transition: color .2s ease-in-out;
+            }
+        }
+    }
+
+    &__heading {
+        font-family: 'Circe';
+        font-weight: 700;
+        font-size: 4.5rem;
+        line-height: 5rem;
+        color: #313131;
+
+    }
+
+    @media (max-width:48em) {
+        padding-top: 4rem;
+        padding-bottom: 8.8rem;
+        background-color: #FFF;
+
+        &__breadcrumbs {
+            margin-bottom: 6.8rem;
+
+            &-item {
+
+                &:not(:last-child) {
+                    margin-right: 1.5rem;
+
+                    &::after {
+                        right: -1.2rem;
+                        font-size: 3rem;
+                        line-height: 4.4rem;
+                    }
+                }
+
+
+                &__link {
+                    font-size: 3rem;
+                    line-height: 4.4rem;
+                }
+            }
+        }
+
+        &__heading {
+            font-size: 6.6rem;
+            line-height: 7.2rem;
+        }
+    }
+
+
+}
+
+.product-hero {
+    background-color: #FFF;
+
+    .hero__breadcrumbs {
+        margin-bottom: 0;
+    }
+}
+
+.search-hero {
+    .hero__heading {
+        margin-bottom: 2.6rem;
+    }
+
+    &__form {
+        width: 100%;
+        position: relative;
+
+        &-span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+        }
+
+        &-input {
+            padding-left: 10rem;
+            padding-right: 3rem;
+            padding-bottom: 1rem;
+            width: 100%;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.1rem;
+            border-bottom: .1rem solid #313131;
+
+            &::-webkit-search-decoration,
+            &::-webkit-search-cancel-button,
+            &::-webkit-search-results-button,
+            &::-webkit-search-results-decoration {
+                display: none;
+            }
+        }
+
+        &-button {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            &:hover {
+                svg {
+                    path {
+                        fill: #E30613;
+                    }
+                }
+            }
+
+            svg {
+                width: 2.4rem;
+                height: 2.5rem;
+                object-fit: contain;
+
+                path {
+                    transition: fill .2s ease-in-out;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+
+        .hero__heading {
+            margin-bottom: 5rem;
+        }
+
+        &__form {
+            &-span {
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+            }
+
+            &-input {
+                padding-left: 15rem;
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+                border-bottom: .2rem solid #313131;
+            }
+
+            &-button {
+                top: -.5rem;
+
+                svg {
+                    width: 3.6rem;
+                    height: 4rem;
+                }
+            }
+        }
+    }
+}

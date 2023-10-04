@@ -1,0 +1,384 @@
+.qa {
+    &__heading {
+        margin-bottom: 4.4rem;
+        font-weight: 700;
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    &__subheading {
+        margin-bottom: .8rem;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 2.8rem;
+    }
+
+    &__description {
+        margin-bottom: 3.1rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    &__form {
+        margin-bottom: 6rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+
+        &__input {
+            padding: 1.6rem 2.2rem;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            border: 1px solid #C4C4C4;
+            border-radius: .4rem;
+
+            &::placeholder {
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                color: #C4C4C4;
+            }
+
+            &:first-child {
+                margin-bottom: 1.6rem;
+                flex: 0 0 100%;
+                width: 100%;
+            }
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-bottom: 1.6rem;
+                flex: 0 0 51.2rem;
+            }
+        }
+
+        &__textarea {
+            padding: 1.6rem 2.2rem;
+            flex: 0 0 100%;
+            width: 100%;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            border: 1px solid #C4C4C4;
+            border-radius: .4rem;
+
+            &::placeholder {
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                color: #C4C4C4;
+            }
+        }
+
+        &__btn {
+            position: absolute;
+            bottom: 2.8rem;
+            right: 2.2rem;
+
+            svg {
+                &:last-child {
+                    width: 3.4rem;
+                    height: 1rem;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    &__list {
+        margin-bottom: 11rem;
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 8rem;
+            }
+
+            &__author {
+                margin-bottom: 4.1rem;
+                display: flex;
+                align-items: flex-start;
+
+                &-img {
+                    margin-right: 2.2rem;
+                    position: relative;
+
+                    img {
+                        width: 7.6rem;
+                        height: 7.6rem;
+                        object-fit: contain;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        bottom: -7rem;
+                        left: 50%;
+                        width: 7.6rem;
+                        height: 6.3rem;
+                        border-left: 1px solid #C4C4C4;
+                        border-bottom: 1px solid #C4C4C4;
+                    }
+
+                }
+
+                &-name {
+                    margin-bottom: .5rem;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+
+                &-question {
+                    font-weight: 700;
+                    font-size: 2.2rem;
+                    line-height: 3.1rem;
+                }
+            }
+
+            &__homa {
+                margin-left: 12rem;
+                display: flex;
+                align-items: flex-start;
+
+                &-img {
+                    margin-right: 2.2rem;
+                    width: 7.6rem;
+                    height: 7.6rem;
+                    object-fit: contain;
+                }
+
+                &-name {
+                    margin-bottom: .5rem;
+                    font-weight: 700;
+                    font-size: 2.2rem;
+                    line-height: 3.1rem;
+                }
+
+                &-answer {
+                    width: 82.2rem;
+                    font-size: 1.8rem;
+                    line-height: 2.7rem;
+                }
+            }
+        }
+    }
+
+    &__btn-error {
+        margin-bottom: 11rem;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        line-height: 2.9rem;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+            color: #E30613;
+
+            svg {
+                &:last-child {
+                    path {
+                        fill: #E30613;
+                    }
+                }
+            }
+        }
+
+        svg {
+            &:first-child {
+                width: 7.1rem;
+                height: 7.1rem;
+                object-fit: contain;
+            }
+
+            &:nth-child(2) {
+                margin-left: -4.7rem;
+                margin-right: 1rem;
+                width: 2.6rem;
+                height: 1.9rem;
+                object-fit: contain;
+            }
+
+            &:last-child {
+                width: 3.4rem;
+                height: 1rem;
+                object-fit: contain;
+
+                path {
+                    transition: fill .2s ease-in-out;
+                }
+            }
+        }
+
+        span {
+            margin-right: 1.3rem;
+            background-color: #FFF;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__heading {
+            margin-bottom: 6rem;
+            font-size: 6.6rem;
+            line-height: 7.2rem;
+        }
+
+        &__subheading {
+            margin-bottom: 2rem;
+            font-size: 5.2rem;
+            line-height: 5.2rem;
+        }
+
+        &__description {
+            margin-bottom: 8rem;
+            font-size: 3.2rem;
+            line-height: 4.8rem;
+        }
+
+        &__form {
+            margin-bottom: 10rem;
+            flex-direction: column;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+
+            &__input {
+                margin-bottom: 2rem;
+                padding: 3rem 4.4rem;
+                flex: none;
+                width: 100%;
+                font-size: 3.6rem;
+                line-height: 5rem;
+
+                &::placeholder {
+                    font-size: 3.6rem;
+                    line-height: 5rem;
+                }
+
+                &:first-child,
+                &:nth-child(2),
+                &:nth-child(3) {
+                    margin-bottom: 2rem;
+                    flex: none;
+                }
+            }
+
+            &__textarea {
+                padding: 3rem 4.4rem;
+                flex: none;
+                width: 100%;
+                height: 35.4rem;
+                font-size: 3.6rem;
+                line-height: 5rem;
+
+                &::placeholder {
+                    font-size: 3.6rem;
+                    line-height: 5rem;
+                }
+            }
+
+            &__btn {
+                bottom: 4rem;
+                right: 4rem;
+
+                svg {
+                    &:last-child {
+                        width: 4rem;
+                        height: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        &__list {
+            margin-bottom: 12rem;
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 6.2rem;
+                }
+
+                &__author {
+                    margin-bottom: 4rem;
+
+                    &-img {
+                        margin-right: 4rem;
+
+                        &::after {
+                            top: 100%;
+                            width: 3.6rem;
+                            height: 8rem;
+                        }
+
+                        img {
+                            width: 12.4rem;
+                            height: 12.4rem;
+                        }
+                    }
+
+                    &-name {
+                        margin-bottom: 1.2rem;
+                        font-size: 3.2rem;
+                        line-height: 4.8rem;
+                    }
+
+                    &-question {
+                        font-size: 4.4rem;
+                        line-height: 4.4rem;
+                    }
+                }
+
+                &__homa {
+                    margin-left: 7.4rem;
+
+                    &-img {
+                        margin-right: 0;
+                        width: 9.2rem;
+                        height: 9.2rem;
+                    }
+
+                    &-data {
+                        width: 51.4rem;
+                    }
+
+                    &-name {
+                        margin-bottom: 1rem;
+                        font-size: 4.4rem;
+                        line-height: 6.2rem;
+                    }
+
+                    &-answer {
+                        width: 100%;
+                        font-size: 3.2rem;
+                        line-height: 4.8rem;
+                    }
+                }
+            }
+        }
+
+        &__btn-error {
+            margin-bottom: 10rem;
+            font-size: 3.2rem;
+            line-height: 4.2rem;
+
+            svg {
+                &:first-child {
+                    width: 7.6rem;
+                    height: 7.6rem;
+                }
+
+                &:nth-child(2) {
+                    margin-left: -5.2rem;
+                    margin-right: .6rem;
+                    width: 2.8rem;
+                    height: 2rem;
+                }
+
+                &:last-child {
+                    width: 4rem;
+                    height: 1.2rem;
+                }
+            }
+
+            img {
+                width: 4rem;
+            }
+        }
+    }
+}

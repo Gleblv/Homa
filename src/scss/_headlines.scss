@@ -1,0 +1,370 @@
+.headlines {
+    padding-top: 3.8rem;
+    padding-bottom: 16rem;
+    background-color: #FFF;
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .news-categories {
+            margin-top: 4rem;
+        }
+    }
+
+    &__list {
+        margin-left: auto;
+        margin-bottom: 9rem;
+        width: 116rem;
+
+        &-item {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            padding-left: 1.6rem;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            transition: background-color .2s ease-in-out;
+            border-bottom: 1px solid #C4C4C4;
+
+            &:hover {
+                background-color: #F8F8F8;
+
+                .headlines__list-item__img {
+                    transform: scale(1.1);
+                }
+
+                .headlines__list-item__right-bottom {
+                    &-list {
+                        opacity: 1;
+                    }
+
+
+                    &-link {
+                        color: #E30613;
+
+                        svg {
+                            path {
+                                fill: #E30613;
+                            }
+                        }
+                    }
+                }
+
+
+            }
+
+            &__img {
+                margin-right: 4rem;
+                width: 32rem;
+                height: 20rem;
+                object-fit: contain;
+                transition: transform .2s ease-in-out;
+            }
+
+            &__right {
+                &-title {
+                    margin-bottom: 1.6rem;
+                    font-family: 'Circe';
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                    color: #000000;
+                }
+
+                &-date {
+                    margin-bottom: 1.6rem;
+                    font-family: 'Circe';
+                    font-weight: 350;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                    color: #8F8F8F;
+                }
+
+                &-description {
+                    margin-bottom: 1rem;
+                    font-family: 'Circe';
+                    font-weight: 350;
+                    font-size: 1.8rem;
+                    line-height: 2.6rem;
+                    color: #000000;
+                }
+
+                &-bottom {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &-list {
+                        display: flex;
+                        align-items: center;
+                        opacity: 0;
+                        transition: opacity .2s ease-in-out;
+
+                        &-item {
+                            &:not(:last-child) {
+                                margin-right: 1rem;
+                            }
+                        }
+
+                        &-btn {
+                            display: flex;
+                            position: relative;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 10;
+
+                            &:hover {
+                                svg {
+                                    path {
+                                        fill: #E30613;
+                                    }
+                                }
+                            }
+
+                            svg {
+                                width: 1.6rem;
+                                height: 1.6rem;
+                                object-fit: contain;
+
+                                path {
+                                    transition: fill .2s ease-in-out;
+                                }
+                            }
+                        }
+
+                        &-social-link {
+
+                            &:hover {
+                                img {
+                                    opacity: .7;
+                                }
+                            }
+
+                            img {
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                object-fit: contain;
+                                transition: opacity .2s ease-in-out;
+                            }
+                        }
+                    }
+
+                    &-link {
+                        margin-right: 1rem;
+                        display: flex;
+                        align-items: center;
+                        font-family: 'Circe';
+                        font-weight: 700;
+                        font-size: 1.6rem;
+                        line-height: 1;
+                        color: #000000;
+                        transition: color .2s ease-in-out;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 2;
+                        }
+
+                        span {
+                            margin-right: .5rem;
+                        }
+
+                        svg {
+                            width: 1.9rem;
+                            object-fit: contain;
+
+                            path {
+                                transition: fill .2s ease-in-out;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+
+    &__control {
+        margin-left: auto;
+        width: 116rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-prev,
+        &-next {
+            img {
+                width: 3.4rem;
+                object-fit: contain;
+            }
+        }
+
+        &-prev {
+            margin-right: 2.1rem;
+
+            img {
+                transform: scale(-1);
+            }
+        }
+
+        &-pagination {
+            margin-right: 1.5rem;
+            display: flex;
+            align-items: center;
+
+            .current {
+                margin-right: .2rem;
+                font-size: 4rem;
+                line-height: 5.9rem;
+            }
+
+            .total {
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        padding-top: 5rem;
+        border-top: .1rem solid #C4C4C4;
+
+        .container {
+            padding: 0;
+        }
+
+        &__content {
+            flex-direction: column;
+
+            .news-categories {
+                margin-top: 0;
+                margin-left: 0;
+            }
+        }
+
+        &__list {
+            margin-bottom: 6rem;
+            margin-left: 0;
+            width: 100%;
+
+            &-item {
+                padding: 0;
+                padding-top: 6rem;
+                padding-bottom: 5.5rem;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                border-bottom: .1rem solid #C4C4C4;
+                border-top: none;
+
+                &__img {
+                    margin-bottom: 6rem;
+                    margin-right: 0;
+                    width: 69rem;
+                    height: 40rem;
+                    object-fit: cover;
+                }
+
+                &__right {
+                    width: 69rem;
+
+                    &-title {
+                        margin-bottom: 3.2rem;
+                        font-size: 3.6rem;
+                        line-height: 5.9rem;
+                    }
+
+                    &-date {
+                        margin-bottom: 3.2rem;
+                        font-size: 3.2rem;
+                        line-height: 5.2rem;
+                    }
+
+                    &-description {
+                        margin-bottom: 3rem;
+                        font-size: 3.2rem;
+                        line-height: 4.8rem;
+                    }
+
+                    &-bottom {
+                        &-list {
+                            &-item {
+                                &:not(:last-child) {
+                                    margin-right: 2rem;
+                                }
+                            }
+
+                            &-social-link {
+                                img {
+                                    width: 4.8rem;
+                                    height: 4.8rem;
+                                }
+                            }
+
+                            &-btn {
+                                svg {
+                                    width: 3.2rem;
+                                    height: 3.2rem;
+                                }
+                            }
+                        }
+
+                        &-link {
+                            margin-right: 0;
+                            font-size: 3.2rem;
+
+                            span {
+                                margin-right: 1rem;
+                            }
+
+                            svg {
+                                width: 3.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__control {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            width: 100%;
+            justify-content: space-between;
+
+            &-prev {
+                margin-right: 0;
+            }
+
+            &-prev,
+            &-next {
+                img {
+                    width: 6.8rem;
+                }
+            }
+
+            &-pagination {
+                margin-right: 0;
+
+                .current {
+                    font-size: 8rem;
+                    line-height: 11.8rem;
+                }
+
+                .total {
+                    font-size: 2rem;
+                    line-height: 4rem;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@import "set";
+@import "components";
+@import "../fonts/fonts";
+
+@import "header";
+@import "footer";
+
+@import "popup";
+
+@import "modal";
+
+@import "intro";
+@import "production";
+@import "advantages";
+@import "support";
+@import "news";
+@import "recommendations";
+@import "reviews";
+@import "video";
+@import "social";
+@import "hero";
+
+@import "timeline";
+
+@import "partners";
+@import "headlines";
+@import "catalog";
+@import "catalog-categories";
+@import "news-categories";
+@import "polymer-hero";
+@import "polymer-catalog";
+@import "categories";
+@import "article";
+@import "qa";
+@import "paints";
+@import "product";
+@import "science";
+@import "suggestion";
+@import "production-complex";
+@import "contacts";
+
+@import "techsupport-hero";
+@import "techsupport-main";
+
+@import "press-hero";
+@import "press-main";
+
+@import "projects-main";
+
+@import "project-page-main";
+
+@import "news-page-main";
+
+@import "videos-main";
+
+@import "polygraphy-main";
+
+@import "vacancies-main";
+
+@import "vacancy-page-main";
+
+@import "reviews-main";
+
+@import "achievements-main";
+
+@import "achievements-page-main";
+
+@import "partners-main";
+
+@import "search-main";
+
+
+body.lock {
+  overflow: hidden;
+}
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 48em) {
+  .desktop {
+    display: none !important;
+  }
+}

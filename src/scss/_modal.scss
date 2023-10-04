@@ -1,0 +1,331 @@
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 4;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+
+    /* хром, сафари */
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &.active {
+        display: flex;
+    }
+
+    &__container {
+        padding: 9.3rem 10rem 12rem 9.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 71.3rem;
+        // height: 110rem;
+        // max-height: 100%;
+        background-color: #FFF;
+        // overflow-y: auto;
+        // -ms-overflow-style: none;
+
+        /* хром, сафари */
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+
+    &__close-btn {
+        position: absolute;
+        top: 2.2rem;
+        right: 2.4rem;
+        cursor: pointer;
+
+        svg {
+            width: 2.6rem;
+            height: 2.6rem;
+            object-fit: contain;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 1.1rem;
+        font-weight: 700;
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    &__subheading {
+        margin-bottom: 4.5rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    &__form {
+        margin-bottom: 3.3rem;
+
+        &-input {
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+
+            &[id="resume"] {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 100%;
+
+                label {
+                    margin-right: 1rem;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        color: #E30613;
+
+                        svg {
+                            path {
+                                fill: #E30613;
+                            }
+                        }
+
+                        span {
+                            color: #E30613;
+                        }
+                    }
+
+                    svg {
+                        margin-right: .4rem;
+                        width: 2.6rem;
+                        height: 2.5rem;
+
+                        path {
+                            transition: fill .2s ease-in-out;
+                        }
+                    }
+
+                    span {
+                        font-size: 1.8rem;
+                        line-height: 2.5rem;
+                        color: #313131;
+                        transform: translateY(.2rem);
+                        transition: color .2s ease-in-out;
+                    }
+                }
+
+                input[type="file"] {
+                    width: 0.1px;
+                    height: 0.1px;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: -1;
+
+                    &:focus-visible+label {
+                        svg {
+                            path {
+                                fill: #E30613;
+                            }
+                        }
+
+                        span {
+                            color: #E30613;
+                        }
+                    }
+                }
+            }
+
+            label {
+                margin-bottom: 1.5rem;
+                display: inline-block;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+
+                span {
+                    color: #E30613;
+                }
+            }
+
+            input,
+            textarea {
+                padding: 1.5rem;
+                width: 100%;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                border: .1rem solid #C4C4C4;
+                border-radius: .4rem;
+
+                &::placeholder {
+                    color: #C4C4C4;
+                }
+            }
+        }
+    }
+
+    &__disclaimer {
+        margin-bottom: 2.4rem;
+        width: 51.8rem;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    &__form-btn {
+        margin-bottom: 3rem;
+    }
+
+    &__notice {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        color: #C4C4C4;
+
+        span {
+            color: #E30613;
+        }
+
+    }
+
+    &-response,
+    &-request {
+        .modal__container {
+            margin-top: 50rem;
+            margin-bottom: 20rem;
+        }
+    }
+
+    &-request {
+        .modal__heading {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &-mistake {
+        .modal__container {
+            padding: 9.5rem;
+            min-width: 89rem;
+        }
+    }
+
+    &-question,
+    &-description {
+        .modal__container {
+            margin-top: 60rem;
+            margin-bottom: 20rem;
+            max-width: 71.3rem;
+        }
+    }
+
+    &-question {
+        .modal__container {
+            margin-top: 70rem;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__container {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 6rem 4rem;
+            padding-top: 12rem;
+            position: relative;
+            max-width: none;
+            min-width: none;
+            width: calc(100% - 6rem);
+        }
+
+        &__close-btn {
+            top: 4rem;
+            right: 4rem;
+
+            svg {
+                width: 5.2rem;
+                height: 5.2rem;
+                object-fit: contain;
+            }
+        }
+
+        &__heading {
+            font-size: 6rem;
+            line-height: 6.6rem;
+        }
+
+        &__subheading {
+            font-size: 3.2rem;
+            line-height: 4.8rem;
+        }
+
+        &__form {
+            &-input {
+
+                label {
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+                }
+
+                input,
+                textarea {
+                    font-size: 3.2rem;
+                    line-height: 4.8rem;
+
+                    &::placeholder {
+                        font-size: 3.2rem;
+                        line-height: 4.8rem;
+                    }
+                }
+
+            }
+        }
+
+        &__disclaimer {
+            font-size: 3.2rem;
+            line-height: 4.8rem;
+        }
+
+        &__notice {
+            font-size: 3.2rem;
+            line-height: 4.8rem;
+        }
+
+
+        &-response,
+        &-request {
+            .modal__container {
+                margin-top: 71rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-mistake {
+            .modal__container {
+                margin-top: 23rem;
+                margin-bottom: 3rem;
+                padding: 6rem 4rem;
+                padding-top: 12rem;
+                min-width: auto;
+            }
+        }
+
+        &-question,
+        &-description {
+            .modal__container {
+                margin-top: 86rem;
+                margin-bottom: 3rem;
+                max-width: none;
+            }
+        }
+
+        &-question {
+            .modal__container {
+                margin-top: 106rem;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+}

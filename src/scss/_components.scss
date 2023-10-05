@@ -48,6 +48,28 @@
         margin-right: 1.3rem;
         background-color: #FFF;
     }
+
+    @media (min-width: 45em) and (max-width: 75em) {
+        span {
+            margin-left: -7rem;
+            color: #000;
+            font-size: 3.4rem;
+            line-height: normal;
+            margin-right: 1.8rem;
+        }
+
+        svg {
+            &:first-child {
+                width: 12rem;
+                height: 12rem;
+            }
+
+            &:last-child {
+                width: 6rem;
+                height: 1.8rem;
+            }
+        }
+    }
 }
 
 .swiper__controls {

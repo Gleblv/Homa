@@ -122,7 +122,8 @@
 
             &-slide {
                 padding: 4rem 4rem 5rem;
-                min-height: 85.6rem;
+                height: 85.6rem;
+                overflow: hidden;
 
                 &__img {
                     width: 100%;
@@ -151,34 +152,6 @@
                 &__description {
                     font-size: 3.4rem;
                     line-height: 140%; /* 4.76rem */
-                }
-            }
-
-            .swiper__controls {
-                &__prev,
-                &__next {
-                    img {
-                        width: 6rem;
-                        height: 6rem;
-                    }
-                }
-
-                &__prev {
-                    margin-right: 4.2rem;
-                }
-
-                &__pagination {
-                    margin-right: 4.2rem;
-
-                    .current {
-                        font-size: 4.8rem;
-                        line-height: normal;
-                    }
-
-                    .total {
-                        font-size: 2.8rem;
-                        line-height: normal;
-                    }
                 }
             }
         }

@@ -82,6 +82,57 @@
         }
     }
 
+    @media (min-width: 45em) and (max-width: 75em) {
+        padding-top: 13rem;
+        padding-bottom: 21rem;
+
+        &__top {
+            &-heading {
+                font-size: 7.2rem;
+                line-height: 140%; /* 10.08rem */
+            }
+        }
+
+        .swiper-wrapper {
+            margin-bottom: 8rem;
+        }
+
+        .swiper__recommendations {
+            width: 220rem;
+            padding-top: 4rem;
+
+            &-slide {
+                width: 51rem;
+                padding: 4rem 4rem 4rem 1.2rem;
+                overflow: hidden;
+                height: 77rem;
+
+                &__img {
+                    width: 43rem;
+                    height: 26rem;
+                    margin-bottom: 4rem;
+                }
+
+                &__title {
+                    font-size: 4rem;
+                    line-height: 140%; /* 5.6rem */
+                    margin-bottom: 2rem;
+                }
+
+                .line {
+                    width: 10.2rem;
+                    height: 0.4rem;
+                    margin-bottom: 3rem;
+                }
+
+                &__description {
+                    font-size: 3.4rem;
+                    line-height: 140%; /* 4.76rem */
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-top: 20rem;
         padding-bottom: 20rem;

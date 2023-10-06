@@ -119,6 +119,34 @@
             color: #000000;
         }
     }
+
+    @media (min-width: 45em) and (max-width: 75em) {
+        &__prev,
+        &__next {
+            img {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+
+        &__prev {
+            margin-right: 4.2rem;
+        }
+
+        &__pagination {
+            margin-right: 4.2rem;
+
+            .current {
+                font-size: 4.8rem;
+                line-height: normal;
+            }
+
+            .total {
+                font-size: 2.8rem;
+                line-height: normal;
+            }
+        }
+    }
 }
 
 @media (max-width: 48em) {

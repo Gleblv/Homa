@@ -164,6 +164,91 @@
         }
     }
 
+    @media (min-width: 45em) and (max-width: 75em) {
+        padding-top: 0rem;
+        padding-bottom: 8rem;
+
+        &__top {
+            margin-bottom: 4rem;
+
+            &-heading {
+                font-size: 7.2rem;
+                line-height: 140%; /* 10.08rem */
+            }
+        }
+
+        .swiper__reviews {
+            .swiper-wrapper {
+                margin-bottom: 8rem;
+            }
+
+            &-slide {
+                padding: 6rem;
+
+                &__quotation {
+                    width: 5.2rem;
+                    height: 4.2rem;
+                    margin-bottom: 4rem;
+                }
+
+                &__quote {
+                    font-size: 4.4rem;
+                    line-height: 140%; /* 6.16rem */
+                    margin-bottom: 4rem;
+                }
+
+                &__description {
+                    font-size: 3.4rem;
+                    line-height: 140%; /* 4.76rem */
+                    margin-bottom: 2rem;
+                }
+
+                &__link {
+                    font-size: 2.8rem;
+                    line-height: 4rem; /* 142.857% */
+                    margin-bottom: 2rem;
+                }
+
+                .line {
+                    margin-bottom: 2.2rem;
+                }
+
+                &__author {
+                    &-logo {
+                        &.bratets {
+                            img {
+                                width: 21.6rem;
+                                height: 10.2rem;
+                            }
+                        }
+
+                        &.master {
+                            img {
+                                width: 16.2rem;
+                                height: 10.8rem;
+                            }
+                        }
+                    }
+
+                    &-text {
+                        width: auto;
+                    }
+
+                    &-name {
+                        font-size: 3.4rem;
+                        line-height: normal;
+                        margin-bottom: 1rem;
+                    }
+
+                    &-type {
+                        font-size: 3.2rem;
+                        line-height: 140%; /* 4.48rem */
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width:48em) {
         padding-top: 0;
         margin-bottom: 2rem;

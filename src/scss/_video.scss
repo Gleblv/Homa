@@ -99,6 +99,54 @@
         }
     }
 
+    @media (min-width: 45em) and (max-width: 75em) {
+        padding-top: 13rem;
+        padding-bottom: 12rem;
+
+        &__top {
+            margin-bottom: 4rem;
+
+            &-heading {
+                font-size: 7.2rem;
+                line-height: 140%; /* 10.08rem */
+            }
+        }
+
+        .swiper__video {
+            &-slide {
+                &__img {
+                    width: 51rem;
+                    height: 28.8rem;
+                } 
+
+                &__play {
+                    img {
+                        width: 9.4rem;
+                        height: 9.4rem;
+                    }
+
+                    margin-bottom: 2rem;
+                }
+
+                &__date {
+                    font-size: 3rem;
+                    line-height: 2.8rem; /* 93.333% */
+                    margin-bottom: 2rem;
+                }
+
+                &__description {
+                    font-size: 3.6rem;
+                    line-height: 140%; /* 5.04rem */
+                    width: auto;
+                }
+            }
+
+            .swiper__controls {
+                display: none;
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-top: 20rem;
         padding-bottom: 20rem;

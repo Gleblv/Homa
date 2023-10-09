@@ -57,6 +57,26 @@
                 transition: color .2s ease-in-out;
             }
         }
+
+        @media (min-width: 45em) and (max-width: 78em) {
+            margin-bottom: 4rem;
+
+            &-item {
+                &__link {
+                    font-size: 3.4rem;
+                    line-height: 140%; /* 23.8px */
+                }
+
+                &:not(:last-child) {
+                    margin-right: 3rem;
+
+                    &::after {
+                        font-size: 3.4rem;
+                        right: -2.2rem;
+                    }
+                }
+            }
+        }
     }
 
     &__heading {
@@ -102,7 +122,15 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
 
+        &__heading {
+            font-size: 6.4rem;
+            line-height: 140%; /* 44.8px */
+        }
+    }
 }
 
 .product-hero {

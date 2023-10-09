@@ -233,6 +233,100 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        padding-top: 7.4rem;
+        padding-bottom: 20rem;
+
+        .news-categories {
+            display: none;
+        }
+
+        &__list {
+            width: auto;
+
+            &-item {
+                padding: 0 0 5rem 0;
+
+                &:not(:first-child) {
+                    padding-top: 6rem;
+                }
+
+                & > img {
+                    width: 58.2rem;
+                    height: 36.2rem;
+                    margin-right: 6rem;
+                }
+
+                &__right {
+                    &-title {
+                        font-size: 4rem;
+                        line-height: 140%; /* 5.6rem */
+                        margin-bottom: 3rem;
+                    }
+
+                    &-date {
+                        font-size: 3.4rem;
+                        line-height: 140%; /* 4.76rem */
+                        margin-bottom: 3rem;
+                    }
+
+                    &-description {
+                        font-size: 3.4rem;
+                        line-height: 140%; /* 4.76rem */
+                        margin-bottom: 7rem;
+                    }
+
+                    &-bottom {
+                        &-link {
+                            span {
+                                font-size: 2.8rem;
+                                line-height: 3.2rem; /* 114.286% */
+                                margin-right: 1rem;
+                            }
+
+                            svg {
+                                width: 3.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__control {
+            width: auto;
+
+            &-prev,
+            &-next {
+                width: 6rem;
+                height: 6rem;
+
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+
+            &-prev {
+                margin-right: 4.2rem;
+            }
+
+            &-pagination {
+                margin-right: 4.2rem;
+
+                .current {
+                    font-size: 4.8rem;
+                    font-weight: 400;
+                }
+
+                .total {
+                    font-size: 2.8rem;
+                    font-weight: 350;
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-top: 5rem;
         border-top: .1rem solid #C4C4C4;

@@ -95,6 +95,82 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        &__right {
+            padding-left: 8rem;
+            border-left: 1px solid #E8E8E8;
+
+            &-list {
+                padding-top: 8rem;
+                padding-right: 8rem;
+                padding-bottom: 24rem;
+                column-gap: 16rem;
+                row-gap: 24rem;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: calc(50% - 8rem);
+                    width: 0.2rem;
+                    height: 100%;
+                    background: #E8E8E8;
+                }
+
+                &__item {
+                    padding: 0;
+                    width: 65rem;
+
+                    &:not(:nth-child(3n+3)) {
+                        border-right: none;
+                    }
+
+                    &:not(:nth-child(3n+3)) {
+                        padding: 0;
+                        width: 65rem;
+                        border-left: none;
+                    }
+
+                    &:nth-child(3n+3) {
+                        width: 65rem;
+                    }
+
+                    &-heading {
+                        font-size: 4.8rem;
+                        line-height: 120%; /* 5.76rem */
+                        margin-bottom: 4rem;
+                        width: auto;
+                        min-height: 11.6rem;
+                    }
+
+                    &-img {
+                        width: 65rem;
+                        height: 34.6rem;
+                        margin-bottom: 4rem;
+                    }
+
+                    &-sublist {
+                        width: auto;
+
+                        &-heading {
+                            font-size: 4rem;
+                            line-height: 140%; /* 5.6rem */
+                            margin-bottom: 4rem;
+                        }
+
+                        &-item {
+                            a {
+                                font-size: 3.4rem;
+                                line-height: 140%; /* 4.76rem */
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width:48em) {
         padding-bottom: 10rem;
 

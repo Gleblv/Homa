@@ -253,6 +253,104 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        .catalog__categories {
+            padding-top: 7.8rem;
+            padding-right: 4.4rem;
+        }
+
+        &__right {
+            width: 100%;
+
+            &-list {
+                margin-top: 0;
+
+                &__item {
+                    padding: 5rem 4rem;
+
+                    &:first-child {
+                        border-top: none;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 4rem;
+                    }
+
+                    &-left {
+                        margin-top: 2rem;
+                        width: 45.4rem;
+
+                        &-heading {
+                            margin-bottom: 2.8rem;
+                            font-size: 4.8rem;
+                            line-height: 120%; /* 5.76rem */
+                        }
+
+                        &-description {
+                            font-size: 2.4rem;
+                            line-height: 140%; /* 3.36rem */
+                            margin-bottom: 17.2rem;
+                        }
+
+                        &-link {
+                            margin-top: 0;
+                            margin-bottom: 0;
+
+                            span {
+                                font-size: 2.4rem;
+                                line-height: 3.2rem; /* 133.333% */
+                                letter-spacing: 0.12rem;
+                                margin-right: 3rem;
+                            }
+
+                            svg {
+                                width: 3.4rem;
+                                height: 2.4rem;
+                            }
+                        }
+                    }
+
+                    &-center {
+                        margin-top: 1.8rem;
+                        width: 51rem;
+
+                        &-heading {
+                            font-size: 2.4rem;
+                            line-height: 3.8rem; /* 158.333% */
+                            letter-spacing: 0.12rem;
+                            margin-bottom: 3rem;
+                        }
+
+                        &-description {
+                            font-size: 2.8rem;
+                            line-height: 140%; /* 3.92rem */
+                        }
+                    }
+
+                    &-right {
+                        width: 41.2rem;
+                        height: 45.8rem;
+
+                        &-new,
+                        &-top {
+                            left: 3rem;
+                            top: 3rem;
+                            padding: 1rem 2.2rem;
+                            font-size: 2.4rem;
+                            line-height: 140%; /* 3.36rem */
+                            letter-spacing: 0.12rem;
+                        }
+
+                        img {
+                            max-width: 33rem;
+                            max-height: 32.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width:48em) {
         .container {
             flex-direction: column;

@@ -1,177 +1,260 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="fonts/fonts.css"><link rel="stylesheet" href="css/swiper-bundle.min.css"><link rel="stylesheet" href="css/choices.min.css"><link rel="stylesheet" href="css/main.css"><title>Техническая поддержка</title></head><body><header class="header">
-    <div class="header__top">
-        <div class="header__top-container">
-            <button class="header__top-burger mobile">
-                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 7H19M1 1H19M1 13H19" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-            <!-- <button class="header__top-search mobile">
+   <div class="header__top">
+      <div class="header__top-container">
+         <button class="header__top-burger mobile">
+            <svg
+               width="20"
+               height="14"
+               viewBox="0 0 20 14"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  d="M1 7H19M1 1H19M1 13H19"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+               />
+            </svg>
+         </button>
+         <!-- <button class="header__top-search mobile">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z"
                         stroke="black" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </button> -->
-            <form action="#" class="header__top-search__form">
-                <button class="header__top-search__btn" type="submit">
-                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        class="desktop">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.7 12.2088C2.7 6.94942 6.92014 2.70002 12.1086 2.70002C17.2971 2.70002 21.5172 6.94942 21.5172 12.2088C21.5172 14.7877 20.5025 17.1238 18.8565 18.8351C18.8213 18.8606 18.7875 18.8891 18.7557 18.9206C18.7198 18.9562 18.6877 18.9941 18.6595 19.0339C16.9644 20.6956 14.6529 21.7175 12.1086 21.7175C6.92014 21.7175 2.7 17.4681 2.7 12.2088ZM19.3395 20.7181C17.3974 22.4003 14.8721 23.4175 12.1086 23.4175C5.96573 23.4175 1 18.3914 1 12.2088C1 6.02614 5.96573 1.00002 12.1086 1.00002C18.2515 1.00002 23.2172 6.02614 23.2172 12.2088C23.2172 14.9961 22.208 17.5483 20.5366 19.5109L25.5359 24.559C25.8662 24.8926 25.8636 25.4308 25.53 25.7611C25.1965 26.0914 24.6583 26.0888 24.328 25.7553L19.3395 20.7181Z"
-                            fill="#C4C4C4" />
-                        <path
-                            d="M18.8565 18.8351L19.1495 19.2402C19.1736 19.2228 19.1962 19.2032 19.2168 19.1817L18.8565 18.8351ZM18.7557 18.9206L18.4038 18.5654L18.4038 18.5654L18.7557 18.9206ZM18.6595 19.0339L19.0095 19.391C19.0308 19.3701 19.0502 19.3473 19.0675 19.323L18.6595 19.0339ZM19.3395 20.7181L19.6948 20.3663C19.5096 20.1793 19.2111 20.1679 19.0122 20.3402L19.3395 20.7181ZM20.5366 19.5109L20.1559 19.1868C19.9875 19.3845 19.9985 19.6782 20.1813 19.8628L20.5366 19.5109ZM25.5359 24.559L25.1806 24.9109V24.9109L25.5359 24.559ZM25.53 25.7611L25.1782 25.4058H25.1782L25.53 25.7611ZM24.328 25.7553L23.9727 26.1071V26.1071L24.328 25.7553ZM12.1086 2.20002C6.63956 2.20002 2.2 6.67774 2.2 12.2088H3.2C3.2 7.2211 7.20073 3.20002 12.1086 3.20002V2.20002ZM22.0172 12.2088C22.0172 6.67774 17.5777 2.20002 12.1086 2.20002V3.20002C17.0165 3.20002 21.0172 7.2211 21.0172 12.2088H22.0172ZM19.2168 19.1817C20.9494 17.3805 22.0172 14.9213 22.0172 12.2088H21.0172C21.0172 14.654 20.0557 16.8671 18.4961 18.4885L19.2168 19.1817ZM19.1075 19.2759C19.121 19.2625 19.135 19.2507 19.1495 19.2402L18.5635 18.4299C18.5075 18.4704 18.4541 18.5156 18.4038 18.5654L19.1075 19.2759ZM19.0675 19.323C19.079 19.3067 19.0923 19.2909 19.1075 19.2759L18.4038 18.5654C18.3473 18.6214 18.2964 18.6815 18.2515 18.7449L19.0675 19.323ZM12.1086 22.2175C14.7897 22.2175 17.2252 21.1401 19.0095 19.391L18.3095 18.6769C16.7035 20.2512 14.5161 21.2175 12.1086 21.2175V22.2175ZM2.2 12.2088C2.2 17.7398 6.63956 22.2175 12.1086 22.2175V21.2175C7.20073 21.2175 3.2 17.1964 3.2 12.2088H2.2ZM19.0122 20.3402C17.1571 21.9469 14.7469 22.9175 12.1086 22.9175V23.9175C14.9974 23.9175 17.6377 22.8536 19.6669 21.0961L19.0122 20.3402ZM12.1086 22.9175C6.24654 22.9175 1.5 18.1199 1.5 12.2088H0.5C0.5 18.6628 5.68491 23.9175 12.1086 23.9175V22.9175ZM1.5 12.2088C1.5 6.29759 6.24654 1.50002 12.1086 1.50002V0.500015C5.68491 0.500015 0.5 5.75469 0.5 12.2088H1.5ZM12.1086 1.50002C17.9707 1.50002 22.7172 6.29759 22.7172 12.2088H23.7172C23.7172 5.75469 18.5323 0.500015 12.1086 0.500015V1.50002ZM22.7172 12.2088C22.7172 14.8733 21.7528 17.3115 20.1559 19.1868L20.9172 19.8351C22.6631 17.7851 23.7172 15.1188 23.7172 12.2088H22.7172ZM20.1813 19.8628L25.1806 24.9109L25.8911 24.2072L20.8918 19.1591L20.1813 19.8628ZM25.1806 24.9109C25.3166 25.0482 25.3155 25.2698 25.1782 25.4058L25.8818 26.1164C26.4116 25.5917 26.4158 24.737 25.8911 24.2072L25.1806 24.9109ZM25.1782 25.4058C25.0408 25.5418 24.8192 25.5408 24.6832 25.4034L23.9727 26.1071C24.4973 26.6369 25.3521 26.641 25.8819 26.1164L25.1782 25.4058ZM24.6832 25.4034L19.6948 20.3663L18.9843 21.07L23.9727 26.1071L24.6832 25.4034Z"
-                            fill="#C4C4C4" />
-                    </svg>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile"> 
-                        <path
-                            d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z"
-                            stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-                <input type="search" class="header__top-search__input">
-                <div></div>
-            </form>
-            <a href="#" class="header__top-logo">
-                <img src="./images/svg/header-logo.svg" alt="">
-            </a>
-            <p class="header__top-title desktop">Полимерные дисперсии
-                клеевые составы</p>
-            <a href="tel:+74951897730" class="header__top-phone">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M20.8881 15.9201V18.9201C20.8892 19.1986 20.8322 19.4743 20.7206 19.7294C20.6091 19.9846 20.4454 20.2137 20.2402 20.402C20.035 20.5902 19.7927 20.7336 19.5289 20.8228C19.265 20.912 18.9855 20.9452 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66194 16.3148 5.61345 14.2663 4.07812 11.8501C2.38809 9.2413 1.33636 6.27109 1.00812 3.1801C0.983127 2.90356 1.01599 2.62486 1.10462 2.36172C1.19324 2.09859 1.33569 1.85679 1.52288 1.65172C1.71008 1.44665 1.93792 1.28281 2.19191 1.17062C2.44589 1.05843 2.72046 1.00036 2.99812 1.0001H5.99812C6.48342 0.995321 6.95391 1.16718 7.32188 1.48363C7.68985 1.80008 7.93019 2.23954 7.99812 2.7201C8.12474 3.68016 8.35957 4.62282 8.69812 5.5301C8.83266 5.88802 8.86178 6.27701 8.78202 6.65098C8.70227 7.02494 8.51698 7.36821 8.24812 7.6401L6.97812 8.9101C8.40167 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.52 13.3712 14.8633 13.1859 15.2372 13.1062C15.6112 13.0264 16.0002 13.0556 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C19.6539 13.9586 20.0975 14.2033 20.4146 14.5776C20.7318 14.9519 20.9003 15.4297 20.8881 15.9201Z"
-                        stroke="#E30613" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <span class="desktop">+7 (495) 189-77-30</span>
-            </a>
-            <a href="mailto:zakaz5@homa.ru" class="header__top-mail">
-                <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M22.9167 0.984131H2.08335C0.934326 0.984131 0 1.9234 0 3.0785V17.739C0 18.8941 0.934326 19.8333 2.08335 19.8333H22.9167C24.0657 19.8333 25 18.8941 25 17.739V3.0785C25 1.9234 24.0657 0.984131 22.9167 0.984131ZM2.08335 2.03129H22.9167C22.9935 2.03129 23.0611 2.05942 23.1331 2.07532C21.3294 3.73479 15.3488 9.23503 13.2559 11.1307C13.0921 11.279 12.8281 11.4559 12.5 11.4559C12.172 11.4559 11.908 11.279 11.7437 11.1302C9.65098 9.23483 3.66997 3.7343 1.8666 2.07542C1.93877 2.05952 2.00654 2.03129 2.08335 2.03129ZM1.04165 17.739V3.0785C1.04165 2.97591 1.07241 2.88285 1.09995 2.78909C2.48042 4.05925 6.65347 7.89703 9.35933 10.3706C6.66226 12.6996 2.48813 16.678 1.09668 18.0119C1.07212 17.9228 1.04165 17.8358 1.04165 17.739ZM22.9167 18.7862H2.08335C2.00015 18.7862 1.92617 18.757 1.84849 18.7384C3.28633 17.3604 7.48701 13.3592 10.1367 11.0804C10.4821 11.3954 10.7976 11.6826 11.0463 11.9079C11.4756 12.2976 11.9781 12.5031 12.5 12.5031C13.0219 12.5031 13.5244 12.2975 13.9531 11.9084C14.202 11.683 14.5177 11.3956 14.8633 11.0804C17.5131 13.3589 21.7132 17.3599 23.1515 18.7384C23.0738 18.757 23 18.7862 22.9167 18.7862ZM23.9583 17.739C23.9583 17.8357 23.9279 17.9228 23.9034 18.0119C22.5114 16.6773 18.3377 12.6994 15.6407 10.3707C18.3467 7.89708 22.5191 4.05964 23.9 2.78899C23.9276 2.88275 23.9583 2.97586 23.9583 3.07845V17.739Z"
-                        fill="#E30613" />
-                </svg>
-                <span class="desktop">zakaz5@homa.ru</span>
-            </a>
-            <button class="header__top-call desktop">Заказать звонок</button>
-            <div class="header__top-btns desktop">
-                <button class="rus active">rus</button>
-                <button class="en">en</button>
-            </div>
-        </div>
-    </div>
-    <div class="header__bottom">
-        <div class="container">
-            <nav>
-                <ul class="header__bottom-list desktop">
-                    <li class="header__bottom-list__item">
-                        <span>О компании</span>
-                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.66602 0.89682L6.00053 5.19693L10.3351 0.89682" stroke="black"
-                                stroke-width="2" />
-                        </svg>
-                        <ul class="header__bottom-list__item-sublist">
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="production-complex.html">Производственный комплекс</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="scientific-complex.html">Научно-исследовательский комплекс</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="history.html">История компании</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="news.html">Новости</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="partners.html">Партнеры</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__bottom-list__item">
-                        <span>Каталог</span>
-                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.66602 0.89682L6.00053 5.19693L10.3351 0.89682" stroke="black"
-                                stroke-width="2" />
-                        </svg>
-                        <ul class="header__bottom-list__item-sublist">
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="polymer-dispersions.html">Полимерные дисперсии</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Строительная химия</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Клеи для мебели и деревообработки</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Клеи для тары и упаковки</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Клеи для автопрома и машиностроения</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="header__bottom-list__item">
-                        <a href="#">Техподдержка</a>
-                    </li>
-                    <li class="header__bottom-list__item">
-                        <a href="#">Видео</a>
-                    </li>
-                    <li class="header__bottom-list__item">
-                        <span>Рекомендации</span>
-                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.66602 0.89682L6.00053 5.19693L10.3351 0.89682" stroke="black"
-                                stroke-width="2" />
-                        </svg>
-                        <ul class="header__bottom-list__item-sublist">
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="polymer-dispersions.html">Полимерные дисперсии</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Строительная химия</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Клеи для мебели и деревообработки</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Клеи для тары и упаковки</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Клеи для автопрома и машиностроения</a>
-                            </li>
-                            <li class="header__bottom-list__item-sublist-item">
-                                <a href="#">Онлайн подбор клеев для напольных покрытий</a>
-                            </li>
-                        </ul>
-
-                    </li>
-                    <li class="header__bottom-list__item">
-                        <a href="#">Проекты</a>
-                    </li>
-                    <li class="header__bottom-list__item">
-                        <a href="#">Пресс-центр</a>
-                    </li>
-                    <li class="header__bottom-list__item">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-                <ul class="header__bottom-mobile-list mobile">
-                    <li class="header__bottom-mobile-list__item">
-                        <a href="#">Полимерные дисперсии</a>
-                    </li>
-                    <li class="header__bottom-mobile-list__item">
+         <form action="#" class="header__top-search__form">
+            <button class="header__top-search__btn" type="submit">
+               <svg
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="desktop"
+               >
+                  <path
+                     fill-rule="evenodd"
+                     clip-rule="evenodd"
+                     d="M2.7 12.2088C2.7 6.94942 6.92014 2.70002 12.1086 2.70002C17.2971 2.70002 21.5172 6.94942 21.5172 12.2088C21.5172 14.7877 20.5025 17.1238 18.8565 18.8351C18.8213 18.8606 18.7875 18.8891 18.7557 18.9206C18.7198 18.9562 18.6877 18.9941 18.6595 19.0339C16.9644 20.6956 14.6529 21.7175 12.1086 21.7175C6.92014 21.7175 2.7 17.4681 2.7 12.2088ZM19.3395 20.7181C17.3974 22.4003 14.8721 23.4175 12.1086 23.4175C5.96573 23.4175 1 18.3914 1 12.2088C1 6.02614 5.96573 1.00002 12.1086 1.00002C18.2515 1.00002 23.2172 6.02614 23.2172 12.2088C23.2172 14.9961 22.208 17.5483 20.5366 19.5109L25.5359 24.559C25.8662 24.8926 25.8636 25.4308 25.53 25.7611C25.1965 26.0914 24.6583 26.0888 24.328 25.7553L19.3395 20.7181Z"
+                     fill="#C4C4C4"
+                  />
+                  <path
+                     d="M18.8565 18.8351L19.1495 19.2402C19.1736 19.2228 19.1962 19.2032 19.2168 19.1817L18.8565 18.8351ZM18.7557 18.9206L18.4038 18.5654L18.4038 18.5654L18.7557 18.9206ZM18.6595 19.0339L19.0095 19.391C19.0308 19.3701 19.0502 19.3473 19.0675 19.323L18.6595 19.0339ZM19.3395 20.7181L19.6948 20.3663C19.5096 20.1793 19.2111 20.1679 19.0122 20.3402L19.3395 20.7181ZM20.5366 19.5109L20.1559 19.1868C19.9875 19.3845 19.9985 19.6782 20.1813 19.8628L20.5366 19.5109ZM25.5359 24.559L25.1806 24.9109V24.9109L25.5359 24.559ZM25.53 25.7611L25.1782 25.4058H25.1782L25.53 25.7611ZM24.328 25.7553L23.9727 26.1071V26.1071L24.328 25.7553ZM12.1086 2.20002C6.63956 2.20002 2.2 6.67774 2.2 12.2088H3.2C3.2 7.2211 7.20073 3.20002 12.1086 3.20002V2.20002ZM22.0172 12.2088C22.0172 6.67774 17.5777 2.20002 12.1086 2.20002V3.20002C17.0165 3.20002 21.0172 7.2211 21.0172 12.2088H22.0172ZM19.2168 19.1817C20.9494 17.3805 22.0172 14.9213 22.0172 12.2088H21.0172C21.0172 14.654 20.0557 16.8671 18.4961 18.4885L19.2168 19.1817ZM19.1075 19.2759C19.121 19.2625 19.135 19.2507 19.1495 19.2402L18.5635 18.4299C18.5075 18.4704 18.4541 18.5156 18.4038 18.5654L19.1075 19.2759ZM19.0675 19.323C19.079 19.3067 19.0923 19.2909 19.1075 19.2759L18.4038 18.5654C18.3473 18.6214 18.2964 18.6815 18.2515 18.7449L19.0675 19.323ZM12.1086 22.2175C14.7897 22.2175 17.2252 21.1401 19.0095 19.391L18.3095 18.6769C16.7035 20.2512 14.5161 21.2175 12.1086 21.2175V22.2175ZM2.2 12.2088C2.2 17.7398 6.63956 22.2175 12.1086 22.2175V21.2175C7.20073 21.2175 3.2 17.1964 3.2 12.2088H2.2ZM19.0122 20.3402C17.1571 21.9469 14.7469 22.9175 12.1086 22.9175V23.9175C14.9974 23.9175 17.6377 22.8536 19.6669 21.0961L19.0122 20.3402ZM12.1086 22.9175C6.24654 22.9175 1.5 18.1199 1.5 12.2088H0.5C0.5 18.6628 5.68491 23.9175 12.1086 23.9175V22.9175ZM1.5 12.2088C1.5 6.29759 6.24654 1.50002 12.1086 1.50002V0.500015C5.68491 0.500015 0.5 5.75469 0.5 12.2088H1.5ZM12.1086 1.50002C17.9707 1.50002 22.7172 6.29759 22.7172 12.2088H23.7172C23.7172 5.75469 18.5323 0.500015 12.1086 0.500015V1.50002ZM22.7172 12.2088C22.7172 14.8733 21.7528 17.3115 20.1559 19.1868L20.9172 19.8351C22.6631 17.7851 23.7172 15.1188 23.7172 12.2088H22.7172ZM20.1813 19.8628L25.1806 24.9109L25.8911 24.2072L20.8918 19.1591L20.1813 19.8628ZM25.1806 24.9109C25.3166 25.0482 25.3155 25.2698 25.1782 25.4058L25.8818 26.1164C26.4116 25.5917 26.4158 24.737 25.8911 24.2072L25.1806 24.9109ZM25.1782 25.4058C25.0408 25.5418 24.8192 25.5408 24.6832 25.4034L23.9727 26.1071C24.4973 26.6369 25.3521 26.641 25.8819 26.1164L25.1782 25.4058ZM24.6832 25.4034L19.6948 20.3663L18.9843 21.07L23.9727 26.1071L24.6832 25.4034Z"
+                     fill="#C4C4C4"
+                  />
+               </svg>
+               <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mobile"
+               >
+                  <path
+                     d="M19 19L14.65 14.65M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z"
+                     stroke="black"
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                  />
+               </svg>
+            </button>
+            <input type="search" class="header__top-search__input" />
+            <div></div>
+         </form>
+         <a href="#" class="header__top-logo">
+            <img src="./images/svg/header-logo.svg" alt="" />
+         </a>
+         <p class="header__top-title desktop">Клеевые системы и герметики</p>
+         <a href="tel:+74951897730" class="header__top-phone">
+            <svg
+               width="22"
+               height="22"
+               viewBox="0 0 22 22"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  d="M20.8881 15.9201V18.9201C20.8892 19.1986 20.8322 19.4743 20.7206 19.7294C20.6091 19.9846 20.4454 20.2137 20.2402 20.402C20.035 20.5902 19.7927 20.7336 19.5289 20.8228C19.265 20.912 18.9855 20.9452 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66194 16.3148 5.61345 14.2663 4.07812 11.8501C2.38809 9.2413 1.33636 6.27109 1.00812 3.1801C0.983127 2.90356 1.01599 2.62486 1.10462 2.36172C1.19324 2.09859 1.33569 1.85679 1.52288 1.65172C1.71008 1.44665 1.93792 1.28281 2.19191 1.17062C2.44589 1.05843 2.72046 1.00036 2.99812 1.0001H5.99812C6.48342 0.995321 6.95391 1.16718 7.32188 1.48363C7.68985 1.80008 7.93019 2.23954 7.99812 2.7201C8.12474 3.68016 8.35957 4.62282 8.69812 5.5301C8.83266 5.88802 8.86178 6.27701 8.78202 6.65098C8.70227 7.02494 8.51698 7.36821 8.24812 7.6401L6.97812 8.9101C8.40167 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.52 13.3712 14.8633 13.1859 15.2372 13.1062C15.6112 13.0264 16.0002 13.0556 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C19.6539 13.9586 20.0975 14.2033 20.4146 14.5776C20.7318 14.9519 20.9003 15.4297 20.8881 15.9201Z"
+                  stroke="#E30613"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+               />
+            </svg>
+            <span class="desktop">+7 (495) 189-77-30</span>
+         </a>
+         <a href="mailto:zakaz5@homa.ru" class="header__top-mail">
+            <svg
+               width="25"
+               height="20"
+               viewBox="0 0 25 20"
+               fill="none"
+               xmlns="http://www.w3.org/2000/svg"
+            >
+               <path
+                  d="M22.9167 0.984131H2.08335C0.934326 0.984131 0 1.9234 0 3.0785V17.739C0 18.8941 0.934326 19.8333 2.08335 19.8333H22.9167C24.0657 19.8333 25 18.8941 25 17.739V3.0785C25 1.9234 24.0657 0.984131 22.9167 0.984131ZM2.08335 2.03129H22.9167C22.9935 2.03129 23.0611 2.05942 23.1331 2.07532C21.3294 3.73479 15.3488 9.23503 13.2559 11.1307C13.0921 11.279 12.8281 11.4559 12.5 11.4559C12.172 11.4559 11.908 11.279 11.7437 11.1302C9.65098 9.23483 3.66997 3.7343 1.8666 2.07542C1.93877 2.05952 2.00654 2.03129 2.08335 2.03129ZM1.04165 17.739V3.0785C1.04165 2.97591 1.07241 2.88285 1.09995 2.78909C2.48042 4.05925 6.65347 7.89703 9.35933 10.3706C6.66226 12.6996 2.48813 16.678 1.09668 18.0119C1.07212 17.9228 1.04165 17.8358 1.04165 17.739ZM22.9167 18.7862H2.08335C2.00015 18.7862 1.92617 18.757 1.84849 18.7384C3.28633 17.3604 7.48701 13.3592 10.1367 11.0804C10.4821 11.3954 10.7976 11.6826 11.0463 11.9079C11.4756 12.2976 11.9781 12.5031 12.5 12.5031C13.0219 12.5031 13.5244 12.2975 13.9531 11.9084C14.202 11.683 14.5177 11.3956 14.8633 11.0804C17.5131 13.3589 21.7132 17.3599 23.1515 18.7384C23.0738 18.757 23 18.7862 22.9167 18.7862ZM23.9583 17.739C23.9583 17.8357 23.9279 17.9228 23.9034 18.0119C22.5114 16.6773 18.3377 12.6994 15.6407 10.3707C18.3467 7.89708 22.5191 4.05964 23.9 2.78899C23.9276 2.88275 23.9583 2.97586 23.9583 3.07845V17.739Z"
+                  fill="#E30613"
+               />
+            </svg>
+            <span class="desktop">zakaz5@homa.ru</span>
+         </a>
+         <button class="header__top-call desktop">Заказать звонок</button>
+         <div class="header__top-btns desktop">
+            <button class="rus active">rus</button>
+            <button class="en">en</button>
+         </div>
+      </div>
+   </div>
+   <div class="header__bottom">
+      <div class="container">
+         <nav>
+            <ul class="header__bottom-list desktop">
+               <li class="header__bottom-list__item">
+                  <span>О компании</span>
+                  <svg
+                     width="12"
+                     height="7"
+                     viewBox="0 0 12 7"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        d="M1.66602 0.89682L6.00053 5.19693L10.3351 0.89682"
+                        stroke="black"
+                        stroke-width="2"
+                     />
+                  </svg>
+                  <ul class="header__bottom-list__item-sublist">
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="production-complex.html"
+                           >Производственный комплекс</a
+                        >
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="scientific-complex.html"
+                           >Научно-исследовательский комплекс</a
+                        >
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="history.html">История компании</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="news.html">Новости</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="partners.html">Партнеры</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header__bottom-list__item">
+                  <span>Каталог</span>
+                  <svg
+                     width="12"
+                     height="7"
+                     viewBox="0 0 12 7"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        d="M1.66602 0.89682L6.00053 5.19693L10.3351 0.89682"
+                        stroke="black"
+                        stroke-width="2"
+                     />
+                  </svg>
+                  <ul class="header__bottom-list__item-sublist">
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="polymer-dispersions.html"
+                           >Полимерные дисперсии</a
+                        >
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
                         <a href="#">Строительная химия</a>
-                    </li>
-                    <li class="header__bottom-mobile-list__item">
-                        <a href="#">Промышленные клеи</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header><main><section class="techsupport-hero"><div class="techsupport-hero__container"><ul class="techsupport-hero__list"><li class="techsupport-hero__list__item">внедрение</li><li class="techsupport-hero__list__item">Подход</li><li class="techsupport-hero__list__item">КАЧЕСТВО</li></ul><div class="techsupport-hero__left"><img src="./images/techsupport-hero-img.webp" alt="" class="techsupport-hero__left__img"></div><div class="techsupport-hero__right"><p class="techsupport-hero__right__heading">Техническая поддержка</p><p class="techsupport-hero__right__slogan">комплексный подход</p><p class="techsupport-hero__right__subtitle">От разработки до внедрения</p><p class="techsupport-hero__right__description">Технологи и ученые компании помогут решить вопросы применения промышленных клеев, строительной химии и полимерной дисперсии</p><div class="techsupport-hero__right__links"><a href="tel:+74951897397" class="techsupport-hero__right__links-phone desktop"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9624 11.5875V10.4159C21.9624 7.61188 21.0821 5.0063 19.4862 3.07292C17.8505 1.08833 15.6014 0 13.1479 0H12.2903C9.83679 0 7.58773 1.08833 5.95206 3.07292C4.35613 5.0063 3.47582 7.61188 3.47582 10.4159V11.5875C1.53913 11.7347 0 13.5529 0 15.7743V17.6053C0 19.9164 1.66976 21.7985 3.72003 21.7985H5.81575C6.19059 21.7985 6.49728 21.4528 6.49728 21.0303V12.3429C6.49728 11.9204 6.19059 11.5747 5.81575 11.5747H4.83888V10.4159C4.83888 5.35201 8.04209 1.53646 12.2846 1.53646H13.1422C17.3905 1.53646 20.588 5.35201 20.588 10.4159V11.5747H19.6111C19.2363 11.5747 18.9296 11.9204 18.9296 12.3429V21.0239C18.9296 21.4464 19.2363 21.7921 19.6111 21.7921H20.5653C20.287 25.7997 17.8391 26.728 16.7032 26.9393C16.3909 25.8574 15.4878 25.0763 14.4258 25.0763H12.722C11.4043 25.0763 10.3309 26.2863 10.3309 27.7715C10.3309 29.2568 11.4043 30.4731 12.722 30.4731H14.4315C15.5333 30.4731 16.459 29.6281 16.7373 28.4885C17.2939 28.3989 18.1742 28.1749 19.0488 27.5987C20.2813 26.7856 21.7409 25.1275 21.934 21.7857C23.8821 21.6513 25.4269 19.8267 25.4269 17.5989V15.7679C25.4325 13.5529 23.8991 11.7283 21.9624 11.5875ZM5.14557 20.2557H3.73139C2.4308 20.2557 1.37442 19.0649 1.37442 17.5989V15.7679C1.37442 14.3019 2.4308 13.1111 3.73139 13.1111H5.14557V20.2557ZM14.4315 28.9367H12.722C12.154 28.9367 11.694 28.4181 11.694 27.7779C11.694 27.1377 12.154 26.6192 12.722 26.6192H14.4315C14.9994 26.6192 15.4594 27.1377 15.4594 27.7779C15.4594 28.4181 14.9994 28.9367 14.4315 28.9367ZM24.0695 17.5989C24.0695 19.0649 23.0131 20.2557 21.7125 20.2557H20.2983V13.1111H21.7125C23.0131 13.1111 24.0695 14.3019 24.0695 15.7679V17.5989Z" fill="#313131"/></svg> <span>+7 (495) 189-73-97</span> </a><a href="#" class="techsupport-hero__right__links-email link"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <span>Оставить заявку</span> <svg width="28" height="9" viewBox="0 0 28 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z" fill="black"/></svg></a></div></div></div></section><section class="techsupport-main"><div class="techsupport-main__qa mobile"><p class="techsupport-main__qa-heading">Частые вопросы технической поддержке:</p><ul class="techsupport-main__qa-list"><li class="techsupport-main__qa-list__item">Как подобрать продукт под особенности технологического процесса?</li><li class="techsupport-main__qa-list__item">Что делать если не клеит?</li><li class="techsupport-main__qa-list__item">Как склеить то, что другие раньше не клеили?</li><li class="techsupport-main__qa-list__item">Как быть, если вчера продукт был отличным, а сегодня с браком?</li></ul></div><div class="techsupport-main__request mobile"><p class="techsupport-main__request-description">Технологи и ученые компании помогут решить вопросы применения промышленных клеев, строительной химии и полимерных дисперсий.</p><p class="techsupport-main__request-heading">Обратитесь в техническую поддержку компании Хома</p><div class="techsupport-main__request-links"><a href="tel:+74951897397" class="techsupport-main__request-links-phone"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9624 11.5875V10.4159C21.9624 7.61188 21.0821 5.0063 19.4862 3.07292C17.8505 1.08833 15.6014 0 13.1479 0H12.2903C9.83679 0 7.58773 1.08833 5.95206 3.07292C4.35613 5.0063 3.47582 7.61188 3.47582 10.4159V11.5875C1.53913 11.7347 0 13.5529 0 15.7743V17.6053C0 19.9164 1.66976 21.7985 3.72003 21.7985H5.81575C6.19059 21.7985 6.49728 21.4528 6.49728 21.0303V12.3429C6.49728 11.9204 6.19059 11.5747 5.81575 11.5747H4.83888V10.4159C4.83888 5.35201 8.04209 1.53646 12.2846 1.53646H13.1422C17.3905 1.53646 20.588 5.35201 20.588 10.4159V11.5747H19.6111C19.2363 11.5747 18.9296 11.9204 18.9296 12.3429V21.0239C18.9296 21.4464 19.2363 21.7921 19.6111 21.7921H20.5653C20.287 25.7997 17.8391 26.728 16.7032 26.9393C16.3909 25.8574 15.4878 25.0763 14.4258 25.0763H12.722C11.4043 25.0763 10.3309 26.2863 10.3309 27.7715C10.3309 29.2568 11.4043 30.4731 12.722 30.4731H14.4315C15.5333 30.4731 16.459 29.6281 16.7373 28.4885C17.2939 28.3989 18.1742 28.1749 19.0488 27.5987C20.2813 26.7856 21.7409 25.1275 21.934 21.7857C23.8821 21.6513 25.4269 19.8267 25.4269 17.5989V15.7679C25.4325 13.5529 23.8991 11.7283 21.9624 11.5875ZM5.14557 20.2557H3.73139C2.4308 20.2557 1.37442 19.0649 1.37442 17.5989V15.7679C1.37442 14.3019 2.4308 13.1111 3.73139 13.1111H5.14557V20.2557ZM14.4315 28.9367H12.722C12.154 28.9367 11.694 28.4181 11.694 27.7779C11.694 27.1377 12.154 26.6192 12.722 26.6192H14.4315C14.9994 26.6192 15.4594 27.1377 15.4594 27.7779C15.4594 28.4181 14.9994 28.9367 14.4315 28.9367ZM24.0695 17.5989C24.0695 19.0649 23.0131 20.2557 21.7125 20.2557H20.2983V13.1111H21.7125C23.0131 13.1111 24.0695 14.3019 24.0695 15.7679V17.5989Z" fill="#313131"/></svg> <span>+7 (495) 189-73-97</span> </a><a href="#" class="techsupport-main__request-links-email link"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <span>Оставить заявку</span> <svg width="28" height="9" viewBox="0 0 28 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z" fill="black"/></svg></a></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><p class="techsupport-main__block-left__heading mobile">Услуги отдела технической поддержки</p><p class="techsupport-main__block-left__description mobile">Помогаем по любым вопросоам связанным с разработкой, внедрением и сопровождений технических процессов.</p><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">01</p><p class="techsupport-main__block-left__list-item-heading">Подбор продукта</p><p class="techsupport-main__block-left__list-item-description">Подбор продукта осуществляем с учетом особенностей технологий, материалов и оборудования заказчика. В ассортименте компании: полимерные дисперсии, промышленные клеи для мебели, деревообработки и упаковки, клеи для укладки напольных покрытий, строительная химия.</p></li><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">02</p><p class="techsupport-main__block-left__list-item-heading">Выезд на предприятие</p><p class="techsupport-main__block-left__list-item-description">Опционно служба поддержки выезжает на предприятии заказчика. Технологи знакомятся с производственным процессов, проводят консультацию по его наладке, определяют причины некорректной работы.</p></li></ul></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img1.webp" alt="" class="techsupport-main__block-right__img"></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">03</p><p class="techsupport-main__block-left__list-item-heading">Выбор решения</p><p class="techsupport-main__block-left__list-item-description">По результатам полученных данных предлагаем подходящее решение: продукт из ассортимента, доработка рецептуры под технические особенности или разработка с нуля под специфику процесса.</p></li><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">04</p><p class="techsupport-main__block-left__list-item-heading">Доработка продукта</p><p class="techsupport-main__block-left__list-item-description">Продукт из ассортимента «Хома» по необходимости дорабатывается под технологические особенности предприятия заказчика. По результатам тестирования технолог компании определит, какие параметры необходимо изменить.</p></li></ul></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img2.webp" alt="" class="techsupport-main__block-right__img"></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">05</p><p class="techsupport-main__block-left__list-item-heading">Разработка с нуля</p><p class="techsupport-main__block-left__list-item-description">Собственный научный ресурс компании позволяет разрабатывать продукты с индивидуальными свойствами. Продукты «Хома» могут быть созданы с нуля под специфику процесса производства. Каждый этап разработки под контролем - ученые управляют свойствами и характеристиками будущих продуктов.</p></li><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">06</p><p class="techsupport-main__block-left__list-item-heading">Внедрение</p><p class="techsupport-main__block-left__list-item-description">Служба поддержки компании помогает внедрить продукт на производстве. Технологи проводят тестирования, настраивают техпроцесс, доводят испытания до положительного результата.</p></li></ul></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img3.webp" alt="" class="techsupport-main__block-right__img"></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">07</p><p class="techsupport-main__block-left__list-item-heading">Сопровождение</p><p class="techsupport-main__block-left__list-item-description">Клиент компании сопровождается на всем пути использования продукта «Хома». Специалисты компании проводят оперативные консультации, по необходимости приезжают на предприятие для устранения неполадок техпроцессов и решения других вопросов.</p></li><li></li></ul><a href="tel:+78007006683" class="techsupport-main__block-left__link desktop"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width=".4" stroke="#313131"><path d="M21.9624 11.5875V10.4159C21.9624 7.61188 21.0821 5.0063 19.4862 3.07292C17.8505 1.08833 15.6014 0 13.1479 0H12.2903C9.83679 0 7.58773 1.08833 5.95206 3.07292C4.35613 5.0063 3.47582 7.61188 3.47582 10.4159V11.5875C1.53913 11.7347 0 13.5529 0 15.7743V17.6053C0 19.9164 1.66976 21.7985 3.72003 21.7985H5.81575C6.19059 21.7985 6.49728 21.4528 6.49728 21.0303V12.3429C6.49728 11.9204 6.19059 11.5747 5.81575 11.5747H4.83888V10.4159C4.83888 5.35201 8.04209 1.53646 12.2846 1.53646H13.1422C17.3905 1.53646 20.588 5.35201 20.588 10.4159V11.5747H19.6111C19.2363 11.5747 18.9296 11.9204 18.9296 12.3429V21.0239C18.9296 21.4464 19.2363 21.7921 19.6111 21.7921H20.5653C20.287 25.7997 17.8391 26.728 16.7032 26.9393C16.3909 25.8574 15.4878 25.0763 14.4258 25.0763H12.722C11.4043 25.0763 10.3309 26.2863 10.3309 27.7715C10.3309 29.2568 11.4043 30.4731 12.722 30.4731H14.4315C15.5333 30.4731 16.459 29.6281 16.7373 28.4885C17.2939 28.3989 18.1742 28.1749 19.0488 27.5987C20.2813 26.7856 21.7409 25.1275 21.934 21.7857C23.8821 21.6513 25.4269 19.8267 25.4269 17.5989V15.7679C25.4325 13.5529 23.8991 11.7283 21.9624 11.5875ZM5.14557 20.2557H3.73139C2.4308 20.2557 1.37442 19.0649 1.37442 17.5989V15.7679C1.37442 14.3019 2.4308 13.1111 3.73139 13.1111H5.14557V20.2557ZM14.4315 28.9367H12.722C12.154 28.9367 11.694 28.4181 11.694 27.7779C11.694 27.1377 12.154 26.6192 12.722 26.6192H14.4315C14.9994 26.6192 15.4594 27.1377 15.4594 27.7779C15.4594 28.4181 14.9994 28.9367 14.4315 28.9367ZM24.0695 17.5989C24.0695 19.0649 23.0131 20.2557 21.7125 20.2557H20.2983V13.1111H21.7125C23.0131 13.1111 24.0695 14.3019 24.0695 15.7679V17.5989Z" fill="#313131"/></svg> <span>8 800 700 66 83</span></a><p class="techsupport-main__block-left__notice desktop">звонок по России бесплатный</p><button class="techsupport-main__block-left__btn desktop">Заявка на техподдержку</button></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img4.webp" alt="" class="techsupport-main__block-right__img"></div></div></section><section class="partners">
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#">Клеи для мебели и деревообработки</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#">Клеи для тары и упаковки</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#">Клеи для автопрома и машиностроения</a>
+                     </li>
+                  </ul>
+               </li>
+               <li class="header__bottom-list__item">
+                  <a href="#">Техподдержка</a>
+               </li>
+               <li class="header__bottom-list__item">
+                  <a href="#">Видео</a>
+               </li>
+               <li class="header__bottom-list__item">
+                  <span>Рекомендации</span>
+                  <svg
+                     width="12"
+                     height="7"
+                     viewBox="0 0 12 7"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        d="M1.66602 0.89682L6.00053 5.19693L10.3351 0.89682"
+                        stroke="black"
+                        stroke-width="2"
+                     />
+                  </svg>
+                  <ul class="header__bottom-list__item-sublist">
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="polymer-dispersions.html"
+                           >Полимерные дисперсии</a
+                        >
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#">Строительная химия</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#">Клеи для мебели и деревообработки</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#">Клеи для тары и упаковки</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#">Клеи для автопрома и машиностроения</a>
+                     </li>
+                     <li class="header__bottom-list__item-sublist-item">
+                        <a href="#"
+                           >Онлайн подбор клеев для напольных покрытий</a
+                        >
+                     </li>
+                  </ul>
+               </li>
+               <li class="header__bottom-list__item">
+                  <a href="#">Проекты</a>
+               </li>
+               <li class="header__bottom-list__item">
+                  <a href="#">Пресс-центр</a>
+               </li>
+               <li class="header__bottom-list__item">
+                  <a href="#">Контакты</a>
+               </li>
+            </ul>
+            <ul class="header__bottom-mobile-list mobile">
+               <li class="header__bottom-mobile-list__item">
+                  <a href="#">Полимерные дисперсии</a>
+               </li>
+               <li class="header__bottom-mobile-list__item">
+                  <a href="#">Строительная химия</a>
+               </li>
+               <li class="header__bottom-mobile-list__item">
+                  <a href="#">Промышленные клеи</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </div>
+</header>
+<main><section class="techsupport-hero"><div class="techsupport-hero__container"><ul class="techsupport-hero__list"><li class="techsupport-hero__list__item">внедрение</li><li class="techsupport-hero__list__item">Подход</li><li class="techsupport-hero__list__item">КАЧЕСТВО</li></ul><div class="techsupport-hero__left"><img src="./images/techsupport-hero-img.webp" alt="" class="techsupport-hero__left__img"></div><div class="techsupport-hero__right"><p class="techsupport-hero__right__heading">Техническая поддержка</p><p class="techsupport-hero__right__slogan">комплексный подход</p><p class="techsupport-hero__right__subtitle">От разработки до внедрения</p><p class="techsupport-hero__right__description">Технологи и ученые компании помогут решить вопросы применения промышленных клеев, строительной химии и полимерной дисперсии</p><div class="techsupport-hero__right__links"><a href="tel:+74951897397" class="techsupport-hero__right__links-phone desktop"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9624 11.5875V10.4159C21.9624 7.61188 21.0821 5.0063 19.4862 3.07292C17.8505 1.08833 15.6014 0 13.1479 0H12.2903C9.83679 0 7.58773 1.08833 5.95206 3.07292C4.35613 5.0063 3.47582 7.61188 3.47582 10.4159V11.5875C1.53913 11.7347 0 13.5529 0 15.7743V17.6053C0 19.9164 1.66976 21.7985 3.72003 21.7985H5.81575C6.19059 21.7985 6.49728 21.4528 6.49728 21.0303V12.3429C6.49728 11.9204 6.19059 11.5747 5.81575 11.5747H4.83888V10.4159C4.83888 5.35201 8.04209 1.53646 12.2846 1.53646H13.1422C17.3905 1.53646 20.588 5.35201 20.588 10.4159V11.5747H19.6111C19.2363 11.5747 18.9296 11.9204 18.9296 12.3429V21.0239C18.9296 21.4464 19.2363 21.7921 19.6111 21.7921H20.5653C20.287 25.7997 17.8391 26.728 16.7032 26.9393C16.3909 25.8574 15.4878 25.0763 14.4258 25.0763H12.722C11.4043 25.0763 10.3309 26.2863 10.3309 27.7715C10.3309 29.2568 11.4043 30.4731 12.722 30.4731H14.4315C15.5333 30.4731 16.459 29.6281 16.7373 28.4885C17.2939 28.3989 18.1742 28.1749 19.0488 27.5987C20.2813 26.7856 21.7409 25.1275 21.934 21.7857C23.8821 21.6513 25.4269 19.8267 25.4269 17.5989V15.7679C25.4325 13.5529 23.8991 11.7283 21.9624 11.5875ZM5.14557 20.2557H3.73139C2.4308 20.2557 1.37442 19.0649 1.37442 17.5989V15.7679C1.37442 14.3019 2.4308 13.1111 3.73139 13.1111H5.14557V20.2557ZM14.4315 28.9367H12.722C12.154 28.9367 11.694 28.4181 11.694 27.7779C11.694 27.1377 12.154 26.6192 12.722 26.6192H14.4315C14.9994 26.6192 15.4594 27.1377 15.4594 27.7779C15.4594 28.4181 14.9994 28.9367 14.4315 28.9367ZM24.0695 17.5989C24.0695 19.0649 23.0131 20.2557 21.7125 20.2557H20.2983V13.1111H21.7125C23.0131 13.1111 24.0695 14.3019 24.0695 15.7679V17.5989Z" fill="#313131"/></svg> <span>+7 (495) 189-73-97</span> </a><a href="#" class="techsupport-hero__right__links-email link"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <span>Оставить заявку</span> <svg width="28" height="9" viewBox="0 0 28 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z" fill="black"/></svg></a></div></div></div></section><section class="techsupport-main"><div class="techsupport-main__qa mobile"><p class="techsupport-main__qa-heading">Частые вопросы технической поддержке:</p><ul class="techsupport-main__qa-list"><li class="techsupport-main__qa-list__item">Как подобрать продукт под особенности технологического процесса?</li><li class="techsupport-main__qa-list__item">Что делать если не клеит?</li><li class="techsupport-main__qa-list__item">Как склеить то, что другие раньше не клеили?</li><li class="techsupport-main__qa-list__item">Как быть, если вчера продукт был отличным, а сегодня с браком?</li></ul></div><div class="techsupport-main__request mobile"><p class="techsupport-main__request-description">Технологи и ученые компании помогут решить вопросы применения промышленных клеев, строительной химии и полимерных дисперсий.</p><p class="techsupport-main__request-heading">Обратитесь в техническую поддержку компании Хома</p><div class="techsupport-main__request-links"><a href="tel:+74951897397" class="techsupport-main__request-links-phone"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9624 11.5875V10.4159C21.9624 7.61188 21.0821 5.0063 19.4862 3.07292C17.8505 1.08833 15.6014 0 13.1479 0H12.2903C9.83679 0 7.58773 1.08833 5.95206 3.07292C4.35613 5.0063 3.47582 7.61188 3.47582 10.4159V11.5875C1.53913 11.7347 0 13.5529 0 15.7743V17.6053C0 19.9164 1.66976 21.7985 3.72003 21.7985H5.81575C6.19059 21.7985 6.49728 21.4528 6.49728 21.0303V12.3429C6.49728 11.9204 6.19059 11.5747 5.81575 11.5747H4.83888V10.4159C4.83888 5.35201 8.04209 1.53646 12.2846 1.53646H13.1422C17.3905 1.53646 20.588 5.35201 20.588 10.4159V11.5747H19.6111C19.2363 11.5747 18.9296 11.9204 18.9296 12.3429V21.0239C18.9296 21.4464 19.2363 21.7921 19.6111 21.7921H20.5653C20.287 25.7997 17.8391 26.728 16.7032 26.9393C16.3909 25.8574 15.4878 25.0763 14.4258 25.0763H12.722C11.4043 25.0763 10.3309 26.2863 10.3309 27.7715C10.3309 29.2568 11.4043 30.4731 12.722 30.4731H14.4315C15.5333 30.4731 16.459 29.6281 16.7373 28.4885C17.2939 28.3989 18.1742 28.1749 19.0488 27.5987C20.2813 26.7856 21.7409 25.1275 21.934 21.7857C23.8821 21.6513 25.4269 19.8267 25.4269 17.5989V15.7679C25.4325 13.5529 23.8991 11.7283 21.9624 11.5875ZM5.14557 20.2557H3.73139C2.4308 20.2557 1.37442 19.0649 1.37442 17.5989V15.7679C1.37442 14.3019 2.4308 13.1111 3.73139 13.1111H5.14557V20.2557ZM14.4315 28.9367H12.722C12.154 28.9367 11.694 28.4181 11.694 27.7779C11.694 27.1377 12.154 26.6192 12.722 26.6192H14.4315C14.9994 26.6192 15.4594 27.1377 15.4594 27.7779C15.4594 28.4181 14.9994 28.9367 14.4315 28.9367ZM24.0695 17.5989C24.0695 19.0649 23.0131 20.2557 21.7125 20.2557H20.2983V13.1111H21.7125C23.0131 13.1111 24.0695 14.3019 24.0695 15.7679V17.5989Z" fill="#313131"/></svg> <span>+7 (495) 189-73-97</span> </a><a href="#" class="techsupport-main__request-links-email link"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <span>Оставить заявку</span> <svg width="28" height="9" viewBox="0 0 28 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z" fill="black"/></svg></a></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><p class="techsupport-main__block-left__heading mobile">Услуги отдела технической поддержки</p><p class="techsupport-main__block-left__description mobile">Помогаем по любым вопросоам связанным с разработкой, внедрением и сопровождений технических процессов.</p><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">01</p><p class="techsupport-main__block-left__list-item-heading">Подбор продукта</p><p class="techsupport-main__block-left__list-item-description">Подбор продукта осуществляем с учетом особенностей технологий, материалов и оборудования заказчика. В ассортименте компании: полимерные дисперсии, промышленные клеи для мебели, деревообработки и упаковки, клеи для укладки напольных покрытий, строительная химия.</p></li><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">02</p><p class="techsupport-main__block-left__list-item-heading">Выезд на предприятие</p><p class="techsupport-main__block-left__list-item-description">Опционно служба поддержки выезжает на предприятии заказчика. Технологи знакомятся с производственным процессов, проводят консультацию по его наладке, определяют причины некорректной работы.</p></li></ul></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img1.webp" alt="" class="techsupport-main__block-right__img"></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">03</p><p class="techsupport-main__block-left__list-item-heading">Выбор решения</p><p class="techsupport-main__block-left__list-item-description">По результатам полученных данных предлагаем подходящее решение: продукт из ассортимента, доработка рецептуры под технические особенности или разработка с нуля под специфику процесса.</p></li><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">04</p><p class="techsupport-main__block-left__list-item-heading">Доработка продукта</p><p class="techsupport-main__block-left__list-item-description">Продукт из ассортимента «Хома» по необходимости дорабатывается под технологические особенности предприятия заказчика. По результатам тестирования технолог компании определит, какие параметры необходимо изменить.</p></li></ul></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img2.webp" alt="" class="techsupport-main__block-right__img"></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">05</p><p class="techsupport-main__block-left__list-item-heading">Разработка с нуля</p><p class="techsupport-main__block-left__list-item-description">Собственный научный ресурс компании позволяет разрабатывать продукты с индивидуальными свойствами. Продукты «Хома» могут быть созданы с нуля под специфику процесса производства. Каждый этап разработки под контролем - ученые управляют свойствами и характеристиками будущих продуктов.</p></li><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">06</p><p class="techsupport-main__block-left__list-item-heading">Внедрение</p><p class="techsupport-main__block-left__list-item-description">Служба поддержки компании помогает внедрить продукт на производстве. Технологи проводят тестирования, настраивают техпроцесс, доводят испытания до положительного результата.</p></li></ul></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img3.webp" alt="" class="techsupport-main__block-right__img"></div></div><div class="techsupport-main__block"><div class="techsupport-main__block-left"><ul class="techsupport-main__block-left__list"><li class="techsupport-main__block-left__list-item"><p class="techsupport-main__block-left__list-item-number">07</p><p class="techsupport-main__block-left__list-item-heading">Сопровождение</p><p class="techsupport-main__block-left__list-item-description">Клиент компании сопровождается на всем пути использования продукта «Хома». Специалисты компании проводят оперативные консультации, по необходимости приезжают на предприятие для устранения неполадок техпроцессов и решения других вопросов.</p></li><li></li></ul><a href="tel:+78007006683" class="techsupport-main__block-left__link desktop"><svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613" stroke-width="2"/></svg> <svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg" stroke-width=".4" stroke="#313131"><path d="M21.9624 11.5875V10.4159C21.9624 7.61188 21.0821 5.0063 19.4862 3.07292C17.8505 1.08833 15.6014 0 13.1479 0H12.2903C9.83679 0 7.58773 1.08833 5.95206 3.07292C4.35613 5.0063 3.47582 7.61188 3.47582 10.4159V11.5875C1.53913 11.7347 0 13.5529 0 15.7743V17.6053C0 19.9164 1.66976 21.7985 3.72003 21.7985H5.81575C6.19059 21.7985 6.49728 21.4528 6.49728 21.0303V12.3429C6.49728 11.9204 6.19059 11.5747 5.81575 11.5747H4.83888V10.4159C4.83888 5.35201 8.04209 1.53646 12.2846 1.53646H13.1422C17.3905 1.53646 20.588 5.35201 20.588 10.4159V11.5747H19.6111C19.2363 11.5747 18.9296 11.9204 18.9296 12.3429V21.0239C18.9296 21.4464 19.2363 21.7921 19.6111 21.7921H20.5653C20.287 25.7997 17.8391 26.728 16.7032 26.9393C16.3909 25.8574 15.4878 25.0763 14.4258 25.0763H12.722C11.4043 25.0763 10.3309 26.2863 10.3309 27.7715C10.3309 29.2568 11.4043 30.4731 12.722 30.4731H14.4315C15.5333 30.4731 16.459 29.6281 16.7373 28.4885C17.2939 28.3989 18.1742 28.1749 19.0488 27.5987C20.2813 26.7856 21.7409 25.1275 21.934 21.7857C23.8821 21.6513 25.4269 19.8267 25.4269 17.5989V15.7679C25.4325 13.5529 23.8991 11.7283 21.9624 11.5875ZM5.14557 20.2557H3.73139C2.4308 20.2557 1.37442 19.0649 1.37442 17.5989V15.7679C1.37442 14.3019 2.4308 13.1111 3.73139 13.1111H5.14557V20.2557ZM14.4315 28.9367H12.722C12.154 28.9367 11.694 28.4181 11.694 27.7779C11.694 27.1377 12.154 26.6192 12.722 26.6192H14.4315C14.9994 26.6192 15.4594 27.1377 15.4594 27.7779C15.4594 28.4181 14.9994 28.9367 14.4315 28.9367ZM24.0695 17.5989C24.0695 19.0649 23.0131 20.2557 21.7125 20.2557H20.2983V13.1111H21.7125C23.0131 13.1111 24.0695 14.3019 24.0695 15.7679V17.5989Z" fill="#313131"/></svg> <span>8 800 700 66 83</span></a><p class="techsupport-main__block-left__notice desktop">звонок по России бесплатный</p><button class="techsupport-main__block-left__btn desktop">Заявка на техподдержку</button></div><div class="techsupport-main__block-right"><img src="./images/techsupport-main-img4.webp" alt="" class="techsupport-main__block-right__img"></div></div></section><section class="partners">
     <div class="container">
         <ul class="partners__list">
             <li class="partners__list-item">

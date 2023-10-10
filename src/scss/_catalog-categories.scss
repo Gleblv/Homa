@@ -158,6 +158,11 @@
 
         &-accordion {
             &__item {
+
+                &:not(:last-child) {
+                    margin-bottom: 3rem;
+                }
+
                 &-head {
                     p {
                         font-size: 3.6rem;

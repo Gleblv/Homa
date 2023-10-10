@@ -213,6 +213,153 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        &__heading {
+            margin-bottom: 4rem;
+            font-size: 6.4rem;
+            line-height: 140%; /* 8.96rem */
+        }
+
+        &__subheading {
+            margin-bottom: 3rem;
+            font-size: 4.8rem;
+            line-height: 120%; /* 5.76rem */
+        }
+
+        &__description {
+            margin-bottom: 4rem;
+            font-size: 3.6rem;
+            line-height: 140%; /* 5.04rem */
+        }
+
+        &__form {
+            margin-bottom: 6rem;
+
+            &__input {
+                padding: 2rem 4rem 1.2rem 4rem;
+                font-size: 3.6rem;
+                line-height: 140%; /* 5.04rem */
+                margin-bottom: 2rem;
+    
+                &:nth-child(2),
+                &:nth-child(3) {
+                    flex: 0 0 75.6rem;
+                }
+    
+                &::placeholder {
+                    font-size: 3.6rem;
+                    line-height: 140%; /* 5.04rem */
+                }
+            }
+
+            &__textarea  {
+                padding: 2rem 4rem;
+                font-size: 3.6rem;
+                line-height: 140%; /* 5.04rem */
+                height: 32.6rem;
+    
+                &::placeholder {
+                    font-size: 3.6rem;
+                    line-height: 140%; /* 5.04rem */
+                }
+            }
+        }
+
+        &__list {
+            margin-bottom: 6rem;
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 6rem;
+                }
+
+                &__author {
+                    margin-bottom: 6rem;
+                    align-items: center;
+
+                    &-img {
+                        width: 13.8rem;
+                        height: 13.8rem;
+
+                        img {
+                            width: 13.8rem;
+                            height: 13.8rem;
+                        }
+
+                        &::after {
+                            width: 13.4rem;
+                            height: 8.4rem;
+                            bottom: -10rem;
+                        }
+                    }
+
+                    &-name {
+                        font-size: 3.6rem;
+                        line-height: 140%; /* 5.04rem */
+                        margin-bottom: 0;
+                    }
+
+                    &-question {
+                        font-size: 3.6rem;
+                        line-height: 140%; /* 5.04rem */
+                    }
+                }
+
+                &__homa {
+                    margin-left: 20.6rem;
+
+                    &-img {
+                        width: 12rem;
+                        height: 12rem;
+                        border-radius: 50%;
+                        margin-right: 1.6rem;
+                    }
+
+                    &-name {
+                        font-size: 3.6rem;
+                        line-height: normal;
+                        margin-bottom: 3rem;
+                    }
+
+                    &-answer {
+                        font-size: 3.6rem;
+                        line-height: 140%; /* 5.04rem */
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        &__btn-error {
+            margin-bottom: 8rem;
+
+            svg {
+                &:first-child {
+                    width: 13rem;
+                    height: 13rem;
+                }
+
+                &:nth-child(2) {
+                    width: 4.4rem;
+                    height: 4.4rem;
+                    margin-left: -8.7rem;
+                    margin-right: 2.4rem;
+                }
+
+                &:last-child {
+                    width: 5.8rem;
+                    height: 5.4rem;
+                }
+            }
+
+            span {
+                font-size: 3.6rem;
+                line-height: 140%; /* 5.04rem */
+                margin-right: 2rem;
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         &__heading {
             margin-bottom: 6rem;

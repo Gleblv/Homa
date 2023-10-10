@@ -62,6 +62,44 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        padding: 5.2rem 4rem 5.6rem 4.2rem;
+        width: 62.8rem;
+
+        &__heading {
+            font-size: 4.8rem;
+            line-height: 120%; /* 5.76rem */
+            margin-bottom: 2.4rem;
+        }
+
+        &__list {
+            padding-top: 4rem;
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 2.6rem;
+                }
+
+                button {
+                    span {
+                        &:first-child {
+                            font-size: 3.2rem;
+                            line-height: 140%; /* 4.48rem */
+                            width: 47.8rem;
+                        }
+
+                        &:last-child {
+                            font-size: 3rem;
+                            line-height: 140%; /* 4.2rem */
+                            width: 4.6rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         margin-left: -3rem;
         margin-bottom: 6rem;

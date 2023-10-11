@@ -204,6 +204,77 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        padding-top: 8rem;
+        padding-bottom: 20rem;
+
+        &__right {
+            &-list {
+                margin-left: 4rem;
+
+                &__item {
+                    padding: 4rem 0;
+                    min-height: 44rem;
+
+                    &-img {
+                        width: 41.8rem;
+                        height: 35.6rem;
+                        margin-right: 4rem;
+                    }
+
+                    &-text {
+                        width: auto;
+                    }
+
+                    &-title {
+                        font-size: 4rem;
+                        line-height: 140%; /* 5.6rem */
+                        margin-bottom: 3rem;
+                    }
+
+                    &-block {
+                        margin-bottom: 3rem;
+                    }
+
+                    &-date,
+                    &-theme {
+                        font-size: 3.2rem;
+                        line-height: 140%; /* 4.48rem */
+                    }
+
+                    &-date {
+                        ::after {
+                            width: 0.2rem;
+                            height: 2.6rem;
+                            right: -1rem;
+                            top: 0.8rem;
+                        }
+                    }
+
+                    &-description {
+                        font-size: 3.4rem;
+                        line-height: 140%; /* 4.76rem */
+                        margin-bottom: 1.2rem;
+                        width: auto;
+                    }
+                    
+                    &-link {
+                        span {
+                            font-size: 2.8rem;
+                            line-height: 3.2rem; /* 114.286% */
+                            margin-right: 2rem;
+                        }
+
+                        svg {
+                            width: 3.4rem;
+                            height: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-top: 0rem;
         padding-bottom: 17rem;

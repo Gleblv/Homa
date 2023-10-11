@@ -293,7 +293,12 @@ const swiperSame = new Swiper(".swiper__same", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 1,
+         spaceBetween: rem(2.4),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },
@@ -328,7 +333,12 @@ const swiperRelated = new Swiper(".swiper__related", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 1,
+         spaceBetween: rem(2.4),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },
@@ -364,7 +374,12 @@ const swiperProductRecommendations = new Swiper(
             spaceBetween: rem(3),
             slidesPerGroup: 2,
          },
-         769: {
+         768: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: rem(2.4),
+         },
+         1201: {
             slidesPerView: "auto",
             spaceBetween: rem(3.2),
             slidesPerGroup: 3,

@@ -710,6 +710,458 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        .catalog__categories {
+            padding-top: 4rem;
+            padding-right: 4.6rem;
+            margin-left: 10rem;
+            width: 58.6rem;
+        }
+
+        &__right {
+            width: 161.2rem;
+
+            &-card {
+                &__left {
+                    width: 59.2rem;
+                    padding: 4rem 3rem 3rem 4rem;
+
+                    &-container {
+                        width: 52.2rem;
+                        height: 73.2rem;
+
+                        img {
+                            max-width: 38.2rem;
+                            max-height: 39.2rem;
+                        }
+                    }
+
+                    &-new {
+                        font-size: 2.4rem;
+                        line-height: 140%; /* 3.36rem */
+                        letter-spacing: 0.12rem;
+                        padding: 1rem 2.2rem;
+                        top: 3rem;
+                        left: 3rem;
+                    }
+                }
+
+                &__right {
+                    &-top {
+                        padding: 4rem 0 3.8rem 3rem;
+                    }
+
+                    &-title {
+                        font-size: 4.8rem;
+                        line-height: 120%; /* 5.76rem */
+                        margin-bottom: 3rem;
+                    }
+
+                    &-subtitle {
+                        font-size: 2.8rem;
+                        line-height: 3.9rem; /* 139.286% */
+                        margin-bottom: 3rem;
+                    }
+
+                    &-description {
+                        font-size: 3.6rem;
+                        line-height: 140%; /* 5.04rem */
+                    }
+
+                    &-actions {
+                        button {
+                            &:first-child {
+                                svg {
+                                    &:first-child {
+                                        width: 13rem;
+                                        height: 13rem;
+                                    }
+                                }
+                            }
+
+                            &:last-child {
+                                svg {
+                                    &:first-child {
+                                        width: 13rem;
+                                        height: 13rem;
+                                    }
+
+                                    &:nth-child(2) {
+                                        width: 4.03rem;
+                                        height: 3.1rem;
+                                        margin-left: -8rem;
+                                        margin-right: 1.38rem;
+                                    }
+                                }
+
+                                span {
+                                    font-size: 3.6rem;
+                                    line-height: 140%; /* 5.04rem */
+                                    max-width: 42.6rem;
+                                    margin-bottom: -2rem;
+                                }
+                            }
+                        }
+                    }
+
+                    &-bottom {
+                        padding: 2rem 0rem 2.2rem 3rem;
+
+                        &-text {
+                            margin-top: 1.8rem;
+                            margin-right: 2rem;
+                            font-size: 3rem;
+                            line-height: 140%; /* 4.2rem */
+                        }
+
+                        &-list {
+                            margin-top: 1.4rem;
+
+                            &-item {
+                                &:not(:last-child) {
+                                    margin-right: 2rem;
+                                }
+
+                                a {
+                                    img {
+                                        width: 4.8rem;
+                                        height: 4.8rem;
+                                    }
+                                }
+                            }
+                        }
+
+                        &-link {
+                            span {
+                                margin-top: 1.8rem;
+                                font-size: 3.6rem;
+                                line-height: 140%; /* 5.04rem */
+                            }
+
+                            img {
+                                width: 7rem;
+                                height: 7rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-description {
+                padding: 6rem 0 6rem 4rem;
+
+                &__left {
+                    width: 71.4rem;
+
+                    &-title {
+                        font-size: 2.6rem;
+                        line-height: 4.8rem; /* 184.615% */
+                        letter-spacing: 0.13rem;
+                        margin-bottom: 2rem;
+                    }
+
+                    &-list {
+                        &-item {
+                            font-size: 3.6rem;
+                            line-height: 140%; /* 5.04rem */
+                        }
+                    }
+                }
+
+                &__right {
+                    width: 72.2rem;
+
+                    &-text {
+                        &:not(:last-child) {
+                            margin-bottom: 5.4rem;
+                        }
+
+                        &-title {
+                            font-size: 2.6rem;
+                            line-height: 4.8rem; /* 184.615% */
+                            letter-spacing: 0.13rem;
+                            margin-bottom: 2rem;
+                        }
+
+                        &-description {
+                            font-size: 3.6rem;
+                            line-height: 140%; /* 5.04rem */
+                        }
+                    }
+                }
+            }
+
+            &-advantages {
+                padding: 6rem 0.2rem 6.39rem 4rem;
+
+                &__list {
+                    column-gap: 9rem;
+
+                    &-item {
+                        max-width: none;
+
+                        img {
+                            max-width: 11.9rem;
+                            max-height: 10.8rem;
+                            margin-bottom: 3.13rem;
+                        }
+
+                        &-title {
+                            font-size: 3.6rem;
+                            line-height: 140%; /* 5.04rem */
+                            margin-bottom: 3.13rem;
+                        }
+
+                        &-description {
+                            font-size: 3.4rem;
+                            line-height: 140%; /* 4.76rem */
+                        }
+                    }
+                }
+            }
+
+            &-same {
+                padding: 8rem 0 4rem 4rem;
+
+                &__heading {
+                    font-size: 4.8rem;
+                    line-height: 120%; /* 5.76rem */
+                    margin-bottom: 5.2rem;
+                }
+
+                .swiper__same {
+                    &-slide {
+                        padding: 11.4rem 3.2rem 4rem 4rem;
+                        width: 49.2rem;
+
+                        &__new {
+                            top: 3rem;
+                            left: 3rem;
+                            font-size: 2.4rem;
+                            line-height: 140%; /* 3.36rem */
+                            letter-spacing: 0.12rem;
+                            padding: 1rem 2.2rem;
+                        }
+
+                        &__img {
+                            max-width: 33.8rem;
+                            max-height: 34.6rem;
+                            margin-bottom: 6.8rem;
+                        }
+
+                        &__name {
+                            font-size: 4rem;
+                            line-height: 140%; /* 5.6rem */
+                            margin-bottom: 2rem;
+                        }
+
+                        &__description {
+                            font-size: 3.2rem;
+                            line-height: 140%; /* 4.48rem */
+                        }
+                    }
+
+                    &-controllers {
+                        top: 8rem;
+                        right: 0;
+
+                        
+                        .swiper__same-pagination {
+                            margin-right: 4.2rem;
+                            width: auto;
+
+                            .current {
+                                font-size: 4.8rem;
+                                line-height: normal;
+                            }
+
+                            .total {
+                                font-size: 2.8rem;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    &-prev,
+                    &-next {
+                        width: 6rem;
+                        height: 6rem;
+
+                        img {
+                            width: 6rem;
+                            height: 6rem; 
+                        }
+                    }
+
+                    &-prev {
+                        margin-right: 4.2rem;
+                    }
+                }
+            }
+
+            &-related {
+                padding: 4rem 0 4rem 4rem;
+
+                &__heading {
+                    font-size: 4.8rem;
+                    line-height: 120%; /* 5.76rem */
+                    margin-bottom: 5.2rem;
+                }
+
+                .swiper__related {
+                    &-slide {
+                        padding: 11.4rem 3.2rem 4rem 4rem;
+                        width: 49.2rem;
+
+                        &__new {
+                            top: 3rem;
+                            left: 3rem;
+                            font-size: 2.4rem;
+                            line-height: 140%; /* 3.36rem */
+                            letter-spacing: 0.12rem;
+                            padding: 1rem 2.2rem;
+                        }
+
+                        &__img {
+                            max-width: 33.8rem;
+                            max-height: 34.6rem;
+                            margin-bottom: 6.8rem;
+                        }
+
+                        &__name {
+                            font-size: 4rem;
+                            line-height: 140%; /* 5.6rem */
+                            margin-bottom: 2rem;
+                        }
+
+                        &__description {
+                            font-size: 3.2rem;
+                            line-height: 140%; /* 4.48rem */
+                        }
+                    }
+
+                    &-controllers {
+                        top: 4rem;
+                        right: 0;
+
+                        
+                        .swiper__related-pagination {
+                            margin-right: 4.2rem;
+                            width: auto;
+
+                            .current {
+                                font-size: 4.8rem;
+                                line-height: normal;
+                            }
+
+                            .total {
+                                font-size: 2.8rem;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    &-prev,
+                    &-next {
+                        width: 6rem;
+                        height: 6rem;
+
+                        img {
+                            width: 6rem;
+                            height: 6rem; 
+                        }
+                    }
+
+                    &-prev {
+                        margin-right: 4.2rem;
+                    }
+                }
+            }
+
+            &-recommendations {
+                padding: 4rem 0rem 20rem 4rem;
+
+                &__heading {
+                    font-size: 4.8rem;
+                    line-height: 120%; /* 5.76rem */
+                    margin-bottom: 5.2rem;
+                }
+
+                .swiper__product-recommendations {
+                    &-slide {
+                        width: 49.2rem;
+
+                        &__img {
+                            height: 26rem;
+                            margin-bottom: 4rem;
+                        }
+
+                        &__name {
+                            font-size: 4rem;
+                            line-height: 140%; /* 5.6rem */
+                            margin-bottom: 5.4rem;
+
+                            &::after {
+                                width: 10.2rem;
+                                bottom: -2rem;
+                            }
+                        }
+
+                        &__description {
+                            overflow: hidden;
+                            color: #000;
+                            text-overflow: ellipsis;
+                            white-space: pre-line;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
+                            font-size: 3.4rem;
+                            font-style: normal;
+                            font-weight: 350;
+                            line-height: 140%; /* 4.76rem */
+                        }
+                    }
+
+                    &-controllers {
+                        top: 4rem;
+                        right: 0;
+
+                        
+                        .swiper__product-recommendations-pagination {
+                            margin-right: 4.2rem;
+                            width: auto;
+
+                            .current {
+                                font-size: 4.8rem;
+                                line-height: normal;
+                            }
+
+                            .total {
+                                font-size: 2.8rem;
+                                line-height: normal;
+                            }
+                        }
+                    }
+
+                    &-prev,
+                    &-next {
+                        width: 6rem;
+                        height: 6rem;
+
+                        img {
+                            width: 6rem;
+                            height: 6rem; 
+                        }
+                    }
+
+                    &-prev {
+                        margin-right: 4.2rem;
+                    }
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         flex-direction: column;
 

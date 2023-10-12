@@ -146,6 +146,97 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        &__block {
+            padding-left: 10rem;
+
+            &:nth-child(even) {
+                .techsupport-main__block-right {
+                    width: 110rem;
+                }
+
+                .techsupport-main__block-left {
+                    width: 110rem;
+                    padding: 8rem 8rem 8rem 8.61rem;
+                }
+            }
+
+            &-left {
+                width: 110rem;
+                padding: 8rem 12rem 8rem 4.6rem;
+
+                &__list {
+                    &-item {
+                        &:not(:last-child) {
+                            margin-bottom: 2rem;
+                        }
+
+                        &-number {
+                            font-size: 7.2rem;
+                            line-height: normal;
+                            margin-bottom: 1.2rem;
+                        }
+
+                        &-heading {
+                            font-size: 5.6rem;
+                            line-height: 120%; /* 6.72rem */
+                            margin-bottom: 3rem;
+                        }
+
+                        &-description {
+                            font-size: 3.6rem;
+                            line-height: 140%; /* 5.04rem */
+                        }
+                    }
+                }
+
+                &__link {
+                    margin-bottom: 4rem;
+
+                    svg {
+                        &:first-child {
+                            width: 14.2rem;
+                            height: 14.2rem;
+                        }
+
+                        &:nth-child(2) {
+                            width: 5.08rem;
+                            height: 6.09rem;
+                            margin-left: -9.5rem;
+                            margin-right: 2.11rem;
+                        }
+                    }
+
+                    span {
+                        font-size: 4rem;
+                        line-height: normal;
+                    }
+                }
+
+                &__notice {
+                    font-size: 2.8rem;
+                    line-height: normal;
+                    margin-bottom: 6rem;
+                }
+
+                &__btn {
+                    padding: 2.6rem 4.8rem;
+                    font-size: 3.6rem;
+                    line-height: normal;
+                }
+            }
+
+            &-right {
+                width: 110rem;
+                height: auto;
+
+                &__img {
+                    width: 110rem;
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-bottom: 20rem;
 

@@ -609,7 +609,12 @@ const swiperEvents = new Swiper(".projects-main__events", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+         spaceBetween: rem(4.6),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },
@@ -643,7 +648,12 @@ const swiperGlue = new Swiper(".projects-main__glue", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+         spaceBetween: rem(4.6),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },
@@ -677,7 +687,12 @@ const swiperObjects = new Swiper(".projects-main__objects", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+         spaceBetween: rem(4.6),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },
@@ -711,7 +726,12 @@ const swiperHomakoll = new Swiper(".projects-main__homakoll", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+         spaceBetween: rem(4.6),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },

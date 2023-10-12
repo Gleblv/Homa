@@ -415,7 +415,12 @@ staff.forEach((swiperStaff) => {
          320: {
             slidesPerView: 1,
          },
-         769: {
+         768: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: rem(2),
+         },
+         1201: {
             slidesPerView: "auto",
             spaceBetween: rem(4),
          },

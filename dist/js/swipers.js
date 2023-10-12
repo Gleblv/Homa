@@ -457,7 +457,12 @@ const swiperExperts = new Swiper(".press-main__experts", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+         spaceBetween: rem(3.8),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },
@@ -491,7 +496,12 @@ const swiperMedia = new Swiper(".press-main__media", {
          slidesPerView: 1,
          slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+         spaceBetween: rem(3.8),
+      },
+      1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
       },
@@ -521,13 +531,16 @@ const swiperPhoto = new Swiper(".press-main__photo", {
 
    breakpoints: {
       320: {
-         slidesPerView: 2,
-         spaceBetween: rem(3),
-         slidesPerGroup: 2,
+         slidesPerView: 1,
+         slidesPerGroup: 1,
       },
-      769: {
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 3,
+         spaceBetween: rem(3.8),
+      },
+      1201: {
          slidesPerView: "auto",
-         spaceBetween: rem(4),
          slidesPerGroup: 3,
       },
    },

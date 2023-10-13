@@ -147,6 +147,111 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        padding-top: 6rem;
+        padding-bottom: 12rem;
+
+        &__heading {
+            font-size: 4.4rem;
+            line-height: 120%; /* 5.28rem */
+            margin-bottom: 5.6rem;
+        }
+
+        &__list {
+            margin-bottom: 8rem;
+
+            &-item {
+                padding: 4rem 0;
+
+                &__img {
+                    width: 31.6rem;
+                    height: 34.6rem;
+                }
+
+                &__text {
+                    width: 182.4rem;
+                }
+
+                &__link {
+                    font-size: 3.6rem;
+                    line-height: 140%; /* 5.04rem */
+                    margin-bottom: 2rem;
+                }
+
+                &__description {
+                    font-size: 3.4rem;
+                    line-height: 140%; /* 4.76rem */
+                    margin-bottom: 2rem;
+                }
+
+                &__notice {
+                    font-size: 3.4rem;
+                    line-height: 140%; /* 4.76rem */
+                    margin-bottom: 2rem;
+                }
+
+                &__bottom {
+                    p {
+                        font-size: 3.4rem;
+                        line-height: 140%; /* 4.76rem */
+                        margin-right: 1rem;
+                    }
+
+                    ul {
+                        li {
+                            &:not(:last-child) {
+                                margin-right: 2.4rem;
+                            }
+
+                            a {
+                                font-size: 3rem;
+                                line-height: 4.8rem;
+
+
+                                &::after {
+                                    font-size: 3rem;
+                                    line-height: 4.8rem;
+                                    right: -1.7rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__controls {
+            &__prev,
+            &__next {
+                width: 6rem;
+                height: 6rem;
+
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+
+            &__prev {
+                margin-right: 4.2rem;
+            }
+
+            &__pagination {
+                margin-right: 4.2rem;
+
+                .current {
+                    font-size: 4.8rem;
+                    line-height: normal;
+                }
+
+                .total {
+                    font-size: 2.8rem;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-top: 0;
         padding-bottom: 20rem;

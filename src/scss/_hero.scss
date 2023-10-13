@@ -201,6 +201,31 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        &__form {
+            &-span {
+                font-size: 3rem;
+                line-height: 4.2rem; /* 140% */
+            }
+
+            input {
+                font-size: 3rem;
+                line-height: 4.2rem; /* 140% */
+                padding-left: 16rem;
+            }
+
+            button {
+                width: 4.2468rem;
+                height: 4.3186rem;
+
+                svg {
+                    width: 4.2468rem;
+                    height: 4.3186rem;
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
 
         .hero__heading {

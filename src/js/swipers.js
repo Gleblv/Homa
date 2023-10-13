@@ -219,37 +219,37 @@ const swiperVideo = new Swiper(".swiper__video", {
    },
 });
 
-const swiperMainVideo = new Swiper(".videos-main__swiper", {
-   slidesPerView: 1,
-   spaceBetween: 15,
-   slidesPerColumn: 4,
+// const swiperMainVideo = new Swiper(".videos-main__swiper", {
+//    slidesPerView: 1,
+//    spaceBetween: 15,
+//    slidesPerColumn: 4,
 
-   breakpoints: {
-      768: {
-         slidesPerView: 3,
-         slidesPerColumn: 3,
-      },
-      1201: {
-         slidesPerView: 4,
-         slidesPerColumn: 3,
-      },
-   },
+//    breakpoints: {
+//       768: {
+//          slidesPerView: 3,
+//          slidesPerColumn: 3,
+//       },
+//       1201: {
+//          slidesPerView: 4,
+//          slidesPerColumn: 3,
+//       },
+//    },
 
-   navigation: {
-      nextEl: ".videos-main__controls__next",
-      prevEl: ".videos-main__controls__prev",
-   },
+//    navigation: {
+//       nextEl: ".videos-main__controls__next",
+//       prevEl: ".videos-main__controls__prev",
+//    },
 
-   pagination: {
-      el: ".videos-main__controls__pagination",
-      type: "custom",
-      renderCustom: function (swiper, current, total) {
-         return `<span class="current">${getTwoDigitNumber(
-            current
-         )}</span><span class="total">${getTwoDigitNumber(total)}</span>`;
-      },
-   },
-});
+//    pagination: {
+//       el: ".videos-main__controls__pagination",
+//       type: "custom",
+//       renderCustom: function (swiper, current, total) {
+//          return `<span class="current">${getTwoDigitNumber(
+//             current
+//          )}</span><span class="total">${getTwoDigitNumber(total)}</span>`;
+//       },
+//    },
+// });
 
 const swiperPolymer = new Swiper(".swiper__polymer", {
    direction: "horizontal",

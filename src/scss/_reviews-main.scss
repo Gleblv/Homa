@@ -165,6 +165,114 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        padding-top: 8rem;
+        padding-bottom: 20rem;
+
+        &__list {
+           &-item {
+
+            &__logo {
+                &.economica {
+                    width: 40.4rem;
+                    height: 36.4rem;
+                }
+
+                &.suenko {
+                    width: 39.8rem;
+                    height: 26.6rem;
+                }
+
+                &.tyumen-energo {
+                    width: 43.2rem;
+                    height: 28.8rem;
+                }
+
+                &.no-photo {
+                    width: 40rem;
+                    height: 36.2rem;
+                    margin-left: 0;
+                }
+            }
+
+            &__text {
+                width: 171.6rem;
+            }
+
+            &__quote {
+                width: 5.2rem;
+                height: 4rem;
+                margin-bottom: 4rem;
+            }
+
+            &__title {
+                font-size: 4.4rem;
+                line-height: 120%; /* 5.28rem */
+                margin-bottom: 4rem;
+            }
+
+            &__description {
+                font-size: 3.4rem;
+                line-height: 140%; /* 4.76rem */
+                margin-bottom: 6rem;
+                width: auto;
+            }
+
+            &__download {
+                svg {
+                    &:first-child {
+                        width: 14.2rem;
+                        height: 14.2rem;
+                    }
+
+                    &:nth-child(2) {
+                        width: 4.8rem;
+                        height: 4.8rem;
+                        margin-left: -9.5rem;
+                        margin-right: 2rem;
+                    }
+                }
+
+                span {
+                    font-size: 4rem;
+                    line-height: normal;
+                }
+            }
+           }
+        }
+
+        &__controls {
+            &__prev,
+            &__next {
+                width: 6rem;
+                height: 6rem;
+
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+
+            &__prev {
+                margin-right: 4.2rem;
+            }
+
+            &__pagination {
+                margin-right: 4.2rem;
+
+                .current {
+                    font-size: 4.8rem;
+                    line-height: normal;
+                }
+
+                .total {
+                    font-size: 2.8rem;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-bottom: 20rem;
         border-top: 0.2rem solid #c4c4c4;

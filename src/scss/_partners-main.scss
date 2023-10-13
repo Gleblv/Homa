@@ -176,6 +176,96 @@
         }
     }
 
+    @media (min-width: 48em) and (max-width: 75em) {
+        padding-top: 8rem;
+        padding-bottom: 20rem;
+
+        &__list {
+            column-gap: 32rem;
+            row-gap: 8rem;
+            margin-bottom: 8rem;
+
+            &-item {
+                min-height: 44.6rem;
+                width: auto;
+
+                &:not(:nth-last-child(-n+4)) {
+                    margin-bottom: 0;
+                }
+
+                &:not(:nth-child(4n)) {
+                    margin-right: 0;
+                }
+
+                &__logo {
+                    margin-bottom: 0;
+
+                    &[id="rosatom"] {
+                        width: 22.8rem;
+                        height: 23.8rem;
+                    }
+    
+                    &[id="metro"] {
+                        width: 25.4rem;
+                        height: 25.8rem;
+                    }
+    
+                    &[id="rostech"] {
+                        width: 24.4rem;
+                        height: 23.8rem;
+                    }
+    
+                    &[id="sibur"] {
+                        width: 20.8rem;
+                        height: 21.4rem;
+                    }
+                }
+
+                &__name {
+                    font-size: 3.4rem;
+                    line-height: 140%; /* 4.76rem */
+                    margin-bottom: 2rem;
+                }
+
+                &__link {
+                    font-size: 3.4rem;
+                    line-height: 140%; /* 4.76rem */
+                }
+            }
+        }
+
+        &__controls {
+            &__prev,
+            &__next {
+                width: 6rem;
+                height: 6rem;
+
+                img {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+
+            &__prev {
+                margin-right: 4.2rem;
+            }
+
+            &__pagination {
+                margin-right: 4.2rem;
+
+                .current {
+                    font-size: 4.8rem;
+                    line-height: normal;
+                }
+
+                .total {
+                    font-size: 2.8rem;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
     @media (max-width: 48em) {
         padding-top: 0;
         padding-bottom: 20rem;

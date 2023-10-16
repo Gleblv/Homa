@@ -68,9 +68,22 @@
     }
 
     @media (min-width: 45em) and (max-width: 75em) {
-        padding-top: 0rem;
+        padding-top: 3.4rem;
         padding-bottom: 0rem;
-        margin-bottom: 20rem;
+        margin-bottom: 3.4rem;
+
+        &__list {
+            &-item {
+                &:not(:last-child) {
+                    margin-right: 14.4rem;
+                }
+    
+                a {
+                    font-size: 5.4rem;
+                    line-height: normal;
+                }
+            }
+        }
     }
 
     @media (max-width:48em) {

@@ -1,517 +1,569 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
+   // переключаение языков
+   const rusBtn = document.querySelector(".header__top-btns .rus");
+   const enBtn = document.querySelector(".header__top-btns .en");
 
-    // переключаение языков
-    const rusBtn = document.querySelector('.header__top-btns .rus');
-    const enBtn = document.querySelector('.header__top-btns .en');
+   enBtn.addEventListener("click", function () {
+      rusBtn.classList.remove("active");
+      enBtn.classList.add("active");
+   });
 
-    enBtn.addEventListener('click', function () {
-        rusBtn.classList.remove('active');
-        enBtn.classList.add('active');
-    })
+   rusBtn.addEventListener("click", function () {
+      enBtn.classList.remove("active");
+      rusBtn.classList.add("active");
+   });
 
-    rusBtn.addEventListener('click', function () {
-        enBtn.classList.remove('active');
-        rusBtn.classList.add('active');
-    })
+   // анимация на Главной
 
-    // анимация на Главной
-
-    const gearAnimation = (function () {
-        const animation = anime.timeline({
+   const gearAnimation = (function () {
+      const animation = anime
+         .timeline({
             autoplay: false,
-            easing: 'linear',
+            easing: "linear",
             loop: true,
-        }).add({
-            targets: '#gear',
-            rotate: [
-                { value: 360, duration: 4000 },
-            ],
-        });
+         })
+         .add({
+            targets: "#gear",
+            rotate: [{ value: 360, duration: 4000 }],
+         });
 
-        return animation;
-    })();
+      return animation;
+   })();
 
-    const stat = (function () {
-        const animation = anime.timeline({
+   const stat = (function () {
+      const animation = anime
+         .timeline({
             autoplay: false,
             loop: true,
-        }).add({
-            targets: '#stat path:nth-child(1)',
+         })
+         .add({
+            targets: "#stat path:nth-child(1)",
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             duration: 400,
-            delay: function (el, i) { return i * 250 },
-        }).add({
-            targets: '#stat path:nth-child(2)',
+            delay: function (el, i) {
+               return i * 250;
+            },
+         })
+         .add({
+            targets: "#stat path:nth-child(2)",
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             duration: 400,
-            delay: function (el, i) { return i * 250 },
-        }).add({
-            targets: '#stat path:nth-child(3)',
+            delay: function (el, i) {
+               return i * 250;
+            },
+         })
+         .add({
+            targets: "#stat path:nth-child(3)",
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             duration: 400,
-            delay: function (el, i) { return i * 250 },
-        }).add({
-            targets: '#stat path:nth-child(4)',
+            delay: function (el, i) {
+               return i * 250;
+            },
+         })
+         .add({
+            targets: "#stat path:nth-child(4)",
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             duration: 400,
-            delay: function (el, i) { return i * 250 },
-        }).add({
-            targets: '#stat path:nth-child(5)',
+            delay: function (el, i) {
+               return i * 250;
+            },
+         })
+         .add({
+            targets: "#stat path:nth-child(5)",
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             duration: 400,
-            delay: function (el, i) { return i * 250 },
-        }).add({
-            targets: '#stat path:nth-child(6)',
+            delay: function (el, i) {
+               return i * 250;
+            },
+         })
+         .add({
+            targets: "#stat path:nth-child(6)",
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             duration: 400,
-            delay: function (el, i) { return i * 250 },
-        }).add({
-            targets: '#stat path:nth-child(7)',
+            delay: function (el, i) {
+               return i * 250;
+            },
+         })
+         .add({
+            targets: "#stat path:nth-child(7)",
             strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             duration: 400,
-            delay: function (el, i) { return i * 250 },
-        }).add({
+            delay: function (el, i) {
+               return i * 250;
+            },
+         })
+         .add({
             duration: 2000,
-        });
+         });
 
-        animation.seek(4790);
+      animation.seek(4790);
 
-        return animation;
-    })();
+      return animation;
+   })();
 
-    const shieldAnimation = (function () {
-        const animation = anime.timeline({
+   const shieldAnimation = (function () {
+      const animation = anime
+         .timeline({
             autoplay: false,
             loop: true,
-            easing: 'easeOutSine',
-        }).add({
-            targets: '#shield span',
+            easing: "easeOutSine",
+         })
+         .add({
+            targets: "#shield span",
             delay: 1000,
             loop: true,
             translateY: [
-                { value: '100%', duration: 0 },
-                { value: '0%', duration: 700 },
-                { value: '-100%', duration: 700 },
+               { value: "100%", duration: 0 },
+               { value: "0%", duration: 700 },
+               { value: "-100%", duration: 700 },
             ],
-            rotate: [
-                { value: 30, duration: 0 }
-            ]
-        });
+            rotate: [{ value: 30, duration: 0 }],
+         });
 
-        return animation;
-    })();
+      return animation;
+   })();
 
-    const bubble1 = (function () {
-        const animation = anime.timeline({
+   const bubble1 = (function () {
+      const animation = anime
+         .timeline({
             autoplay: false,
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             loop: true,
             delay: 700,
-        }).add({
-            targets: '#bubbles svg:nth-child(1)',
+         })
+         .add({
+            targets: "#bubbles svg:nth-child(1)",
             translateY: [
-                { value: 0, duration: 0 },
-                { value: rem(-2.2), duration: 800 },
+               { value: 0, duration: 0 },
+               { value: rem(-2.2), duration: 800 },
             ],
-        });
+         });
 
-        return animation;
-    })();
+      return animation;
+   })();
 
-    const bubble2 = (function () {
-        const animation = anime.timeline({
+   const bubble2 = (function () {
+      const animation = anime
+         .timeline({
             autoplay: false,
-            easing: 'easeOutSine',
+            easing: "easeOutSine",
             loop: true,
             delay: 700,
-        }).add({
-            targets: '#bubbles svg:nth-child(2)',
+         })
+         .add({
+            targets: "#bubbles svg:nth-child(2)",
             loop: true,
             translateY: [
-                { value: 0, duration: 0 },
-                { value: rem(-1.8), duration: 1200 },
+               { value: 0, duration: 0 },
+               { value: rem(-1.8), duration: 1200 },
             ],
-        });
+         });
 
-        return animation;
-    })();
+      return animation;
+   })();
 
-    $('.advantages__list-item.gear').hover(function () {
-        gearAnimation.play();
-    }, function () {
-        gearAnimation.pause();
-    });
+   $(".advantages__list-item.gear").hover(
+      function () {
+         gearAnimation.play();
+      },
+      function () {
+         gearAnimation.pause();
+      }
+   );
 
-    $('.advantages__list-item.stat').hover(function () {
-        stat.play();
-    }, function () {
-        stat.pause();
-    });
+   $(".advantages__list-item.stat").hover(
+      function () {
+         stat.play();
+      },
+      function () {
+         stat.pause();
+      }
+   );
 
-    $('.advantages__list-item.bubbles').hover(function () {
-        shieldAnimation.play();
-        bubble1.play();
-        bubble2.play();
-    }, function () {
-        shieldAnimation.pause();
-        bubble1.pause();
-        bubble2.pause();
-    });
+   $(".advantages__list-item.bubbles").hover(
+      function () {
+         shieldAnimation.play();
+         bubble1.play();
+         bubble2.play();
+      },
+      function () {
+         shieldAnimation.pause();
+         bubble1.pause();
+         bubble2.pause();
+      }
+   );
 
-    // раскрывающийся список в футере в мобилке
+   // раскрывающийся список в футере в мобилке
 
-    if (window.innerWidth <= 768) {
-        const list1Btn = document.querySelector('.footer__list1-heading');
-        const list2Btn = document.querySelector('.footer__list2-heading');
-        const list3Btn = document.querySelector('.footer__list3-heading');
+   if (window.innerWidth <= 768) {
+      const list1Btn = document.querySelector(".footer__list1-heading");
+      const list2Btn = document.querySelector(".footer__list2-heading");
+      const list3Btn = document.querySelector(".footer__list3-heading");
 
-        list1Btn.addEventListener('click', function () {
-            list2Btn.classList.remove('active');
-            list3Btn.classList.remove('active');
-            list2Btn.nextElementSibling.style.maxHeight = null;
-            list3Btn.nextElementSibling.style.maxHeight = null;
-            list1Btn.classList.toggle('active');
-            let content = list1Btn.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.classList.remove('active');
-                content.style.maxHeight = null
-            } else {
-                content.classList.add('active');
-                content.style.maxHeight = content.scrollHeight / 5 + "rem";
+      list1Btn.addEventListener("click", function () {
+         list2Btn.classList.remove("active");
+         list3Btn.classList.remove("active");
+         list2Btn.nextElementSibling.style.maxHeight = null;
+         list3Btn.nextElementSibling.style.maxHeight = null;
+         list1Btn.classList.toggle("active");
+         let content = list1Btn.nextElementSibling;
+         if (content.style.maxHeight) {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+         } else {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight / 5 + "rem";
+         }
+      });
+
+      list2Btn.addEventListener("click", function () {
+         list1Btn.classList.remove("active");
+         list3Btn.classList.remove("active");
+         list1Btn.nextElementSibling.style.maxHeight = null;
+         list3Btn.nextElementSibling.style.maxHeight = null;
+         list2Btn.classList.toggle("active");
+         let content = list2Btn.nextElementSibling;
+         if (content.style.maxHeight) {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+         } else {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight / 5 + "rem";
+         }
+      });
+
+      list3Btn.addEventListener("click", function () {
+         list1Btn.classList.remove("active");
+         list2Btn.classList.remove("active");
+         list1Btn.nextElementSibling.style.maxHeight = null;
+         list2Btn.nextElementSibling.style.maxHeight = null;
+         list3Btn.classList.toggle("active");
+         let content = list3Btn.nextElementSibling;
+         if (content.style.maxHeight) {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+         } else {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight / 5 + "rem";
+         }
+      });
+   }
+
+   // селект на странице ...
+   if (document.querySelector(".sorting-select")) {
+      const sortingSelect = new Choices(".sorting-select", {
+         searchEnabled: false,
+         shouldSort: false,
+         itemSelectText: "",
+      });
+   }
+
+   // карта на странице Контакты
+   if (document.querySelector("#map")) {
+      ymaps.ready(init);
+      function init() {
+         const myMap = new ymaps.Map("map", {
+            center: [55.678402, 37.853416],
+            zoom: 14,
+         });
+
+         const dzerzhinskMap = new ymaps.Map("dzerzhinsk-map", {
+            center: [56.290484, 43.603766],
+            zoom: 14,
+         });
+
+         const homaPlacemark = new ymaps.Placemark(
+            [55.678402, 37.853416],
+            {},
+            {
+               iconLayout: "default#image",
+               // Своё изображение иконки метки.
+               iconImageHref: "images/svg/homaPoint.svg",
+               // Размеры метки.
+               iconImageSize: [rem(13.2), rem(8.5)],
+               // Смещение левого верхнего угла иконки относительно
+               // её "ножки" (точки привязки).
+               iconImageOffset: [rem(-5), rem(-4)],
             }
-        })
+         );
 
-        list2Btn.addEventListener('click', function () {
-            list1Btn.classList.remove('active');
-            list3Btn.classList.remove('active');
-            list1Btn.nextElementSibling.style.maxHeight = null;
-            list3Btn.nextElementSibling.style.maxHeight = null;
-            list2Btn.classList.toggle('active');
-            let content = list2Btn.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.classList.remove('active');
-                content.style.maxHeight = null
-            } else {
-                content.classList.add('active');
-                content.style.maxHeight = content.scrollHeight / 5 + "rem";
+         myMap.geoObjects.add(homaPlacemark);
+
+         const dzerzhinskPlacemark = new ymaps.Placemark([56.290484, 43.603766], null, {
+            preset: "islands#redDotIcon",
+         });
+         dzerzhinskMap.geoObjects.add(dzerzhinskPlacemark);
+      }
+   }
+
+   // переключалка складов на странице Контакты
+
+   const tabsBtns = document.querySelectorAll(".contacts-hero__left-list__item button");
+   const main = document.querySelectorAll(`[data-target="main"]`);
+   const dzerzhinsk = document.querySelectorAll(`[data-target="dzerzhinsk"]`);
+
+   tabsBtns.forEach(function (btn) {
+      btn.addEventListener("click", function (e) {
+         const path = e.currentTarget.parentElement.dataset.path;
+
+         tabsBtns.forEach(function (tab) {
+            tab.parentElement.classList.remove("active");
+         });
+
+         tabsBtns.forEach((tabBtn) => {
+            if (tabBtn.parentElement.dataset.path === path) {
+               tabBtn.parentElement.classList.add("active");
             }
-        })
+         });
 
-        list3Btn.addEventListener('click', function () {
-            list1Btn.classList.remove('active');
-            list2Btn.classList.remove('active');
-            list1Btn.nextElementSibling.style.maxHeight = null;
-            list2Btn.nextElementSibling.style.maxHeight = null;
-            list3Btn.classList.toggle('active');
-            let content = list3Btn.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.classList.remove('active');
-                content.style.maxHeight = null
-            } else {
-                content.classList.add('active');
-                content.style.maxHeight = content.scrollHeight / 5 + "rem";
-            }
-        })
-    }
-
-    // селект на странице ...
-    if (document.querySelector('.sorting-select')) {
-        const sortingSelect = new Choices('.sorting-select', {
-            searchEnabled: false,
-            shouldSort: false,
-            itemSelectText: '',
-        })
-
-    }
-
-    // карта на странице Контакты
-    if (document.querySelector('#map')) {
-        ymaps.ready(init);
-        function init() {
-            const myMap = new ymaps.Map("map", {
-                center: [55.678402, 37.853416],
-                zoom: 14
+         if (path === "main") {
+            dzerzhinsk.forEach((element) => {
+               element.classList.remove("active");
             });
-
-            const dzerzhinskMap = new ymaps.Map("dzerzhinsk-map", {
-                center: [56.290484, 43.603766],
-                zoom: 14
+            main.forEach((element) => {
+               element.classList.add("active");
             });
-
-            const homaPlacemark = new ymaps.Placemark([55.678402, 37.853416], {},
-                {
-                    iconLayout: 'default#image',
-                    // Своё изображение иконки метки.
-                    iconImageHref: 'images/svg/homaPoint.svg',
-                    // Размеры метки.
-                    iconImageSize: [rem(13.2), rem(8.5)],
-                    // Смещение левого верхнего угла иконки относительно
-                    // её "ножки" (точки привязки).
-                    iconImageOffset: [rem(-5), rem(-4)]
-                })
-
-            myMap.geoObjects.add(homaPlacemark);
-
-            const dzerzhinskPlacemark = new ymaps.Placemark([56.290484, 43.603766], null, {
-                preset: 'islands#redDotIcon'
+         } else if (path === "dzerzhinsk") {
+            main.forEach((element) => {
+               element.classList.remove("active");
             });
-            dzerzhinskMap.geoObjects.add(dzerzhinskPlacemark);
-        }
-
-
-    }
-
-    // переключалка складов на странице Контакты
-
-    const tabsBtns = document.querySelectorAll('.contacts-hero__left-list__item button');
-    const main = document.querySelectorAll(`[data-target="main"]`);
-    const dzerzhinsk = document.querySelectorAll(`[data-target="dzerzhinsk"]`);
-
-    tabsBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            const path = e.currentTarget.parentElement.dataset.path;
-
-            tabsBtns.forEach(function (tab) {
-                tab.parentElement.classList.remove('active');
-            })
-
-            tabsBtns.forEach(tabBtn => {
-                if (tabBtn.parentElement.dataset.path === path) {
-                    tabBtn.parentElement.classList.add('active');
-                }
-            })
-
-            if (path === 'main') {
-                dzerzhinsk.forEach(element => {
-                    element.classList.remove('active');
-                })
-                main.forEach(element => {
-                    element.classList.add('active');
-                })
-            } else if (path === 'dzerzhinsk') {
-                main.forEach(element => {
-                    element.classList.remove('active');
-                })
-                dzerzhinsk.forEach(element => {
-                    element.classList.add('active');
-                })
-            }
-        })
-    })
-
-    // плавный скролл на странице Пресс-центр
-
-    document.querySelectorAll('a[href^="#"').forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            let href = this.getAttribute('href').substring(1);
-
-            const scrollTarget = document.getElementById(href);
-
-            // const topOffset = document.querySelector('.scrollto').offsetHeight;
-            const topOffset = 0; // если не нужен отступ сверху 
-            const elementPosition = scrollTarget.getBoundingClientRect().top;
-            const offsetPosition = elementPosition - topOffset;
-
-            window.scrollBy({
-                top: offsetPosition,
-                behavior: 'smooth'
+            dzerzhinsk.forEach((element) => {
+               element.classList.add("active");
             });
-        });
-    });
+         }
+      });
+   });
 
-    // модалка отклика на вакансии (страницы Вакансия и Страница вакансии)
+   // плавный скролл на странице Пресс-центр
 
-    if (document.querySelector('.modal-response')) {
-        const modalResponse = document.querySelector('.modal-response');
+   document.querySelectorAll('a[href^="#"').forEach((link) => {
+      link.addEventListener("click", function (e) {
+         e.preventDefault();
 
-        const responseVacancyBtn = document.querySelector('.vacancy-page__main-right__btn');
+         let href = this.getAttribute("href").substring(1);
 
-        responseVacancyBtn.addEventListener('click', function () {
-            modalResponse.classList.add('active');
-            document.body.classList.add('lock');
-        })
+         const scrollTarget = document.getElementById(href);
 
-        const modalCloseBtn = document.querySelector('.modal-response .modal__close-btn');
-        modalCloseBtn.addEventListener('click', function () {
-            modalResponse.classList.remove('active');
-            document.body.classList.remove('lock');
-        })
+         // const topOffset = document.querySelector('.scrollto').offsetHeight;
+         const topOffset = 0; // если не нужен отступ сверху
+         const elementPosition = scrollTarget.getBoundingClientRect().top;
+         const offsetPosition = elementPosition - topOffset;
 
-        const inputFile = document.querySelector('#resume-file');
-        const label = inputFile.nextElementSibling;
-        const labelVal = label.innerHTML;
+         window.scrollBy({
+            top: offsetPosition,
+            behavior: "smooth",
+         });
+      });
+   });
 
-        inputFile.addEventListener('change', function (e) {
-            var fileName = '';
-            if (this.files && this.files.length > 1)
-                fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}', this.files.length);
-            else {
-                console.log(e)
-                fileName = e.target.value.split('\\').pop();
-            }
+   // модалка отклика на вакансии (страницы Вакансия и Страница вакансии)
 
+   if (document.querySelector(".modal-response")) {
+      const modalResponse = document.querySelector(".modal-response");
 
-            if (fileName)
-                label.querySelector('span').innerHTML = fileName;
-            else
-                label.innerHTML = labelVal;
-        });
-    }
+      const responseVacancyBtn = document.querySelector(".vacancy-page__main-right__btn");
 
-    // модалка об ошибке нас странице Чем приклеить ПВХ плитку
+      responseVacancyBtn.addEventListener("click", function () {
+         modalResponse.classList.add("active");
+         document.body.classList.add("lock");
+      });
 
-    if (document.querySelector('.modal-mistake')) {
-        const modalResponse = document.querySelector('.modal-mistake');
+      const modalCloseBtn = document.querySelector(".modal-response .modal__close-btn");
+      modalCloseBtn.addEventListener("click", function () {
+         modalResponse.classList.remove("active");
+         document.body.classList.remove("lock");
+      });
 
-        const mistakeBtn = document.querySelector('.qa__btn-error');
+      const inputFile = document.querySelector("#resume-file");
+      const label = inputFile.nextElementSibling;
+      const labelVal = label.innerHTML;
 
-        mistakeBtn.addEventListener('click', function () {
-            modalResponse.classList.add('active');
-            document.body.classList.add('lock');
-        })
+      inputFile.addEventListener("change", function (e) {
+         var fileName = "";
+         if (this.files && this.files.length > 1)
+            fileName = (this.getAttribute("data-multiple-caption") || "").replace(
+               "{count}",
+               this.files.length
+            );
+         else {
+            console.log(e);
+            fileName = e.target.value.split("\\").pop();
+         }
 
-        const modalCloseBtn = document.querySelector('.modal-mistake .modal__close-btn');
-        modalCloseBtn.addEventListener('click', function () {
-            modalResponse.classList.remove('active');
-            document.body.classList.remove('lock');
-        })
-    }
+         if (fileName) label.querySelector("span").innerHTML = fileName;
+         else label.innerHTML = labelVal;
+      });
+   }
 
-    // модалка заявку не техподдержку на Главной
-    if (document.querySelector('.modal-request')) {
-        const modalRequest = document.querySelector('.modal-request');
+   // модалка об ошибке нас странице Чем приклеить ПВХ плитку
 
-        const requestBtn = document.querySelector('.support__left-links__request');
+   if (document.querySelector(".modal-mistake")) {
+      const modalResponse = document.querySelector(".modal-mistake");
 
-        requestBtn.addEventListener('click', function () {
-            modalRequest.classList.add('active');
-            document.body.classList.add('lock');
-        })
+      const mistakeBtn = document.querySelector(".qa__btn-error");
 
-        const modalCloseBtn = document.querySelector('.modal-request .modal__close-btn');
-        modalCloseBtn.addEventListener('click', function () {
-            modalRequest.classList.remove('active');
-            document.body.classList.remove('lock');
-        })
-    }
+      mistakeBtn.addEventListener("click", function () {
+         modalResponse.classList.add("active");
+         document.body.classList.add("lock");
+      });
 
-    // модалка запроса тех описания на Странице товара
-    if (document.querySelector('.modal-description')) {
-        const modalDescription = document.querySelector('.modal-description');
+      const modalCloseBtn = document.querySelector(".modal-mistake .modal__close-btn");
+      modalCloseBtn.addEventListener("click", function () {
+         modalResponse.classList.remove("active");
+         document.body.classList.remove("lock");
+      });
+   }
 
-        // десктоп
-        const descriptionBtn = document.querySelector('.product__right-card__right-actions-email');
+   // модалка заявку не техподдержку на Главной
+   if (document.querySelector(".modal-request")) {
+      const modalRequest = document.querySelector(".modal-request");
 
-        descriptionBtn.addEventListener('click', function () {
-            modalDescription.classList.add('active');
-            document.body.classList.add('lock');
-        })
+      const requestBtn = document.querySelector(".support__left-links__request");
 
-        const modalCloseBtn = document.querySelector('.modal-description .modal__close-btn');
-        modalCloseBtn.addEventListener('click', function () {
-            modalDescription.classList.remove('active');
-            document.body.classList.remove('lock');
-        })
+      requestBtn.addEventListener("click", function () {
+         modalRequest.classList.add("active");
+         document.body.classList.add("lock");
+      });
 
-        // мобилка
+      const modalCloseBtn = document.querySelector(".modal-request .modal__close-btn");
+      modalCloseBtn.addEventListener("click", function () {
+         modalRequest.classList.remove("active");
+         document.body.classList.remove("lock");
+      });
+   }
 
-        const descriptionMobileBtn = document.querySelector('.product__right-card__left-actions-email');
+   // модалка запроса тех описания на Странице товара
+   if (document.querySelector(".modal-description")) {
+      const modalDescription = document.querySelector(".modal-description");
 
-        descriptionMobileBtn.addEventListener('click', function () {
-            modalDescription.classList.add('active');
-            document.body.classList.add('lock');
-        })
-    }
+      // десктоп
+      const descriptionBtn = document.querySelector(".product__right-card__right-actions-email");
 
-    // модалка задать вопрос на Странице товара ()
-    if (document.querySelector('.modal-question')) {
+      descriptionBtn.addEventListener("click", function () {
+         modalDescription.classList.add("active");
+         document.body.classList.add("lock");
+      });
 
-        // десктоп
-        const modalQuestion = document.querySelector('.modal-question');
+      const modalCloseBtn = document.querySelector(".modal-description .modal__close-btn");
+      modalCloseBtn.addEventListener("click", function () {
+         modalDescription.classList.remove("active");
+         document.body.classList.remove("lock");
+      });
 
-        const questionBtn = document.querySelector('.product__right-card__right-actions-question');
+      // мобилка
 
-        questionBtn.addEventListener('click', function () {
-            modalQuestion.classList.add('active');
-            document.body.classList.add('lock');
-        })
+      const descriptionMobileBtn = document.querySelector(".product__right-card__left-actions-email");
 
-        const modalCloseBtn = document.querySelector('.modal-question .modal__close-btn');
-        modalCloseBtn.addEventListener('click', function () {
-            modalQuestion.classList.remove('active');
-            document.body.classList.remove('lock');
-        })
+      descriptionMobileBtn.addEventListener("click", function () {
+         modalDescription.classList.add("active");
+         document.body.classList.add("lock");
+      });
+   }
 
-        // мобилка
-        const questionMobileBtn = document.querySelector('.product__right-card__left-actions-question');
-        questionMobileBtn.addEventListener('click', function () {
-            modalQuestion.classList.add('active');
-            document.body.classList.add('lock');
-        })
-    }
+   // модалка задать вопрос на Странице товара ()
+   if (document.querySelector(".modal-question")) {
+      // десктоп
+      const modalQuestion = document.querySelector(".modal-question");
 
-    // обрезать кол-во символов на странице Поиск в результатах
+      const questionBtn = document.querySelector(".product__right-card__right-actions-question");
 
-    if (document.querySelector('.search-main__list-item__description')) {
-        const descriptions = document.querySelectorAll('.search-main__list-item__description');
-        for (let i = 0; i < descriptions.length; i++) {
-            if (descriptions[i].innerText.length > 228) {
-                descriptions[i].innerText = descriptions[i].innerText.substring(0, 228);
-                descriptions[i].innerText += '...';
-            }
-        }
-    }
+      questionBtn.addEventListener("click", function () {
+         modalQuestion.classList.add("active");
+         document.body.classList.add("lock");
+      });
 
-    // обрезать кол-во слов в моб версии на странице Отзывы
+      const modalCloseBtn = document.querySelector(".modal-question .modal__close-btn");
+      modalCloseBtn.addEventListener("click", function () {
+         modalQuestion.classList.remove("active");
+         document.body.classList.remove("lock");
+      });
 
-    if (document.querySelector('.reviews-main__list-item__description') && window.innerWidth <= 768) {
-        const reviews = document.querySelectorAll('.reviews-main__list-item__description');
-        for (let i = 0; i < reviews.length; i++) {
-            let count = 0;
-            const splittedReview = reviews[i].innerText.split(' ');
-            for (let i = 0; i < splittedReview.length; i++) {
-                if (splittedReview[i] != '') count += 1;
-            }
-            if (count > 9) {
-                reviews[i].innerText = reviews[i].innerText.split(splittedReview[9])[0];
-            }
-        }
-    }
+      // мобилка
+      const questionMobileBtn = document.querySelector(".product__right-card__left-actions-question");
+      questionMobileBtn.addEventListener("click", function () {
+         modalQuestion.classList.add("active");
+         document.body.classList.add("lock");
+      });
+   }
 
-    // модалка с фотками
+   // обрезать кол-во символов на странице Поиск в результатах
 
+   if (document.querySelector(".search-main__list-item__description")) {
+      const descriptions = document.querySelectorAll(".search-main__list-item__description");
+      for (let i = 0; i < descriptions.length; i++) {
+         if (descriptions[i].innerText.length > 228) {
+            descriptions[i].innerText = descriptions[i].innerText.substring(0, 228);
+            descriptions[i].innerText += "...";
+         }
+      }
+   }
 
-    if (document.querySelector('.project-page-main__right-block__img')) {
+   // обрезать кол-во слов в моб версии на странице Отзывы
 
-        const photoModal = document.querySelector('.popup__photo');
-        const photoModalClose = photoModal.querySelector('.popup__close');
+   if (document.querySelector(".reviews-main__list-item__description") && window.innerWidth <= 768) {
+      const reviews = document.querySelectorAll(".reviews-main__list-item__description");
+      for (let i = 0; i < reviews.length; i++) {
+         let count = 0;
+         const splittedReview = reviews[i].innerText.split(" ");
+         for (let i = 0; i < splittedReview.length; i++) {
+            if (splittedReview[i] != "") count += 1;
+         }
+         if (count > 9) {
+            reviews[i].innerText = reviews[i].innerText.split(splittedReview[9])[0];
+         }
+      }
+   }
 
-        photoModalClose.addEventListener('click', function () {
-            photoModal.classList.remove('active');
-            document.body.classList.remove('lock');
-        })
+   // модалка с фотками
 
-        const swiperPhoto = photoModal.querySelector('.popup__photo-swiper');
+   if (document.querySelector(".project-page-main__right-block__img")) {
+      const photoModal = document.querySelector(".popup__photo");
+      const photoModalClose = photoModal.querySelector(".popup__close");
 
-        const projectPhotos = document.querySelectorAll('.project-page-main__right-block__img');
-        projectPhotos.forEach(photo => {
-            photo.addEventListener('click', function (e) {
-                const number = e.target.dataset.number;
-                console.log(swiperPhoto.swiper);
-                swiperPhoto.swiper.slideTo(number);
-                photoModal.classList.add('active');
-                document.body.classList.add('lock');
+      photoModalClose.addEventListener("click", function () {
+         photoModal.classList.remove("active");
+         document.body.classList.remove("lock");
+      });
 
-            })
-        })
-    }
-})
+      const swiperPhoto = photoModal.querySelector(".popup__photo-swiper");
+
+      const projectPhotos = document.querySelectorAll(".project-page-main__right-block__img");
+      projectPhotos.forEach((photo) => {
+         photo.addEventListener("click", function (e) {
+            const number = e.target.dataset.number;
+            console.log(swiperPhoto.swiper);
+            swiperPhoto.swiper.slideTo(number);
+            photoModal.classList.add("active");
+            document.body.classList.add("lock");
+         });
+      });
+   }
+
+   // Проверка есть ли в категориях вложенные списки
+
+   if (document.querySelector(".catalog__categories-accordion.accordion")) {
+      // Массив из заголовков на всех уровнях вложенности
+
+      const accItems = [
+         ...document.querySelectorAll(".catalog__categories-accordion__item-head"),
+         ...document.querySelectorAll(".catalog__categories-accordion__item-sublist-item-head"),
+         ...document.querySelectorAll(".catalog__categories-accordion__item-sublist-item-sublist-item-head"),
+         ...document.querySelectorAll(
+            ".catalog__categories-accordion__item-sublist-item-sublist-item-sublist-item-head"
+         ),
+      ];
+
+      accItems.forEach((item) => {
+         if (!item.nextElementSibling) {
+            item.querySelector("button").style.display = "none";
+         }
+      });
+   }
+});

@@ -153,6 +153,10 @@
             &-sublist-item-sublist-item {
                 width: 100%;
 
+                &:not(:last-child) {
+                    margin-bottom: 2.4rem;
+                }
+
                 &.acc_active {
                     & > .acc_head {
                         color: #e30613;
@@ -178,7 +182,7 @@
                     p {
                         font-size: 1.6rem;
                         font-weight: 350;
-                        line-height: 4rem;
+                        line-height: 1.6rem;
                     }
 
                     button {
@@ -189,12 +193,16 @@
                 }
 
                 &-content {
-                    margin-top: 0.5rem;
+                    margin-top: 1rem;
                 }
 
                 &-sublist {
                     &-item {
                         width: 100%;
+
+                        &:not(:last-child) {
+                            margin-bottom: 2.4rem;
+                        }
 
                         &.acc_active {
                             & > .acc_head {
@@ -221,7 +229,7 @@
                             p {
                                 font-size: 1.6rem;
                                 font-weight: 350;
-                                line-height: 4rem;
+                                line-height: 1.6rem;
                             }
         
                             button {
@@ -232,13 +240,17 @@
                         }
 
                         &-sublist {
-                            margin-top: 0.5rem;
+                            margin-top: 1rem;
 
                             li {
                                 font-size: 1.6rem;
                                 font-weight: 350;
-                                line-height: 4rem; /* 250% */
+                                line-height: 1.6rem; /* 250% */
                                 cursor: pointer;
+
+                                &:not(:last-child) {
+                                    margin-bottom: 2.4rem;
+                                }
 
                                 &:hover,
                                 &:focus {
@@ -281,19 +293,36 @@
                 }
 
                 &-content {
-                    .catalog__categories-accordion__item-sublist-item-head p,
-                    .catalog__categories-accordion__item-sublist-item-content-list-item a {
-                        font-size: 3.2rem;
-                        line-height: 8rem;
-                        width: 49rem;
+                    .catalog__categories-accordion__item-sublist-item:last-child,
+                    .catalog__categories-accordion__item-sublist-item:not(:last-child) {
+                        margin-top: 3rem;
+
+                        &:not(:last-child) {
+                            margin-bottom: 4.8rem;
+                        }
+
+                        .catalog__categories-accordion__item-sublist-item-head p,
+                        .catalog__categories-accordion__item-sublist-item-content-list-item a {
+                            font-size: 3.2rem;
+                            line-height: 3.2rem;
+                            width: 49rem;
+                        }
+                    }
+
+                    .catalog__categories-accordion__item-sublist-item-content {
+                        margin-top: 3rem;
                     }
                 }
 
                 &-sublist-item-sublist-item {
+                    &:not(:last-child) {
+                        margin-bottom: 4.8rem;
+                    }
+
                     &-head {
                         p {
                             font-size: 3.2rem;
-                            line-height: 8rem;
+                            line-height: 3.2rem;
                         }
 
                         button {
@@ -303,13 +332,21 @@
                             }
                         }
                     }
+
+                    &-content {
+                        margin-top: 3rem;
+                    }
     
                     &-sublist {
                         &-item {
+                            &:not(:last-child) {
+                                margin-bottom: 4.8rem;
+                            }
+
                             &-head {
                                 p {
                                     font-size: 3.2rem;
-                                    line-height: 8rem;
+                                    line-height: 3.2rem;
                                 }
 
                                 button {
@@ -319,11 +356,21 @@
                                     }
                                 }
                             }
+
+                            &-content {
+                                margin-top: 3rem;
+                            }
     
                             &-sublist {
+                                margin-top: 3rem;
+
                                 li {
                                     font-size: 3.2rem;
-                                    line-height: 8rem;
+                                    line-height: 3.2rem;
+
+                                    &:not(:last-child) {
+                                        margin-bottom: 4.8rem;
+                                    }
                                 }
                             }
                         }

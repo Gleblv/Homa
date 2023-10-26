@@ -23,6 +23,37 @@
         width: 108rem;
         border-left: 1px solid #e8e8e8;
 
+        &-article {
+            margin-bottom: 6rem;
+
+            &__title {
+                font-size: 4.5rem;
+                font-weight: 700;
+                line-height: 7rem; /* 155.556% */
+                margin-bottom: 1.8rem;
+            }
+
+            &__img {
+                width: 80rem;
+                height: 40.7rem;
+                margin: 0 auto 6rem auto;
+
+                img {
+                    width: 80rem;
+                    height: 40.7rem;
+                }
+            }
+
+            &__text {
+                font-size: 1.8rem;
+                line-height: 140%; /* 2.52rem */
+                
+                &:not(:last-child) {
+                    margin-bottom: 6rem;
+                }
+            }
+        }
+
         &-list {
             margin-bottom: 11rem;
             display: flex;

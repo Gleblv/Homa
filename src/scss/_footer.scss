@@ -15,11 +15,13 @@
         &-logo {
             display: inline-block;
             margin-bottom: 1.2rem;
+            mix-blend-mode: darken;
 
             img {
                 width: 27.6rem;
                 height: 7.2rem;
                 object-fit: contain;
+                mix-blend-mode: darken;
             }
         }
 

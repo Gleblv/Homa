@@ -23,6 +23,10 @@
         width: 108rem;
         border-left: 1px solid #e8e8e8;
 
+        .catalog__right-list {
+            margin-left: -3.9rem;
+        }
+
         &-article {
             margin-bottom: 6rem;
 
@@ -437,6 +441,10 @@
             padding-bottom: 20rem;
             width: auto;
 
+            .catalog__right-list {
+                margin-left: 0rem;
+            }
+
             &-article {
                 margin-bottom: 17.25rem;
 
@@ -650,6 +658,10 @@
             padding-left: 0;
             width: 100%;
             border-left: none;
+
+            .catalog__right-list {
+                margin-left: 0rem;
+            }
 
             &-article {
                 margin-bottom: 16.36rem;

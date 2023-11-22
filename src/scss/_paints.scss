@@ -351,6 +351,38 @@
                 }
             }
         }
+
+        .catalog__categories {
+            width: 59.2rem;
+        }
+
+        .sorting-select__container {
+            top: -10.4rem;
+
+            & > span {
+                font-size: 2.8rem;
+                line-height: 4.8rem; /* 171.429% */
+                letter-spacing: 0.14rem;
+            }
+
+            .choices {
+                &::before {
+                    top: 2.8rem;
+                    width: 2.2rem;
+                    height: 1rem;
+                }
+            }
+
+            .choices__item {
+                font-size: 2.8rem;
+                line-height: 4.8rem;
+                letter-spacing: 0.14rem;
+            }
+
+            .choices__list {
+                z-index: 10;
+            }
+        }
     }
 
     @media (max-width:48em) {

@@ -1,927 +1,1532 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="fonts/fonts.css" />
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="css/choices.min.css" />
+      <link rel="stylesheet" href="css/main.css" />
+      <title>Пресс-центр</title>
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fonts/fonts.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/choices.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Пресс-центр</title>
-</head>
-
-<body>
-    @@include('./templates/header.html')
-    <main>
-        <section class="press-hero hero">
+   <body>
+      @@include('./templates/header.html')
+      <main>
+         <section class="press-hero hero">
             <div class="container">
-                <ul class="hero__breadcrumbs">
-                    <li class="hero__breadcrumbs-item">
-                        <a href="#" class="hero__breadcrumbs-item__link">Главная</a>
-                    </li>
-                    <li class="hero__breadcrumbs-item">
-                        <a href="#" class="hero__breadcrumbs-item__link">Пресс-центр</a>
-                    </li>
-                </ul>
-                <p class="hero__heading">Пресс-центр</p>
+               <ul class="hero__breadcrumbs">
+                  <li class="hero__breadcrumbs-item">
+                     <a href="#" class="hero__breadcrumbs-item__link">Главная</a>
+                  </li>
+                  <li class="hero__breadcrumbs-item">
+                     <a href="#" class="hero__breadcrumbs-item__link">Пресс-центр</a>
+                  </li>
+               </ul>
+               <p class="hero__heading">Пресс-центр</p>
             </div>
-        </section>
-        <section class="press-main">
+         </section>
+         <section class="press-main">
             <div class="container">
-                <div class="press-main__left">
-                    <ul class="press-main__left-list">
-                        <li class="press-main__left-list__item">
-                            <a href="#experts" class="press-main__left-list__item-btn">Эксперты</a>
-                        </li>
-                        <li class="press-main__left-list__item">
-                            <a href="#media" class="press-main__left-list__item-btn">Контакты для
-                                СМИ</a>
-                        </li>
-                        <li class="press-main__left-list__item">
-                            <a href="#materials" class="press-main__left-list__item-btn">Материалы для
-                                скачивания</a>
-                        </li>
-                        <li class="press-main__left-list__item">
-                            <a href="#poligraphy" class="press-main__left-list__item-btn">Полиграфия</a>
-                        </li>
-                        <li class="press-main__left-list__item">
-                            <a href="#photo" class="press-main__left-list__item-btn">Фотографии для
-                                публикаций</a>
-                        </li>
-                        <li class="press-main__left-list__item">
-                            <a href="#about" class="press-main__left-list__item-btn">СМИ о нас</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="press-main__right">
-                    <div class="press-main__right-experts" id="experts">
-                        <p class="press-main__right-heading">Эксперты</p>
-                        <div class="swiper-container press-main__experts">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide press-main__experts-slide">
-                                    <img src="./images/experts-img1.png" alt="" class="press-main__experts-slide__img">
-                                    <div class="press-main__experts-slide__text">
-                                        <p class="press-main__experts-slide__name">Торочкин Антон Геннадьевич</p>
-                                        <p class="press-main__experts-slide__post desktop">Менеджер</p>
-                                        <p class="press-main__experts-slide__duties">Отвечает на вопросы в области:</p>
-                                        <p class="press-main__experts-slide__category">Полимерных дисперсий </p>
-                                        <a href="#" class="press-main__experts-slide__link link">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <span>Задать вопрос</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__experts-slide">
-                                    <img src="./images/experts-img2.png" alt="" class="press-main__experts-slide__img">
-                                    <div class="press-main__experts-slide__text">
-                                        <p class="press-main__experts-slide__name">Шмакова Светлана</p>
-                                        <p class="press-main__experts-slide__post desktop">Менеджер</p>
-                                        <p class="press-main__experts-slide__duties">Отвечает на вопросы в области:</p>
-                                        <p class="press-main__experts-slide__category">Полимерных дисперсий </p>
-                                        <a href="#" class="press-main__experts-slide__link">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <span>Задать вопрос</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__experts-slide">
-                                    <img src="./images/experts-img3.png" alt="" class="press-main__experts-slide__img">
-                                    <div class="press-main__experts-slide__text">
-                                        <p class="press-main__experts-slide__name">Парфенова Евгения</p>
-                                        <p class="press-main__experts-slide__post desktop">Менеджер</p>
-                                        <p class="press-main__experts-slide__duties">Отвечает на вопросы в области:</p>
-                                        <p class="press-main__experts-slide__category">Полимерных дисперсий </p>
-                                        <a href="#" class="press-main__experts-slide__link">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <span>Задать вопрос</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__experts-slide">
-                                    <img src="./images/experts-img1.png" alt="" class="press-main__experts-slide__img">
-                                    <div class="press-main__experts-slide__text">
-                                        <p class="press-main__experts-slide__name">Торочкин Антон Геннадьевич</p>
-                                        <p class="press-main__experts-slide__post desktop">Менеджер</p>
-                                        <p class="press-main__experts-slide__duties">Отвечает на вопросы в области:</p>
-                                        <p class="press-main__experts-slide__category">Полимерных дисперсий </p>
-                                        <a href="#" class="press-main__experts-slide__link">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <span>Задать вопрос</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__experts-slide">
-                                    <img src="./images/experts-img2.png" alt="" class="press-main__experts-slide__img">
-                                    <div class="press-main__experts-slide__text">
-                                        <p class="press-main__experts-slide__name">Шмакова Светлана</p>
-                                        <p class="press-main__experts-slide__post desktop">Менеджер</p>
-                                        <p class="press-main__experts-slide__duties">Отвечает на вопросы в области:</p>
-                                        <p class="press-main__experts-slide__category">Полимерных дисперсий </p>
-                                        <a href="#" class="press-main__experts-slide__link">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <span>Задать вопрос</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__experts-slide">
-                                    <img src="./images/experts-img3.png" alt="" class="press-main__experts-slide__img">
-                                    <div class="press-main__experts-slide__text">
-                                        <p class="press-main__experts-slide__name">Парфенова Евгения</p>
-                                        <p class="press-main__experts-slide__post desktop">Менеджер</p>
-                                        <p class="press-main__experts-slide__duties">Отвечает на вопросы в области:</p>
-                                        <p class="press-main__experts-slide__category">Полимерных дисперсий </p>
-                                        <a href="#" class="press-main__experts-slide__link">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E30613"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <span>Задать вопрос</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper__controls">
-                            <div class="swiper__controls__prev press-main__experts-prev">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
-                            <div class="swiper__controls__pagination press-main__experts-pagination"></div>
-                            <div class="swiper__controls__next press-main__experts-next">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="press-main__right-media" id="media">
-                        <p class="press-main__right-heading">Контакты для СМИ</p>
-                        <div class="swiper-container press-main__media">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide press-main__media-slide">
-                                    <img src="./images/experts-img1.png" alt="" class="press-main__media-slide__img">
-                                    <div class="press-main__media-slide__text">
-                                        <p class="press-main__media-slide__name">Торочкин Антон Геннадьевич</p>
-                                        <p class="press-main__media-slide__post desktop">Менеджер</p>
-                                        <div>
-                                            <p class="press-main__media-slide__email">e-mail:</p>
-                                            <a href="mailto:torochkin-a@homa.ru"
-                                                class="press-main__media-slide__email-link">torochkin-a@homa.ru</a>
-                                        </div>
-                                        <div>
-                                            <p class="press-main__media-slide__tel">тел.:</p>
-                                            <a href="tel:+74951897397p685" class="press-main__media-slide__tel-link">+7
-                                                (495) 189-73-97 доб. 685</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__media-slide">
-                                    <img src="./images/experts-img2.png" alt="" class="press-main__media-slide__img">
-                                    <div class="press-main__media-slide__text">
-                                        <p class="press-main__media-slide__name">Шмакова Светлана</p>
-                                        <p class="press-main__media-slide__post desktop">Менеджер</p>
-                                        <div>
-                                            <p class="press-main__media-slide__email">e-mail:</p>
-                                            <a href="mailto:shmakova-s@homa.ru"
-                                                class="press-main__media-slide__email-link">shmakova-s@homa.ru</a>
-                                        </div>
-                                        <div>
-                                            <p class="press-main__media-slide__tel">тел.:</p>
-                                            <a href="tel:+74951897734p622" class="press-main__media-slide__tel-link">+7
-                                                (495) 189-77-34, доб. 622</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__media-slide">
-                                    <img src="./images/experts-img3.png" alt="" class="press-main__media-slide__img">
-                                    <div class="press-main__media-slide__text">
-                                        <p class="press-main__media-slide__name">Парфенова Евгения</p>
-                                        <p class="press-main__media-slide__post desktop">Менеджер</p>
-                                        <div>
-                                            <p class="press-main__media-slide__email">e-mail:</p>
-                                            <a href="mailto:parfenova-e@homa.ru"
-                                                class="press-main__media-slide__email-link">parfenova-e@homa.ru</a>
-                                        </div>
-                                        <div>
-                                            <p class="press-main__media-slide__tel">тел.:</p>
-                                            <a href="tel:+74951897734p695" class="press-main__media-slide__tel-link">+7
-                                                (495) 189-77-34, доб. 695</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__media-slide">
-                                    <img src="./images/experts-img1.png" alt="" class="press-main__media-slide__img">
-                                    <div class="press-main__media-slide__text">
-                                        <p class="press-main__media-slide__name">Торочкин Антон Геннадьевич</p>
-                                        <p class="press-main__media-slide__post desktop">Менеджер</p>
-                                        <div>
-                                            <p class="press-main__media-slide__email">e-mail:</p>
-                                            <a href="mailto:torochkin-a@homa.ru"
-                                                class="press-main__media-slide__email-link">torochkin-a@homa.ru</a>
-                                        </div>
-                                        <div>
-                                            <p class="press-main__media-slide__tel">тел.:</p>
-                                            <a href="tel:+74951897397p685" class="press-main__media-slide__tel-link">+7
-                                                (495) 189-73-97 доб. 685</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__media-slide">
-                                    <img src="./images/experts-img2.png" alt="" class="press-main__media-slide__img">
-                                    <div class="press-main__media-slide__text">
-                                        <p class="press-main__media-slide__name">Шмакова Светлана</p>
-                                        <p class="press-main__media-slide__post desktop">Менеджер</p>
-                                        <div>
-                                            <p class="press-main__media-slide__email">e-mail:</p>
-                                            <a href="mailto:shmakova-s@homa.ru"
-                                                class="press-main__media-slide__email-link">shmakova-s@homa.ru</a>
-                                        </div>
-                                        <div>
-                                            <p class="press-main__media-slide__tel">тел.:</p>
-                                            <a href="tel:+74951897734p622" class="press-main__media-slide__tel-link">+7
-                                                (495) 189-77-34, доб. 622</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide press-main__media-slide">
-                                    <img src="./images/experts-img3.png" alt="" class="press-main__media-slide__img">
-                                    <div class="press-main__media-slide__text">
-                                        <p class="press-main__media-slide__name">Парфенова Евгения</p>
-                                        <p class="press-main__media-slide__post desktop">Менеджер</p>
-                                        <div>
-                                            <p class="press-main__media-slide__email">e-mail:</p>
-                                            <a href="mailto:parfenova-e@homa.ru"
-                                                class="press-main__media-slide__email-link">parfenova-e@homa.ru</a>
-                                        </div>
-                                        <div>
-                                            <p class="press-main__media-slide__tel">тел.:</p>
-                                            <a href="tel:+74951897734p695" class="press-main__media-slide__tel-link">+7
-                                                (495) 189-77-34, доб. 695</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper__controls">
-                            <div class="swiper__controls__prev press-main__media-prev">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
-                            <div class="swiper__controls__pagination press-main__media-pagination"></div>
-                            <div class="swiper__controls__next press-main__media-next">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="press-main__right-materials" id="materials">
-                        <p class="press-main__right-heading">Материалы для скачивания</p>
-                        <ul class="press-main__right-materials__list">
-                            <li class="press-main__right-materials__list-item">
-                                <div class="press-main__right-materials__list-item-img">
-                                    <img src="./images/notebook.png" alt="" id="notebook">
-                                </div>
-                                <p class="press-main__right-materials__list-item-heading">Логотип
-                                    для&nbsp;использования&nbsp;на&nbsp;ПК</p>
-                                <a href="#" download class="press-main__right-materials__list-item-link">
-                                    <span>Скачать</span>
-                                    <svg width="17" height="21" viewBox="0 0 17 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 10.1251V20.1621H8.5H17V12.4284V4.69472L14.6219 2.39143L12.2438 0.0881348H6.1219H0V10.1251ZM13.6909 3.25394L15.7048 5.20433V12.0755V18.9467H8.5H1.29524V10.1251V1.30355H6.48615H11.6771L13.6909 3.25394ZM7.85238 9.37011V12.1829L6.79996 11.1641L5.74754 10.1452L5.30238 10.5764L4.85718 11.0077L6.67861 12.7716L8.5 14.5356L10.3214 12.7716L12.1428 11.0077L11.6976 10.5764L11.2525 10.1452L10.2 11.1641L9.14762 12.1829V9.37011V6.55729H8.5H7.85238V9.37011Z"
-                                            fill="#E30613" />
+               <div class="press-main__left">
+                  <ul class="press-main__left-list">
+                     <li class="press-main__left-list__item">
+                        <a href="#experts" class="press-main__left-list__item-btn">Эксперты</a>
+                     </li>
+                     <li class="press-main__left-list__item">
+                        <a href="#media" class="press-main__left-list__item-btn">Контакты для СМИ</a>
+                     </li>
+                     <li class="press-main__left-list__item">
+                        <a href="#materials" class="press-main__left-list__item-btn"
+                           >Материалы для скачивания</a
+                        >
+                     </li>
+                     <li class="press-main__left-list__item">
+                        <a href="#poligraphy" class="press-main__left-list__item-btn">Полиграфия</a>
+                     </li>
+                     <li class="press-main__left-list__item">
+                        <a href="#photo" class="press-main__left-list__item-btn">Фотографии для публикаций</a>
+                     </li>
+                     <li class="press-main__left-list__item">
+                        <a href="#about" class="press-main__left-list__item-btn">СМИ о нас</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="press-main__right">
+                  <div class="press-main__right-experts" id="experts">
+                     <p class="press-main__right-heading">Эксперты</p>
+                     <div class="swiper-container press-main__experts">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide press-main__experts-slide">
+                              <img
+                                 src="./images/experts-img1.png"
+                                 alt=""
+                                 class="press-main__experts-slide__img"
+                              />
+                              <div class="press-main__experts-slide__text">
+                                 <p class="press-main__experts-slide__name">Торочкин Антон Геннадьевич</p>
+                                 <p class="press-main__experts-slide__post desktop">Менеджер</p>
+                                 <p class="press-main__experts-slide__duties">
+                                    Отвечает на вопросы в области:
+                                 </p>
+                                 <p class="press-main__experts-slide__category">Полимерных дисперсий</p>
+                                 <a href="#" class="press-main__experts-slide__link link">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E30613"
+                                          stroke-width="2"
+                                       />
                                     </svg>
-                                </a>
-                            </li>
-                            <li class="press-main__right-materials__list-item">
-                                <div class="press-main__right-materials__list-item-img">
-                                    <img src="./images/poster.png" alt="" id="poster">
-                                </div>
-                                <p class="press-main__right-materials__list-item-heading">Логотип для печати</p>
-                                <a href="#" download class="press-main__right-materials__list-item-link">
-                                    <span>Скачать</span>
-                                    <svg width="17" height="21" viewBox="0 0 17 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 10.1251V20.1621H8.5H17V12.4284V4.69472L14.6219 2.39143L12.2438 0.0881348H6.1219H0V10.1251ZM13.6909 3.25394L15.7048 5.20433V12.0755V18.9467H8.5H1.29524V10.1251V1.30355H6.48615H11.6771L13.6909 3.25394ZM7.85238 9.37011V12.1829L6.79996 11.1641L5.74754 10.1452L5.30238 10.5764L4.85718 11.0077L6.67861 12.7716L8.5 14.5356L10.3214 12.7716L12.1428 11.0077L11.6976 10.5764L11.2525 10.1452L10.2 11.1641L9.14762 12.1829V9.37011V6.55729H8.5H7.85238V9.37011Z"
-                                            fill="#E30613" />
+                                    <span>Задать вопрос</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
                                     </svg>
-                                </a>
-                            </li>
-                            <li class="press-main__right-materials__list-item">
-                                <div class="press-main__right-materials__list-item-img">
-                                    <img src="./images/brandbook.png" alt="" id="brandbook">
-                                </div>
-                                <p class="press-main__right-materials__list-item-heading">Брендбук
-                                    (как&nbsp;использовать&nbsp;логотип)</p>
-                                <a href="#" download class="press-main__right-materials__list-item-link">
-                                    <span>Скачать</span>
-                                    <svg width="17" height="21" viewBox="0 0 17 21" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M0 10.1251V20.1621H8.5H17V12.4284V4.69472L14.6219 2.39143L12.2438 0.0881348H6.1219H0V10.1251ZM13.6909 3.25394L15.7048 5.20433V12.0755V18.9467H8.5H1.29524V10.1251V1.30355H6.48615H11.6771L13.6909 3.25394ZM7.85238 9.37011V12.1829L6.79996 11.1641L5.74754 10.1452L5.30238 10.5764L4.85718 11.0077L6.67861 12.7716L8.5 14.5356L10.3214 12.7716L12.1428 11.0077L11.6976 10.5764L11.2525 10.1452L10.2 11.1641L9.14762 12.1829V9.37011V6.55729H8.5H7.85238V9.37011Z"
-                                            fill="#E30613" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__experts-slide">
+                              <img
+                                 src="./images/experts-img2.png"
+                                 alt=""
+                                 class="press-main__experts-slide__img"
+                              />
+                              <div class="press-main__experts-slide__text">
+                                 <p class="press-main__experts-slide__name">Шмакова Светлана</p>
+                                 <p class="press-main__experts-slide__post desktop">Менеджер</p>
+                                 <p class="press-main__experts-slide__duties">
+                                    Отвечает на вопросы в области:
+                                 </p>
+                                 <p class="press-main__experts-slide__category">Полимерных дисперсий</p>
+                                 <a href="#" class="press-main__experts-slide__link">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E30613"
+                                          stroke-width="2"
+                                       />
                                     </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                                    <span>Задать вопрос</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__experts-slide">
+                              <img
+                                 src="./images/experts-img3.png"
+                                 alt=""
+                                 class="press-main__experts-slide__img"
+                              />
+                              <div class="press-main__experts-slide__text">
+                                 <p class="press-main__experts-slide__name">Парфенова Евгения</p>
+                                 <p class="press-main__experts-slide__post desktop">Менеджер</p>
+                                 <p class="press-main__experts-slide__duties">
+                                    Отвечает на вопросы в области:
+                                 </p>
+                                 <p class="press-main__experts-slide__category">Полимерных дисперсий</p>
+                                 <a href="#" class="press-main__experts-slide__link">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E30613"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <span>Задать вопрос</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__experts-slide">
+                              <img
+                                 src="./images/experts-img1.png"
+                                 alt=""
+                                 class="press-main__experts-slide__img"
+                              />
+                              <div class="press-main__experts-slide__text">
+                                 <p class="press-main__experts-slide__name">Торочкин Антон Геннадьевич</p>
+                                 <p class="press-main__experts-slide__post desktop">Менеджер</p>
+                                 <p class="press-main__experts-slide__duties">
+                                    Отвечает на вопросы в области:
+                                 </p>
+                                 <p class="press-main__experts-slide__category">Полимерных дисперсий</p>
+                                 <a href="#" class="press-main__experts-slide__link">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E30613"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <span>Задать вопрос</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__experts-slide">
+                              <img
+                                 src="./images/experts-img2.png"
+                                 alt=""
+                                 class="press-main__experts-slide__img"
+                              />
+                              <div class="press-main__experts-slide__text">
+                                 <p class="press-main__experts-slide__name">Шмакова Светлана</p>
+                                 <p class="press-main__experts-slide__post desktop">Менеджер</p>
+                                 <p class="press-main__experts-slide__duties">
+                                    Отвечает на вопросы в области:
+                                 </p>
+                                 <p class="press-main__experts-slide__category">Полимерных дисперсий</p>
+                                 <a href="#" class="press-main__experts-slide__link">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E30613"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <span>Задать вопрос</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__experts-slide">
+                              <img
+                                 src="./images/experts-img3.png"
+                                 alt=""
+                                 class="press-main__experts-slide__img"
+                              />
+                              <div class="press-main__experts-slide__text">
+                                 <p class="press-main__experts-slide__name">Парфенова Евгения</p>
+                                 <p class="press-main__experts-slide__post desktop">Менеджер</p>
+                                 <p class="press-main__experts-slide__duties">
+                                    Отвечает на вопросы в области:
+                                 </p>
+                                 <p class="press-main__experts-slide__category">Полимерных дисперсий</p>
+                                 <a href="#" class="press-main__experts-slide__link">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E30613"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <span>Задать вопрос</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper__controls">
+                        <div class="swiper__controls__prev press-main__experts-prev">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
+                        </div>
+                        <div class="swiper__controls__pagination press-main__experts-pagination"></div>
+                        <div class="swiper__controls__next press-main__experts-next">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
+                        </div>
+                     </div>
+                  </div>
 
-                    <div class="press-main__right-poligraphy" id="poligraphy">
-                        <div class="press-main__right-poligraphy__top">
-                            <p class="press-main__right-poligraphy__top-heading press-main__right-heading">Полиграфия
-                            </p>
-                            <a href="#" class="press-main__right-poligraphy__top-link link">
-                                <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E3E3E3"
-                                        stroke-width="2" />
-                                </svg>
-                                <span>Все материалы</span>
-                                <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                  <div class="press-main__right-media" id="media">
+                     <p class="press-main__right-heading">Контакты для СМИ</p>
+                     <div class="swiper-container press-main__media">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide press-main__media-slide">
+                              <img
+                                 src="./images/experts-img1.png"
+                                 alt=""
+                                 class="press-main__media-slide__img"
+                              />
+                              <div class="press-main__media-slide__text">
+                                 <p class="press-main__media-slide__name">Торочкин Антон Геннадьевич</p>
+                                 <p class="press-main__media-slide__post desktop">Менеджер</p>
+                                 <div>
+                                    <p class="press-main__media-slide__email">e-mail:</p>
+                                    <a
+                                       href="mailto:torochkin-a@homa.ru"
+                                       class="press-main__media-slide__email-link"
+                                       >torochkin-a@homa.ru</a
+                                    >
+                                 </div>
+                                 <div>
+                                    <p class="press-main__media-slide__tel">тел.:</p>
+                                    <a href="tel:+74951897397p685" class="press-main__media-slide__tel-link"
+                                       >+7 (495) 189-73-97 доб. 685</a
+                                    >
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__media-slide">
+                              <img
+                                 src="./images/experts-img2.png"
+                                 alt=""
+                                 class="press-main__media-slide__img"
+                              />
+                              <div class="press-main__media-slide__text">
+                                 <p class="press-main__media-slide__name">Шмакова Светлана</p>
+                                 <p class="press-main__media-slide__post desktop">Менеджер</p>
+                                 <div>
+                                    <p class="press-main__media-slide__email">e-mail:</p>
+                                    <a
+                                       href="mailto:shmakova-s@homa.ru"
+                                       class="press-main__media-slide__email-link"
+                                       >shmakova-s@homa.ru</a
+                                    >
+                                 </div>
+                                 <div>
+                                    <p class="press-main__media-slide__tel">тел.:</p>
+                                    <a href="tel:+74951897734p622" class="press-main__media-slide__tel-link"
+                                       >+7 (495) 189-77-34, доб. 622</a
+                                    >
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__media-slide">
+                              <img
+                                 src="./images/experts-img3.png"
+                                 alt=""
+                                 class="press-main__media-slide__img"
+                              />
+                              <div class="press-main__media-slide__text">
+                                 <p class="press-main__media-slide__name">Парфенова Евгения</p>
+                                 <p class="press-main__media-slide__post desktop">Менеджер</p>
+                                 <div>
+                                    <p class="press-main__media-slide__email">e-mail:</p>
+                                    <a
+                                       href="mailto:parfenova-e@homa.ru"
+                                       class="press-main__media-slide__email-link"
+                                       >parfenova-e@homa.ru</a
+                                    >
+                                 </div>
+                                 <div>
+                                    <p class="press-main__media-slide__tel">тел.:</p>
+                                    <a href="tel:+74951897734p695" class="press-main__media-slide__tel-link"
+                                       >+7 (495) 189-77-34, доб. 695</a
+                                    >
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__media-slide">
+                              <img
+                                 src="./images/experts-img1.png"
+                                 alt=""
+                                 class="press-main__media-slide__img"
+                              />
+                              <div class="press-main__media-slide__text">
+                                 <p class="press-main__media-slide__name">Торочкин Антон Геннадьевич</p>
+                                 <p class="press-main__media-slide__post desktop">Менеджер</p>
+                                 <div>
+                                    <p class="press-main__media-slide__email">e-mail:</p>
+                                    <a
+                                       href="mailto:torochkin-a@homa.ru"
+                                       class="press-main__media-slide__email-link"
+                                       >torochkin-a@homa.ru</a
+                                    >
+                                 </div>
+                                 <div>
+                                    <p class="press-main__media-slide__tel">тел.:</p>
+                                    <a href="tel:+74951897397p685" class="press-main__media-slide__tel-link"
+                                       >+7 (495) 189-73-97 доб. 685</a
+                                    >
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__media-slide">
+                              <img
+                                 src="./images/experts-img2.png"
+                                 alt=""
+                                 class="press-main__media-slide__img"
+                              />
+                              <div class="press-main__media-slide__text">
+                                 <p class="press-main__media-slide__name">Шмакова Светлана</p>
+                                 <p class="press-main__media-slide__post desktop">Менеджер</p>
+                                 <div>
+                                    <p class="press-main__media-slide__email">e-mail:</p>
+                                    <a
+                                       href="mailto:shmakova-s@homa.ru"
+                                       class="press-main__media-slide__email-link"
+                                       >shmakova-s@homa.ru</a
+                                    >
+                                 </div>
+                                 <div>
+                                    <p class="press-main__media-slide__tel">тел.:</p>
+                                    <a href="tel:+74951897734p622" class="press-main__media-slide__tel-link"
+                                       >+7 (495) 189-77-34, доб. 622</a
+                                    >
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="swiper-slide press-main__media-slide">
+                              <img
+                                 src="./images/experts-img3.png"
+                                 alt=""
+                                 class="press-main__media-slide__img"
+                              />
+                              <div class="press-main__media-slide__text">
+                                 <p class="press-main__media-slide__name">Парфенова Евгения</p>
+                                 <p class="press-main__media-slide__post desktop">Менеджер</p>
+                                 <div>
+                                    <p class="press-main__media-slide__email">e-mail:</p>
+                                    <a
+                                       href="mailto:parfenova-e@homa.ru"
+                                       class="press-main__media-slide__email-link"
+                                       >parfenova-e@homa.ru</a
+                                    >
+                                 </div>
+                                 <div>
+                                    <p class="press-main__media-slide__tel">тел.:</p>
+                                    <a href="tel:+74951897734p695" class="press-main__media-slide__tel-link"
+                                       >+7 (495) 189-77-34, доб. 695</a
+                                    >
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper__controls">
+                        <div class="swiper__controls__prev press-main__media-prev">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
+                        </div>
+                        <div class="swiper__controls__pagination press-main__media-pagination"></div>
+                        <div class="swiper__controls__next press-main__media-next">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="press-main__right-materials" id="materials">
+                     <p class="press-main__right-heading">Материалы для скачивания</p>
+                     <ul class="press-main__right-materials__list">
+                        <li class="press-main__right-materials__list-item">
+                           <div class="press-main__right-materials__list-item-img">
+                              <img src="./images/notebook.png" alt="" id="notebook" />
+                           </div>
+                           <p class="press-main__right-materials__list-item-heading">
+                              Логотип для&nbsp;использования&nbsp;на&nbsp;ПК
+                           </p>
+                           <a href="#" download class="press-main__right-materials__list-item-link">
+                              <span>Скачать</span>
+                              <svg
+                                 width="17"
+                                 height="21"
+                                 viewBox="0 0 17 21"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 10.1251V20.1621H8.5H17V12.4284V4.69472L14.6219 2.39143L12.2438 0.0881348H6.1219H0V10.1251ZM13.6909 3.25394L15.7048 5.20433V12.0755V18.9467H8.5H1.29524V10.1251V1.30355H6.48615H11.6771L13.6909 3.25394ZM7.85238 9.37011V12.1829L6.79996 11.1641L5.74754 10.1452L5.30238 10.5764L4.85718 11.0077L6.67861 12.7716L8.5 14.5356L10.3214 12.7716L12.1428 11.0077L11.6976 10.5764L11.2525 10.1452L10.2 11.1641L9.14762 12.1829V9.37011V6.55729H8.5H7.85238V9.37011Z"
+                                    fill="#E30613"
+                                 />
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="press-main__right-materials__list-item">
+                           <div class="press-main__right-materials__list-item-img">
+                              <img src="./images/poster.png" alt="" id="poster" />
+                           </div>
+                           <p class="press-main__right-materials__list-item-heading">Логотип для печати</p>
+                           <a href="#" download class="press-main__right-materials__list-item-link">
+                              <span>Скачать</span>
+                              <svg
+                                 width="17"
+                                 height="21"
+                                 viewBox="0 0 17 21"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 10.1251V20.1621H8.5H17V12.4284V4.69472L14.6219 2.39143L12.2438 0.0881348H6.1219H0V10.1251ZM13.6909 3.25394L15.7048 5.20433V12.0755V18.9467H8.5H1.29524V10.1251V1.30355H6.48615H11.6771L13.6909 3.25394ZM7.85238 9.37011V12.1829L6.79996 11.1641L5.74754 10.1452L5.30238 10.5764L4.85718 11.0077L6.67861 12.7716L8.5 14.5356L10.3214 12.7716L12.1428 11.0077L11.6976 10.5764L11.2525 10.1452L10.2 11.1641L9.14762 12.1829V9.37011V6.55729H8.5H7.85238V9.37011Z"
+                                    fill="#E30613"
+                                 />
+                              </svg>
+                           </a>
+                        </li>
+                        <li class="press-main__right-materials__list-item">
+                           <div class="press-main__right-materials__list-item-img">
+                              <img src="./images/brandbook.png" alt="" id="brandbook" />
+                           </div>
+                           <p class="press-main__right-materials__list-item-heading">
+                              Брендбук (как&nbsp;использовать&nbsp;логотип)
+                           </p>
+                           <a href="#" download class="press-main__right-materials__list-item-link">
+                              <span>Скачать</span>
+                              <svg
+                                 width="17"
+                                 height="21"
+                                 viewBox="0 0 17 21"
+                                 fill="none"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0 10.1251V20.1621H8.5H17V12.4284V4.69472L14.6219 2.39143L12.2438 0.0881348H6.1219H0V10.1251ZM13.6909 3.25394L15.7048 5.20433V12.0755V18.9467H8.5H1.29524V10.1251V1.30355H6.48615H11.6771L13.6909 3.25394ZM7.85238 9.37011V12.1829L6.79996 11.1641L5.74754 10.1452L5.30238 10.5764L4.85718 11.0077L6.67861 12.7716L8.5 14.5356L10.3214 12.7716L12.1428 11.0077L11.6976 10.5764L11.2525 10.1452L10.2 11.1641L9.14762 12.1829V9.37011V6.55729H8.5H7.85238V9.37011Z"
+                                    fill="#E30613"
+                                 />
+                              </svg>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div class="press-main__right-poligraphy" id="poligraphy">
+                     <div class="press-main__right-poligraphy__top">
+                        <p class="press-main__right-poligraphy__top-heading press-main__right-heading">
+                           Полиграфия
+                        </p>
+                        <a href="#" class="press-main__right-poligraphy__top-link link">
+                           <svg
+                              width="71"
+                              height="71"
+                              viewBox="0 0 71 71"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <circle
+                                 cx="35.5"
+                                 cy="35.5"
+                                 r="34.5"
+                                 fill="none"
+                                 stroke="#E3E3E3"
+                                 stroke-width="2"
+                              />
+                           </svg>
+                           <span>Все материалы</span>
+                           <svg
+                              width="28"
+                              height="9"
+                              viewBox="0 0 28 9"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                 fill="black"
+                              />
+                           </svg>
+                        </a>
+                     </div>
+                     <ul class="press-main__right-poligraphy__list">
+                        <li class="press-main__right-poligraphy__list-item">
+                           <div class="press-main__right-poligraphy__list-item-img">
+                              <img src="./images/poligraphy-img.png" alt="" />
+                           </div>
+                           <div class="press-main__right-poligraphy__list-item-text">
+                              <p class="press-main__right-poligraphy__list-item-heading">
+                                 Полимерные дисперсии для лакокрасочных материалов и строительных составов
+                              </p>
+                              <p class="press-main__right-poligraphy__list-item-description">
+                                 Широкий ассортимент полимерных дисперсий homacryl и novopol позволяет
+                                 подобрать оптимальное решение для производства декоративных
+                                 водно-дисперсионных интерьерных и фасадных красок, покрытий по дереву,
+                                 металлу.
+                              </p>
+                              <div class="press-main__right-poligraphy__list-item-links">
+                                 <a href="#" class="press-main__right-poligraphy__list-item-links-watch">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <svg
+                                       width="22"
+                                       height="20"
+                                       viewBox="0 0 22 20"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M1.76953 2V16.7692L11.308 18L20.8465 16.7692V2L11.308 3.23077L1.76953 2Z"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                          stroke-miterlimit="10"
+                                       />
+                                       <path
+                                          d="M11.3086 17.9999V3.23071"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                          stroke-miterlimit="10"
+                                       />
+                                    </svg>
+                                    <span>Смотреть</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                                 <a
+                                    href="#"
+                                    class="press-main__right-poligraphy__list-item-links-download"
+                                    download
+                                 >
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <svg
+                                       width="23"
+                                       height="30"
+                                       viewBox="0 0 23 30"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M0 15.0063V29.0581H11.5H23V18.231V7.4038L19.7826 4.17919L16.5651 0.95459H8.28257H0V15.0063ZM18.523 5.38671L21.2476 8.11725V17.7369V27.3565H11.5H1.75238V15.0063V2.65617H8.77538H15.7984L18.523 5.38671ZM10.6238 13.9493V17.8873L9.19994 16.4609L7.77608 15.0345L7.17381 15.6382L6.57148 16.2419L9.03577 18.7115L11.5 21.181L13.9642 18.7115L16.4285 16.2419L15.8262 15.6382L15.2239 15.0345L13.8001 16.4609L12.3762 17.8873V13.9493V10.0114H11.5H10.6238V13.9493Z"
+                                          fill="#E3E3E3"
+                                       />
+                                    </svg>
+                                    <span>Скачать</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                                 <ul class="press-main__right-poligraphy__list-item-sublist">
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-vk.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-wtsap.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-tg.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <button
+                                          class="press-main__right-poligraphy__list-item-sublist-item-btn"
+                                       >
+                                          <svg
+                                             width="16"
+                                             height="16"
+                                             viewBox="0 0 16 16"
+                                             fill="none"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                             <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M4 2a1 1 0 001 1h7.5a.5.5 0 01.5.5v7.497a1 1 0 002 0V3.5A2.5 2.5 0 0012.5 1H5a1 1 0 00-1 1zM2.5 4h8A1.5 1.5 0 0112 5.5v8a1.5 1.5 0 01-1.5 1.5h-8A1.5 1.5 0 011 13.5v-8A1.5 1.5 0 012.5 4zM3 6v7h7V6H3z"
+                                                fill="#999"
+                                             />
+                                          </svg>
+                                       </button>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="press-main__right-poligraphy__list-item">
+                           <div class="press-main__right-poligraphy__list-item-img">
+                              <img src="./images/poligraphy-img.png" alt="" />
+                           </div>
+                           <div class="press-main__right-poligraphy__list-item-text">
+                              <p class="press-main__right-poligraphy__list-item-heading">
+                                 Полимерные дисперсии для лакокрасочных материалов и строительных составов
+                              </p>
+                              <p class="press-main__right-poligraphy__list-item-description">
+                                 Широкий ассортимент полимерных дисперсий homacryl и novopol позволяет
+                                 подобрать оптимальное решение для производства декоративных
+                                 водно-дисперсионных интерьерных и фасадных красок, покрытий по дереву,
+                                 металлу.
+                              </p>
+                              <div class="press-main__right-poligraphy__list-item-links">
+                                 <a href="#" class="press-main__right-poligraphy__list-item-links-watch">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <svg
+                                       width="22"
+                                       height="20"
+                                       viewBox="0 0 22 20"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M1.76953 2V16.7692L11.308 18L20.8465 16.7692V2L11.308 3.23077L1.76953 2Z"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                          stroke-miterlimit="10"
+                                       />
+                                       <path
+                                          d="M11.3086 17.9999V3.23071"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                          stroke-miterlimit="10"
+                                       />
+                                    </svg>
+                                    <span>Смотреть</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                                 <a
+                                    href="#"
+                                    class="press-main__right-poligraphy__list-item-links-download"
+                                    download
+                                 >
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <svg
+                                       width="23"
+                                       height="30"
+                                       viewBox="0 0 23 30"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M0 15.0063V29.0581H11.5H23V18.231V7.4038L19.7826 4.17919L16.5651 0.95459H8.28257H0V15.0063ZM18.523 5.38671L21.2476 8.11725V17.7369V27.3565H11.5H1.75238V15.0063V2.65617H8.77538H15.7984L18.523 5.38671ZM10.6238 13.9493V17.8873L9.19994 16.4609L7.77608 15.0345L7.17381 15.6382L6.57148 16.2419L9.03577 18.7115L11.5 21.181L13.9642 18.7115L16.4285 16.2419L15.8262 15.6382L15.2239 15.0345L13.8001 16.4609L12.3762 17.8873V13.9493V10.0114H11.5H10.6238V13.9493Z"
+                                          fill="#E3E3E3"
+                                       />
+                                    </svg>
+                                    <span>Смотреть</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                                 <ul class="press-main__right-poligraphy__list-item-sublist">
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-vk.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-wtsap.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-tg.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <button
+                                          class="press-main__right-poligraphy__list-item-sublist-item-btn"
+                                       >
+                                          <svg
+                                             width="16"
+                                             height="16"
+                                             viewBox="0 0 16 16"
+                                             fill="none"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                             <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M4 2a1 1 0 001 1h7.5a.5.5 0 01.5.5v7.497a1 1 0 002 0V3.5A2.5 2.5 0 0012.5 1H5a1 1 0 00-1 1zM2.5 4h8A1.5 1.5 0 0112 5.5v8a1.5 1.5 0 01-1.5 1.5h-8A1.5 1.5 0 011 13.5v-8A1.5 1.5 0 012.5 4zM3 6v7h7V6H3z"
+                                                fill="#999"
+                                             />
+                                          </svg>
+                                       </button>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="press-main__right-poligraphy__list-item">
+                           <div class="press-main__right-poligraphy__list-item-img">
+                              <img src="./images/poligraphy-img.png" alt="" />
+                           </div>
+                           <div class="press-main__right-poligraphy__list-item-text">
+                              <p class="press-main__right-poligraphy__list-item-heading">
+                                 Полимерные дисперсии для лакокрасочных материалов и строительных составов
+                              </p>
+                              <p class="press-main__right-poligraphy__list-item-description">
+                                 Широкий ассортимент полимерных дисперсий homacryl и novopol позволяет
+                                 подобрать оптимальное решение для производства декоративных
+                                 водно-дисперсионных интерьерных и фасадных красок, покрытий по дереву,
+                                 металлу.
+                              </p>
+                              <div class="press-main__right-poligraphy__list-item-links">
+                                 <a href="#" class="press-main__right-poligraphy__list-item-links-watch">
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <svg
+                                       width="22"
+                                       height="20"
+                                       viewBox="0 0 22 20"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M1.76953 2V16.7692L11.308 18L20.8465 16.7692V2L11.308 3.23077L1.76953 2Z"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                          stroke-miterlimit="10"
+                                       />
+                                       <path
+                                          d="M11.3086 17.9999V3.23071"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                          stroke-miterlimit="10"
+                                       />
+                                    </svg>
+                                    <span>Смотреть</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                                 <a
+                                    href="#"
+                                    class="press-main__right-poligraphy__list-item-links-download"
+                                    download
+                                 >
+                                    <svg
+                                       width="71"
+                                       height="71"
+                                       viewBox="0 0 71 71"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <circle
+                                          cx="35.5"
+                                          cy="35.5"
+                                          r="34.5"
+                                          fill="none"
+                                          stroke="#E3E3E3"
+                                          stroke-width="2"
+                                       />
+                                    </svg>
+                                    <svg
+                                       width="23"
+                                       height="30"
+                                       viewBox="0 0 23 30"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          fill-rule="evenodd"
+                                          clip-rule="evenodd"
+                                          d="M0 15.0063V29.0581H11.5H23V18.231V7.4038L19.7826 4.17919L16.5651 0.95459H8.28257H0V15.0063ZM18.523 5.38671L21.2476 8.11725V17.7369V27.3565H11.5H1.75238V15.0063V2.65617H8.77538H15.7984L18.523 5.38671ZM10.6238 13.9493V17.8873L9.19994 16.4609L7.77608 15.0345L7.17381 15.6382L6.57148 16.2419L9.03577 18.7115L11.5 21.181L13.9642 18.7115L16.4285 16.2419L15.8262 15.6382L15.2239 15.0345L13.8001 16.4609L12.3762 17.8873V13.9493V10.0114H11.5H10.6238V13.9493Z"
+                                          fill="#E3E3E3"
+                                       />
+                                    </svg>
+                                    <span>Смотреть</span>
+                                    <svg
+                                       width="28"
+                                       height="9"
+                                       viewBox="0 0 28 9"
+                                       fill="none"
+                                       xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                       <path
+                                          d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                          fill="black"
+                                       />
+                                    </svg>
+                                 </a>
+                                 <ul class="press-main__right-poligraphy__list-item-sublist">
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-vk.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-wtsap.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <a
+                                          href="#"
+                                          class="press-main__right-poligraphy__list-item-sublist-item-link"
+                                       >
+                                          <img src="./images/svg/headlines-tg.svg" alt="" />
+                                       </a>
+                                    </li>
+                                    <li class="press-main__right-poligraphy__list-item-sublist-item">
+                                       <button
+                                          class="press-main__right-poligraphy__list-item-sublist-item-btn"
+                                       >
+                                          <svg
+                                             width="16"
+                                             height="16"
+                                             viewBox="0 0 16 16"
+                                             fill="none"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                             <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M4 2a1 1 0 001 1h7.5a.5.5 0 01.5.5v7.497a1 1 0 002 0V3.5A2.5 2.5 0 0012.5 1H5a1 1 0 00-1 1zM2.5 4h8A1.5 1.5 0 0112 5.5v8a1.5 1.5 0 01-1.5 1.5h-8A1.5 1.5 0 011 13.5v-8A1.5 1.5 0 012.5 4zM3 6v7h7V6H3z"
+                                                fill="#999"
+                                             />
+                                          </svg>
+                                       </button>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <div class="press-main__right-photo" id="photo">
+                     <p class="press-main__right-heading">Фотографии для публикаций</p>
+                     <div class="swiper-container press-main__photo">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide press-main__photo-slide">
+                              <img
+                                 src="./images/press-photo-img1.png"
+                                 alt=""
+                                 class="press-main__photo-slide__img"
+                              />
+                              <p class="press-main__photo-slide__description">
+                                 Научно-исследовательский центр Компании Хома Тестирование новой разработки
+                              </p>
+                           </div>
+                           <div class="swiper-slide press-main__photo-slide">
+                              <img
+                                 src="./images/press-photo-img2.png"
+                                 alt=""
+                                 class="press-main__photo-slide__img"
+                              />
+                              <p class="press-main__photo-slide__description">
+                                 Открытие второго производственного участка Хома Адгезив
+                              </p>
+                           </div>
+                           <div class="swiper-slide press-main__photo-slide">
+                              <img
+                                 src="./images/press-photo-img3.png"
+                                 alt=""
+                                 class="press-main__photo-slide__img"
+                              />
+                              <p class="press-main__photo-slide__description">
+                                 Разработка собственного научного центра: Функциональные добавки homacryl
+                              </p>
+                           </div>
+                           <div class="swiper-slide press-main__photo-slide">
+                              <img
+                                 src="./images/press-photo-img1.png"
+                                 alt=""
+                                 class="press-main__photo-slide__img"
+                              />
+                              <p class="press-main__photo-slide__description">
+                                 Научно-исследовательский центр Компании Хома Тестирование новой разработки
+                              </p>
+                           </div>
+                           <div class="swiper-slide press-main__photo-slide">
+                              <img
+                                 src="./images/press-photo-img2.png"
+                                 alt=""
+                                 class="press-main__photo-slide__img"
+                              />
+                              <p class="press-main__photo-slide__description">
+                                 Открытие второго производственного участка Хома Адгезив
+                              </p>
+                           </div>
+                           <div class="swiper-slide press-main__photo-slide">
+                              <img
+                                 src="./images/press-photo-img3.png"
+                                 alt=""
+                                 class="press-main__photo-slide__img"
+                              />
+                              <p class="press-main__photo-slide__description">
+                                 Научно-исследовательский центр Компании Хома Тестирование новой разработки
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper__controls">
+                        <div class="swiper__controls__prev press-main__photo-prev">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
+                        </div>
+                        <div class="swiper__controls__pagination press-main__photo-pagination"></div>
+                        <div class="swiper__controls__next press-main__photo-next">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="press-main__right-about" id="about">
+                     <p class="press-main__right-heading">СМИ о нас</p>
+                     <div class="swiper-container press-main__about">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
                                     <path
-                                        d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                        fill="black" />
-                                </svg>
-                            </a>
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img1.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Выбирайте Хома, Покупайте Нижегородское</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img2.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Компания «Хома» стала дипломантом в номинации «Лидер импортозамещения»</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img3.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Компания «Хома» вышла в финал в номинации «За информационную открытость»</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img1.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Выбирайте Хома, Покупайте Нижегородское</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img2.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Компания «Хома» стала дипломантом в номинации «Лидер импортозамещения»</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img3.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Компания «Хома» вышла в финал в номинации «За информационную открытость»</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img1.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Выбирайте Хома, Покупайте Нижегородское</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img2.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Компания «Хома» стала дипломантом в номинации «Лидер импортозамещения»</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img3.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Компания «Хома» вышла в финал в номинации «За информационную открытость»</a
+                              >
+                           </div>
+                           <div class="swiper-slide press-main__about-slide">
+                              <p class="press-main__about-slide__title desktop">
+                                 Хим-курьер №1 (454) 03.09.2021
+                              </p>
+                              <a href="#" class="press-main__about-slide__link desktop">
+                                 <span>Перейти на веб ресурс</span>
+                                 <svg
+                                    width="28"
+                                    height="9"
+                                    viewBox="0 0 28 9"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                 >
+                                    <path
+                                       d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                                       fill="#9E9E9E"
+                                    />
+                                 </svg>
+                              </a>
+                              <img
+                                 src="./images/press-about-img1.png"
+                                 alt=""
+                                 class="press-main__about-slide__img mobile"
+                              />
+                              <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
+                              <a href="#" class="press-main__about-slide__title mobile"
+                                 >Выбирайте Хома, Покупайте Нижегородское</a
+                              >
+                           </div>
                         </div>
-                        <ul class="press-main__right-poligraphy__list">
-                            <li class="press-main__right-poligraphy__list-item">
-                                <div class="press-main__right-poligraphy__list-item-img">
-                                    <img src="./images/poligraphy-img.png" alt="">
-                                </div>
-                                <div class="press-main__right-poligraphy__list-item-text">
-                                    <p class="press-main__right-poligraphy__list-item-heading">Полимерные дисперсии для
-                                        лакокрасочных материалов
-                                        и строительных составов</p>
-                                    <p class="press-main__right-poligraphy__list-item-description">Широкий ассортимент
-                                        полимерных дисперсий homacryl и novopol позволяет подобрать
-                                        оптимальное решение для производства декоративных водно-дисперсионных
-                                        интерьерных и фасадных красок, покрытий по дереву, металлу.</p>
-                                    <div class="press-main__right-poligraphy__list-item-links">
-                                        <a href="#" class="press-main__right-poligraphy__list-item-links-watch">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E3E3E3"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M1.76953 2V16.7692L11.308 18L20.8465 16.7692V2L11.308 3.23077L1.76953 2Z"
-                                                    stroke="#E3E3E3" stroke-width="2" stroke-miterlimit="10" />
-                                                <path d="M11.3086 17.9999V3.23071" stroke="#E3E3E3" stroke-width="2"
-                                                    stroke-miterlimit="10" />
-                                            </svg>
-                                            <span>Смотреть</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="press-main__right-poligraphy__list-item-links-download"
-                                            download>
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E3E3E3"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <svg width="23" height="30" viewBox="0 0 23 30" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 15.0063V29.0581H11.5H23V18.231V7.4038L19.7826 4.17919L16.5651 0.95459H8.28257H0V15.0063ZM18.523 5.38671L21.2476 8.11725V17.7369V27.3565H11.5H1.75238V15.0063V2.65617H8.77538H15.7984L18.523 5.38671ZM10.6238 13.9493V17.8873L9.19994 16.4609L7.77608 15.0345L7.17381 15.6382L6.57148 16.2419L9.03577 18.7115L11.5 21.181L13.9642 18.7115L16.4285 16.2419L15.8262 15.6382L15.2239 15.0345L13.8001 16.4609L12.3762 17.8873V13.9493V10.0114H11.5H10.6238V13.9493Z"
-                                                    fill="#E3E3E3" />
-                                            </svg>
-                                            <span>Скачать</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                        <ul class="press-main__right-poligraphy__list-item-sublist">
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-vk.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-wtsap.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-tg.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <button
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-btn">
-                                                    <svg width='16' height='16' viewBox="0 0 16 16" fill='none'
-                                                        xmlns='http://www.w3.org/2000/svg'>
-                                                        <path fill-rule='evenodd' clip-rule='evenodd'
-                                                            d='M4 2a1 1 0 001 1h7.5a.5.5 0 01.5.5v7.497a1 1 0 002 0V3.5A2.5 2.5 0 0012.5 1H5a1 1 0 00-1 1zM2.5 4h8A1.5 1.5 0 0112 5.5v8a1.5 1.5 0 01-1.5 1.5h-8A1.5 1.5 0 011 13.5v-8A1.5 1.5 0 012.5 4zM3 6v7h7V6H3z'
-                                                            fill='#999' />
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="press-main__right-poligraphy__list-item">
-                                <div class="press-main__right-poligraphy__list-item-img">
-                                    <img src="./images/poligraphy-img.png" alt="">
-                                </div>
-                                <div class="press-main__right-poligraphy__list-item-text">
-                                    <p class="press-main__right-poligraphy__list-item-heading">Полимерные дисперсии для
-                                        лакокрасочных материалов
-                                        и строительных составов</p>
-                                    <p class="press-main__right-poligraphy__list-item-description">Широкий ассортимент
-                                        полимерных дисперсий homacryl и novopol позволяет подобрать
-                                        оптимальное решение для производства декоративных водно-дисперсионных
-                                        интерьерных и фасадных красок, покрытий по дереву, металлу.</p>
-                                    <div class="press-main__right-poligraphy__list-item-links">
-                                        <a href="#" class="press-main__right-poligraphy__list-item-links-watch">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E3E3E3"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M1.76953 2V16.7692L11.308 18L20.8465 16.7692V2L11.308 3.23077L1.76953 2Z"
-                                                    stroke="#E3E3E3" stroke-width="2" stroke-miterlimit="10" />
-                                                <path d="M11.3086 17.9999V3.23071" stroke="#E3E3E3" stroke-width="2"
-                                                    stroke-miterlimit="10" />
-                                            </svg>
-                                            <span>Смотреть</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="press-main__right-poligraphy__list-item-links-download"
-                                            download>
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E3E3E3"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <svg width="23" height="30" viewBox="0 0 23 30" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 15.0063V29.0581H11.5H23V18.231V7.4038L19.7826 4.17919L16.5651 0.95459H8.28257H0V15.0063ZM18.523 5.38671L21.2476 8.11725V17.7369V27.3565H11.5H1.75238V15.0063V2.65617H8.77538H15.7984L18.523 5.38671ZM10.6238 13.9493V17.8873L9.19994 16.4609L7.77608 15.0345L7.17381 15.6382L6.57148 16.2419L9.03577 18.7115L11.5 21.181L13.9642 18.7115L16.4285 16.2419L15.8262 15.6382L15.2239 15.0345L13.8001 16.4609L12.3762 17.8873V13.9493V10.0114H11.5H10.6238V13.9493Z"
-                                                    fill="#E3E3E3" />
-                                            </svg>
-                                            <span>Смотреть</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                        <ul class="press-main__right-poligraphy__list-item-sublist">
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-vk.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-wtsap.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-tg.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <button
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-btn">
-                                                    <svg width='16' height='16' viewBox="0 0 16 16" fill='none'
-                                                        xmlns='http://www.w3.org/2000/svg'>
-                                                        <path fill-rule='evenodd' clip-rule='evenodd'
-                                                            d='M4 2a1 1 0 001 1h7.5a.5.5 0 01.5.5v7.497a1 1 0 002 0V3.5A2.5 2.5 0 0012.5 1H5a1 1 0 00-1 1zM2.5 4h8A1.5 1.5 0 0112 5.5v8a1.5 1.5 0 01-1.5 1.5h-8A1.5 1.5 0 011 13.5v-8A1.5 1.5 0 012.5 4zM3 6v7h7V6H3z'
-                                                            fill='#999' />
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="press-main__right-poligraphy__list-item">
-                                <div class="press-main__right-poligraphy__list-item-img">
-                                    <img src="./images/poligraphy-img.png" alt="">
-                                </div>
-                                <div class="press-main__right-poligraphy__list-item-text">
-                                    <p class="press-main__right-poligraphy__list-item-heading">Полимерные дисперсии для
-                                        лакокрасочных материалов
-                                        и строительных составов</p>
-                                    <p class="press-main__right-poligraphy__list-item-description">Широкий ассортимент
-                                        полимерных дисперсий homacryl и novopol позволяет подобрать
-                                        оптимальное решение для производства декоративных водно-дисперсионных
-                                        интерьерных и фасадных красок, покрытий по дереву, металлу.</p>
-                                    <div class="press-main__right-poligraphy__list-item-links">
-                                        <a href="#" class="press-main__right-poligraphy__list-item-links-watch">
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E3E3E3"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M1.76953 2V16.7692L11.308 18L20.8465 16.7692V2L11.308 3.23077L1.76953 2Z"
-                                                    stroke="#E3E3E3" stroke-width="2" stroke-miterlimit="10" />
-                                                <path d="M11.3086 17.9999V3.23071" stroke="#E3E3E3" stroke-width="2"
-                                                    stroke-miterlimit="10" />
-                                            </svg>
-                                            <span>Смотреть</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="press-main__right-poligraphy__list-item-links-download"
-                                            download>
-                                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="35.5" cy="35.5" r="34.5" fill="none" stroke="#E3E3E3"
-                                                    stroke-width="2" />
-                                            </svg>
-                                            <svg width="23" height="30" viewBox="0 0 23 30" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                    d="M0 15.0063V29.0581H11.5H23V18.231V7.4038L19.7826 4.17919L16.5651 0.95459H8.28257H0V15.0063ZM18.523 5.38671L21.2476 8.11725V17.7369V27.3565H11.5H1.75238V15.0063V2.65617H8.77538H15.7984L18.523 5.38671ZM10.6238 13.9493V17.8873L9.19994 16.4609L7.77608 15.0345L7.17381 15.6382L6.57148 16.2419L9.03577 18.7115L11.5 21.181L13.9642 18.7115L16.4285 16.2419L15.8262 15.6382L15.2239 15.0345L13.8001 16.4609L12.3762 17.8873V13.9493V10.0114H11.5H10.6238V13.9493Z"
-                                                    fill="#E3E3E3" />
-                                            </svg>
-                                            <span>Смотреть</span>
-                                            <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                    fill="black" />
-                                            </svg>
-                                        </a>
-                                        <ul class="press-main__right-poligraphy__list-item-sublist">
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-vk.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-wtsap.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <a href="#"
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-link">
-                                                    <img src="./images/svg/headlines-tg.svg" alt="">
-                                                </a>
-                                            </li>
-                                            <li class="press-main__right-poligraphy__list-item-sublist-item">
-                                                <button
-                                                    class="press-main__right-poligraphy__list-item-sublist-item-btn">
-                                                    <svg width='16' height='16' viewBox="0 0 16 16" fill='none'
-                                                        xmlns='http://www.w3.org/2000/svg'>
-                                                        <path fill-rule='evenodd' clip-rule='evenodd'
-                                                            d='M4 2a1 1 0 001 1h7.5a.5.5 0 01.5.5v7.497a1 1 0 002 0V3.5A2.5 2.5 0 0012.5 1H5a1 1 0 00-1 1zM2.5 4h8A1.5 1.5 0 0112 5.5v8a1.5 1.5 0 01-1.5 1.5h-8A1.5 1.5 0 011 13.5v-8A1.5 1.5 0 012.5 4zM3 6v7h7V6H3z'
-                                                            fill='#999' />
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="press-main__right-photo" id="photo">
-                        <p class="press-main__right-heading">Фотографии для публикаций</p>
-                        <div class="swiper-container press-main__photo">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide press-main__photo-slide">
-                                    <img src="./images/press-photo-img1.png" alt=""
-                                        class="press-main__photo-slide__img">
-                                    <p class="press-main__photo-slide__description">Научно-исследовательский центр
-                                        Компании Хома Тестирование новой разработки</p>
-                                </div>
-                                <div class="swiper-slide press-main__photo-slide">
-                                    <img src="./images/press-photo-img2.png" alt=""
-                                        class="press-main__photo-slide__img">
-                                    <p class="press-main__photo-slide__description">Открытие второго производственного
-                                        участка Хома Адгезив</p>
-                                </div>
-                                <div class="swiper-slide press-main__photo-slide">
-                                    <img src="./images/press-photo-img3.png" alt=""
-                                        class="press-main__photo-slide__img">
-                                    <p class="press-main__photo-slide__description">Разработка собственного научного
-                                        центра: Функциональные добавки homacryl</p>
-                                </div>
-                                <div class="swiper-slide press-main__photo-slide">
-                                    <img src="./images/press-photo-img1.png" alt=""
-                                        class="press-main__photo-slide__img">
-                                    <p class="press-main__photo-slide__description">Научно-исследовательский центр
-                                        Компании Хома Тестирование новой разработки</p>
-                                </div>
-                                <div class="swiper-slide press-main__photo-slide">
-                                    <img src="./images/press-photo-img2.png" alt=""
-                                        class="press-main__photo-slide__img">
-                                    <p class="press-main__photo-slide__description">Открытие второго производственного
-                                        участка Хома Адгезив</p>
-                                </div>
-                                <div class="swiper-slide press-main__photo-slide">
-                                    <img src="./images/press-photo-img3.png" alt=""
-                                        class="press-main__photo-slide__img">
-                                    <p class="press-main__photo-slide__description">Научно-исследовательский центр
-                                        Компании Хома Тестирование новой разработки</p>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="swiper__controls">
+                        <div class="swiper__controls__prev press-main__about-prev">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
                         </div>
-                        <div class="swiper__controls">
-                            <div class="swiper__controls__prev press-main__photo-prev">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
-                            <div class="swiper__controls__pagination press-main__photo-pagination"></div>
-                            <div class="swiper__controls__next press-main__photo-next">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
+                        <div class="swiper__controls__pagination press-main__about-pagination"></div>
+                        <div class="swiper__controls__next press-main__about-next">
+                           <img src="./images/svg/black-arrow.svg" alt="" />
                         </div>
-                    </div>
-
-                    <div class="press-main__right-about" id="about">
-                        <p class="press-main__right-heading">СМИ о нас</p>
-                        <div class="swiper-container press-main__about">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img1.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Выбирайте Хома, Покупайте
-                                        Нижегородское</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img2.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Компания «Хома» стала
-                                        дипломантом в номинации «Лидер импортозамещения»</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img3.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Компания «Хома» вышла в
-                                        финал в номинации «За информационную открытость»</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img1.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Выбирайте Хома, Покупайте
-                                        Нижегородское</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img2.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Компания «Хома» стала
-                                        дипломантом в номинации «Лидер импортозамещения»</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img3.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Компания «Хома» вышла в
-                                        финал в номинации «За информационную открытость»</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img1.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Выбирайте Хома, Покупайте
-                                        Нижегородское</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img2.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Компания «Хома» стала
-                                        дипломантом в номинации «Лидер импортозамещения»</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img3.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Компания «Хома» вышла в
-                                        финал в номинации «За информационную открытость»</a>
-                                </div>
-                                <div class="swiper-slide press-main__about-slide">
-                                    <p class="press-main__about-slide__title desktop">Хим-курьер №1 (454) 03.09.2021</p>
-                                    <a href="#" class="press-main__about-slide__link desktop">
-                                        <span>Перейти на веб ресурс</span>
-                                        <svg width="28" height="9" viewBox="0 0 28 9" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
-                                                fill="#9E9E9E" />
-                                        </svg>
-                                    </a>
-                                    <img src="./images/press-about-img1.png" alt=""
-                                        class="press-main__about-slide__img mobile">
-                                    <p class="press-main__about-slide__date mobile">10 Декабря 2020</p>
-                                    <a href="#" class="press-main__about-slide__title mobile">Выбирайте Хома, Покупайте
-                                        Нижегородское</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper__controls">
-                            <div class="swiper__controls__prev press-main__about-prev">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
-                            <div class="swiper__controls__pagination press-main__about-pagination"></div>
-                            <div class="swiper__controls__next press-main__about-next">
-                                <img src="./images/svg/black-arrow.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </section>
-        @@include('./templates/partners.html')
-    </main>
-    @@include('./templates/footer.html')
-</body>
-
+         </section>
+         <div class="press-modal">
+            <div class="press-modal__close">
+               <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                  <path
+                     d="M14.4365 13.0001L25.7027 1.73384C26.0993 1.33719 26.0993 0.694093 25.7027 0.29749C25.306 -0.0991127 24.6629 -0.0991635 24.2663 0.29749L13.0001 11.5638L1.73384 0.29749C1.33719 -0.0991635 0.694093 -0.0991635 0.29749 0.29749C-0.0991127 0.694144 -0.0991635 1.33724 0.29749 1.73384L11.5637 13.0001L0.29749 24.2663C-0.0991635 24.663 -0.0991635 25.3061 0.29749 25.7027C0.495792 25.901 0.755742 26.0001 1.01569 26.0001C1.27564 26.0001 1.53554 25.901 1.73389 25.7027L13.0001 14.4365L24.2663 25.7027C24.4646 25.901 24.7245 26.0001 24.9845 26.0001C25.2444 26.0001 25.5043 25.901 25.7027 25.7027C26.0993 25.306 26.0993 24.6629 25.7027 24.2663L14.4365 13.0001Z"
+                     fill="#313131"
+                  />
+               </svg>
+            </div>
+            <div class="press-modal__content">
+               <img src="" alt="" />
+            </div>
+         </div>
+         @@include('./templates/partners.html')
+      </main>
+      @@include('./templates/footer.html')
+   </body>
 </html>

@@ -37,9 +37,7 @@ const introSwiper = new Swiper(".intro__swiper", {
          pagination: {
             type: "custom",
             renderCustom: function (swiper, current, total) {
-               return `<span class="current">${getTwoDigitNumber(
-                  current
-               )}</span>`;
+               return `<span class="current">${getTwoDigitNumber(current)}</span>`;
             },
          },
       },
@@ -47,22 +45,9 @@ const introSwiper = new Swiper(".intro__swiper", {
          pagination: {
             renderBullet: function (index, className) {
                if (index < 10) {
-                  return (
-                     '<span class="' +
-                     className +
-                     '">' +
-                     "0" +
-                     (index + 1) +
-                     "</span>"
-                  );
+                  return '<span class="' + className + '">' + "0" + (index + 1) + "</span>";
                } else {
-                  return (
-                     '<span class="' +
-                     className +
-                     '">' +
-                     (index + 1) +
-                     "</span>"
-                  );
+                  return '<span class="' + className + '">' + (index + 1) + "</span>";
                }
             },
          },
@@ -266,34 +251,20 @@ const swiperPolymer = new Swiper(".swiper__polymer", {
    pagination: {
       el: ".swiper__polymer-controls__pagination",
       renderBullet: function (index, className) {
-         return `<span class="${className}">${getTwoDigitNumber(
-            index + 1
-         )}</span>`;
+         return `<span class="${className}">${getTwoDigitNumber(index + 1)}</span>`;
       },
    },
 
    on: {
       slideChange: function (swiper) {
          if ((swiper.activeIndex + 1) % 2 == 0) {
-            document
-               .querySelector(".swiper__polymer-controls__prev.mobile")
-               .classList.add("even");
-            document
-               .querySelector(".swiper__polymer-controls__next.mobile")
-               .classList.add("even");
-            document
-               .querySelector(".swiper__polymer-controls__pagination")
-               .classList.add("even");
+            document.querySelector(".swiper__polymer-controls__prev.mobile").classList.add("even");
+            document.querySelector(".swiper__polymer-controls__next.mobile").classList.add("even");
+            document.querySelector(".swiper__polymer-controls__pagination").classList.add("even");
          } else {
-            document
-               .querySelector(".swiper__polymer-controls__prev.mobile")
-               .classList.remove("even");
-            document
-               .querySelector(".swiper__polymer-controls__next.mobile")
-               .classList.remove("even");
-            document
-               .querySelector(".swiper__polymer-controls__pagination")
-               .classList.remove("even");
+            document.querySelector(".swiper__polymer-controls__prev.mobile").classList.remove("even");
+            document.querySelector(".swiper__polymer-controls__next.mobile").classList.remove("even");
+            document.querySelector(".swiper__polymer-controls__pagination").classList.remove("even");
          }
       },
    },
@@ -379,48 +350,45 @@ const swiperRelated = new Swiper(".swiper__related", {
    },
 });
 
-const swiperProductRecommendations = new Swiper(
-   ".swiper__product-recommendations",
-   {
-      direction: "horizontal",
-      speed: 500,
-      allowTouchMove: false,
-      loop: false,
+const swiperProductRecommendations = new Swiper(".swiper__product-recommendations", {
+   direction: "horizontal",
+   speed: 500,
+   allowTouchMove: false,
+   loop: false,
 
-      navigation: {
-         nextEl: ".swiper__product-recommendations-next",
-         prevEl: ".swiper__product-recommendations-prev",
-      },
+   navigation: {
+      nextEl: ".swiper__product-recommendations-next",
+      prevEl: ".swiper__product-recommendations-prev",
+   },
 
-      pagination: {
-         el: ".swiper__product-recommendations-pagination",
-         type: "custom",
-         renderCustom: function (swiper, current, total) {
-            return `<span class="current">${getTwoDigitNumber(
-               current
-            )}</span><span class="total">${getTwoDigitNumber(total)}</span>`;
-         },
+   pagination: {
+      el: ".swiper__product-recommendations-pagination",
+      type: "custom",
+      renderCustom: function (swiper, current, total) {
+         return `<span class="current">${getTwoDigitNumber(
+            current
+         )}</span><span class="total">${getTwoDigitNumber(total)}</span>`;
       },
+   },
 
-      breakpoints: {
-         320: {
-            slidesPerView: 2,
-            spaceBetween: rem(3),
-            slidesPerGroup: 2,
-         },
-         768: {
-            slidesPerView: 3,
-            slidesPerGroup: 1,
-            spaceBetween: rem(2.4),
-         },
-         1201: {
-            slidesPerView: "auto",
-            spaceBetween: rem(3.2),
-            slidesPerGroup: 3,
-         },
+   breakpoints: {
+      320: {
+         slidesPerView: 2,
+         spaceBetween: rem(3),
+         slidesPerGroup: 2,
       },
-   }
-);
+      768: {
+         slidesPerView: 3,
+         slidesPerGroup: 1,
+         spaceBetween: rem(2.4),
+      },
+      1201: {
+         slidesPerView: "auto",
+         spaceBetween: rem(3.2),
+         slidesPerGroup: 3,
+      },
+   },
+});
 
 const staff = document.querySelectorAll(".swiper__staff");
 staff.forEach((swiperStaff) => {
@@ -576,6 +544,7 @@ const swiperPhoto = new Swiper(".press-main__photo", {
       1201: {
          slidesPerView: "auto",
          slidesPerGroup: 3,
+         spaceBetween: rem(4),
       },
    },
 });

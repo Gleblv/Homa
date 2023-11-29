@@ -566,4 +566,28 @@ document.addEventListener("DOMContentLoaded", function () {
          }
       });
    }
+
+   // Открытие модалки с изображением
+
+   if (document.querySelector(".press-modal")) {
+      const initialImages = document.querySelectorAll(".press-main__photo-slide__img"),
+         modalImg = document.querySelector(".press-modal__content img"),
+         modal = document.querySelector(".press-modal"),
+         closeModalBtn = modal.querySelector(".press-modal__close");
+
+      initialImages.forEach((img) => {
+         img.addEventListener("click", (e) => {
+            let target = e.target;
+            let imgSrc = target.getAttribute("src");
+
+            modal.classList.add("active");
+
+            modalImg.setAttribute("src", imgSrc);
+         });
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+         modal.classList.remove("active");
+      });
+   }
 });

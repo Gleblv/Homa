@@ -15,6 +15,29 @@
     overflow-y: auto;
     -ms-overflow-style: none;
 
+    &.modal-question-experts,
+    &.modal-question-contacts,
+    &.modal-call-contacts,
+    &.modal-feedback-contacts,
+    &.modal-techsupport {
+        .modal__container {
+            margin-top: 46rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (min-width: 48em) and (max-width: 78em) {
+            .modal__container {
+                margin-top: 117rem;
+            }
+        }
+
+        @media (max-width: 48em) {
+            .modal__container {
+                margin-top: 71rem;
+            }
+        }
+    }
+
     /* хром, сафари */
     &::-webkit-scrollbar {
         width: 0;
@@ -52,6 +75,26 @@
             width: 2.6rem;
             height: 2.6rem;
             object-fit: contain;
+        }
+    }
+
+    &__menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-bottom-left-radius: 2.5px;
+        border-bottom-right-radius: 2.5px;
+        width: 100%;
+        display: none;
+
+        li {
+            padding: 1rem;
+            font-size: 1.4rem;
+            line-height: 1.9rem;
+            color: #313131;
+            text-transform: uppercase;
         }
     }
 
@@ -165,6 +208,16 @@
 
                 &::placeholder {
                     color: #C4C4C4;
+                }
+            }
+
+            &_menu {
+                position: relative;
+
+                &.active {
+                    .modal__menu {
+                        display: block;
+                    }
                 }
             }
         }
@@ -323,6 +376,14 @@
                 line-height: 140%; /* 3.92rem */
             }
         }
+
+        &__menu {
+            li {
+                font-size: 2.8rem;
+                line-height: 4.8rem;
+                letter-spacing: .14rem;
+            }
+        }
     }
 
     @media (max-width: 48em) {
@@ -422,6 +483,13 @@
             .modal__container {
                 margin-top: 106rem;
                 margin-bottom: 3rem;
+            }
+        }
+
+        &__menu {
+            li {
+                font-size: 2.8rem;
+                line-height: 3.8rem;
             }
         }
     }

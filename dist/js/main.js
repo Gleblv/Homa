@@ -493,6 +493,118 @@ document.addEventListener("DOMContentLoaded", function () {
       });
    }
 
+   // Модалка "Заказать звонок" в хеадере
+
+   if (document.querySelector(".modal-call")) {
+      const openModalBtn = document.querySelector(".header__top-call"),
+         modal = document.querySelector(".modal-call"),
+         closeModalBtn = modal.querySelector(".modal__close-btn");
+
+      openModalBtn.addEventListener("click", () => {
+         modal.classList.add("active");
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+         modal.classList.remove("active");
+      });
+   }
+
+   // Модалка на странице тех поддержки
+
+   if (document.querySelector(".modal-techsupport")) {
+      const openModalBtn = document.querySelector(".techsupport-hero__right__links-email"),
+         modal = document.querySelector(".modal-techsupport"),
+         closeModalBtn = modal.querySelector(".modal__close-btn");
+
+      openModalBtn.addEventListener("click", () => {
+         modal.classList.add("active");
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+         modal.classList.remove("active");
+      });
+   }
+
+   // Модальные окна на странице контактов
+
+   if (document.querySelector(".contacts-main")) {
+      const questionModal = document.querySelector(".modal-question-contacts"),
+         callModal = document.querySelector(".modal-call-contacts"),
+         feedbackModal = document.querySelector(".modal-feedback-contacts");
+
+      const openQuestionModal = document.querySelector(".contacts-main__open-question"),
+         openCallModal = document.querySelector(".contacts-main__open-call"),
+         openFeedbackModal = document.querySelector(".contacts-main__open-feedback");
+
+      const closeQuestionModal = questionModal.querySelector(".modal__close-btn"),
+         closeCallModal = callModal.querySelector(".modal__close-btn"),
+         closeFeedbackModal = feedbackModal.querySelector(".modal__close-btn");
+
+      openQuestionModal.addEventListener("click", () => {
+         questionModal.classList.add("active");
+      });
+
+      openCallModal.addEventListener("click", () => {
+         console.log("2");
+         callModal.classList.add("active");
+      });
+
+      openFeedbackModal.addEventListener("click", () => {
+         feedbackModal.classList.add("active");
+      });
+
+      closeQuestionModal.addEventListener("click", () => {
+         questionModal.classList.remove("active");
+      });
+
+      closeCallModal.addEventListener("click", () => {
+         callModal.classList.remove("active");
+      });
+
+      closeFeedbackModal.addEventListener("click", () => {
+         feedbackModal.classList.remove("active");
+      });
+   }
+
+   // Модальное окно на тсранице пресс-центра
+
+   if (document.querySelector(".modal-question-experts")) {
+      const openModalBtns = document.querySelectorAll(".press-main__experts-slide__link"),
+         modal = document.querySelector(".modal-question-experts"),
+         closeModalBtn = modal.querySelector(".modal__close-btn");
+
+      openModalBtns.forEach((btn) => {
+         btn.addEventListener("click", () => {
+            modal.classList.add("active");
+         });
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+         modal.classList.remove("active");
+      });
+   }
+
+   // Выпадающее меню в модальных окнах
+
+   if (document.querySelector(".modal__form-input_menu")) {
+      const inputContainer = document.querySelector(".modal__form-input_menu"),
+         input = inputContainer.querySelector("input"),
+         menu = inputContainer.querySelector(".modal__menu");
+
+      input.addEventListener("click", () => {
+         inputContainer.classList.toggle("active");
+      });
+
+      menu.addEventListener("click", (e) => {
+         let target = e.target;
+
+         if (target.tagName == "LI") {
+            input.value = target.textContent;
+            inputContainer.classList.remove("active");
+         }
+      });
+   }
+
    // обрезать кол-во символов на странице Поиск в результатах
 
    if (document.querySelector(".search-main__list-item__description")) {

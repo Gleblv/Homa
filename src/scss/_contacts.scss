@@ -413,6 +413,11 @@
                         color: #000000;
                         transition: color 0.2s ease-in-out;
 
+                        span,
+                        svg {
+                            pointer-events: none;
+                        }
+
                         span {
                             margin-right: 1.8rem;
                         }

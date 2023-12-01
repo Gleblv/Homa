@@ -259,6 +259,27 @@
                <label for="city">Город<span>*</span></label>
                <input type="text" placeholder="Город" id="city" required />
             </div>
+            <div class="modal__form-input modal__form-input_menu">
+               <label for="area">Интересующая сфера<span>*</span></label>
+               <input type="text" placeholder="Интересующая сфера" id="area" required readonly />
+               <ul class="modal__menu">
+                  <li class="modal__menu-item">Инновационные разработки</li>
+                  <li class="modal__menu-item">Строительная химия</li>
+                  <li class="modal__menu-item">Клеи для мебели и деревообработки</li>
+                  <li class="modal__menu-item">Клеи для тары и упаковки</li>
+                  <li class="modal__menu-item">Клеи и герметики для машностроения и транспорта</li>
+               </ul>
+            </div>
+            <div class="modal__form-input">
+               <label for="question">Ваш вопрос</label>
+               <textarea
+                  name="question"
+                  id="question"
+                  cols="30"
+                  rows="10"
+                  placeholder="Ваш вопрос"
+               ></textarea>
+            </div>
             <div class="g-recaptcha" data-sitekey="0000000000000000000000"></div>
          </form>
          <p class="modal__disclaimer">

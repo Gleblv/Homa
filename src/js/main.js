@@ -422,8 +422,8 @@ document.addEventListener("DOMContentLoaded", function () {
    }
 
    // модалка заявку не техподдержку на Главной
-   if (document.querySelector(".modal-request")) {
-      const modalRequest = document.querySelector(".modal-request");
+   if (document.querySelector(".modal-techsupport-main")) {
+      const modalRequest = document.querySelector(".modal-techsupport-main");
 
       const requestBtn = document.querySelector(".support__left-links__request");
 
@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", function () {
          document.body.classList.add("lock");
       });
 
-      const modalCloseBtn = document.querySelector(".modal-request .modal__close-btn");
+      const modalCloseBtn = document.querySelector(".modal-techsupport-main .modal__close-btn");
       modalCloseBtn.addEventListener("click", function () {
          modalRequest.classList.remove("active");
          document.body.classList.remove("lock");
@@ -566,11 +566,29 @@ document.addEventListener("DOMContentLoaded", function () {
       });
    }
 
-   // Модальное окно на тсранице пресс-центра
+   // Модальное окно на странице пресс-центра
 
    if (document.querySelector(".modal-question-experts")) {
       const openModalBtns = document.querySelectorAll(".press-main__experts-slide__link"),
          modal = document.querySelector(".modal-question-experts"),
+         closeModalBtn = modal.querySelector(".modal__close-btn");
+
+      openModalBtns.forEach((btn) => {
+         btn.addEventListener("click", () => {
+            modal.classList.add("active");
+         });
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+         modal.classList.remove("active");
+      });
+   }
+
+   // Модальное окно на странице вакансий
+
+   if (document.querySelector(".modal-response-detail")) {
+      const openModalBtns = document.querySelectorAll(".vacancies-main__right-list__item-respond"),
+         modal = document.querySelector(".modal-response-detail"),
          closeModalBtn = modal.querySelector(".modal__close-btn");
 
       openModalBtns.forEach((btn) => {

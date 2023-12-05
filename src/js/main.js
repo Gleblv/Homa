@@ -200,6 +200,76 @@ document.addEventListener("DOMContentLoaded", function () {
       }
    );
 
+   // бургер меню в хеадере в мобилке
+
+   if (window.screen.width <= 768) {
+      const openBurgerMenu = document.querySelector(".header__top-burger"),
+         burgerMenu = document.querySelector(".header__menu"),
+         closeBurgerBtn = document.querySelector(".header__menu-close-burger");
+
+      openBurgerMenu.addEventListener("click", () => {
+         burgerMenu.classList.add("active");
+      });
+
+      closeBurgerBtn.addEventListener("click", () => {
+         burgerMenu.classList.remove("active");
+      });
+
+      // ============================================================================
+
+      const list1Btn = document.querySelector(".header__menu-list1-heading");
+      const list2Btn = document.querySelector(".header__menu-list2-heading");
+      const list3Btn = document.querySelector(".header__menu-list3-heading");
+
+      list1Btn.addEventListener("click", function () {
+         list2Btn.classList.remove("active");
+         list3Btn.classList.remove("active");
+         list2Btn.nextElementSibling.style.maxHeight = null;
+         list3Btn.nextElementSibling.style.maxHeight = null;
+         list1Btn.classList.toggle("active");
+         let content = list1Btn.nextElementSibling;
+         if (content.style.maxHeight) {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+         } else {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight / 5 + 1 + "rem";
+         }
+      });
+
+      list2Btn.addEventListener("click", function () {
+         list1Btn.classList.remove("active");
+         list3Btn.classList.remove("active");
+         list1Btn.nextElementSibling.style.maxHeight = null;
+         list3Btn.nextElementSibling.style.maxHeight = null;
+         list2Btn.classList.toggle("active");
+         let content = list2Btn.nextElementSibling;
+         if (content.style.maxHeight) {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+         } else {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight / 5 + 1 + "rem";
+         }
+      });
+
+      list3Btn.addEventListener("click", function () {
+         list1Btn.classList.remove("active");
+         list2Btn.classList.remove("active");
+         list1Btn.nextElementSibling.style.maxHeight = null;
+         list2Btn.nextElementSibling.style.maxHeight = null;
+         list3Btn.classList.toggle("active");
+         let content = list3Btn.nextElementSibling;
+         if (content.style.maxHeight) {
+            content.classList.remove("active");
+            content.style.maxHeight = null;
+         } else {
+            content.classList.add("active");
+            content.style.maxHeight = content.scrollHeight / 5 + 1 + "rem";
+         }
+      });
+   }
+
    // раскрывающийся список в футере в мобилке
 
    if (window.innerWidth <= 768) {
@@ -343,25 +413,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
    // плавный скролл на странице Пресс-центр
 
-   document.querySelectorAll('a[href^="#"').forEach((link) => {
-      link.addEventListener("click", function (e) {
-         e.preventDefault();
+   if (document.querySelector(".press-main")) {
+      document.querySelectorAll('a[href^="#"').forEach((link) => {
+         link.addEventListener("click", function (e) {
+            e.preventDefault();
 
-         let href = this.getAttribute("href").substring(1);
+            let href = this.getAttribute("href").substring(1);
 
-         const scrollTarget = document.getElementById(href);
+            const scrollTarget = document.getElementById(href);
 
-         // const topOffset = document.querySelector('.scrollto').offsetHeight;
-         const topOffset = 0; // если не нужен отступ сверху
-         const elementPosition = scrollTarget.getBoundingClientRect().top;
-         const offsetPosition = elementPosition - topOffset;
+            // const topOffset = document.querySelector('.scrollto').offsetHeight;
+            const topOffset = 0; // если не нужен отступ сверху
+            const elementPosition = scrollTarget.getBoundingClientRect().top;
+            const offsetPosition = elementPosition - topOffset;
 
-         window.scrollBy({
-            top: offsetPosition,
-            behavior: "smooth",
+            window.scrollBy({
+               top: offsetPosition,
+               behavior: "smooth",
+            });
          });
       });
-   });
+   }
 
    // модалка отклика на вакансии (страницы Вакансия и Страница вакансии)
 
@@ -602,24 +674,45 @@ document.addEventListener("DOMContentLoaded", function () {
       });
    }
 
+   // Модальное окно на странице тех. поддержки
+
+   if (document.querySelector(".modal-techsupport-page")) {
+      const openModalBtns = document.querySelectorAll(".techsupport-main__block-left__btn"),
+         modal = document.querySelector(".modal-techsupport-page"),
+         closeModalBtn = modal.querySelector(".modal__close-btn");
+
+      openModalBtns.forEach((btn) => {
+         btn.addEventListener("click", () => {
+            modal.classList.add("active");
+         });
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+         modal.classList.remove("active");
+      });
+   }
+
    // Выпадающее меню в модальных окнах
 
    if (document.querySelector(".modal__form-input_menu")) {
-      const inputContainer = document.querySelector(".modal__form-input_menu"),
-         input = inputContainer.querySelector("input"),
-         menu = inputContainer.querySelector(".modal__menu");
+      const inputContainers = document.querySelectorAll(".modal__form-input_menu");
 
-      input.addEventListener("click", () => {
-         inputContainer.classList.toggle("active");
-      });
+      inputContainers.forEach((container) => {
+         let input = container.querySelector("input"),
+            menu = container.querySelector(".modal__menu");
 
-      menu.addEventListener("click", (e) => {
-         let target = e.target;
+         input.addEventListener("click", () => {
+            container.classList.toggle("active");
+         });
 
-         if (target.tagName == "LI") {
-            input.value = target.textContent;
-            inputContainer.classList.remove("active");
-         }
+         menu.addEventListener("click", (e) => {
+            let target = e.target;
+
+            if (target.tagName == "LI") {
+               input.value = target.textContent;
+               container.classList.remove("active");
+            }
+         });
       });
    }
 

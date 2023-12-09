@@ -672,6 +672,28 @@ document.addEventListener("DOMContentLoaded", function () {
       closeModalBtn.addEventListener("click", () => {
          modal.classList.remove("active");
       });
+
+      // ------------------------------------------------
+
+      const inputFile = document.querySelector("#resume-file");
+      const label = inputFile.nextElementSibling;
+      const labelVal = label.innerHTML;
+
+      inputFile.addEventListener("change", function (e) {
+         var fileName = "";
+         if (this.files && this.files.length > 1)
+            fileName = (this.getAttribute("data-multiple-caption") || "").replace(
+               "{count}",
+               this.files.length
+            );
+         else {
+            console.log(e);
+            fileName = e.target.value.split("\\").pop();
+         }
+
+         if (fileName) label.querySelector("span").innerHTML = fileName;
+         else label.innerHTML = labelVal;
+      });
    }
 
    // Модальное окно на странице тех. поддержки

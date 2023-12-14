@@ -69,6 +69,7 @@
             &__sublist {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
 
                 &-item {
                     &:not(:last-child) {
@@ -81,6 +82,7 @@
                         line-height: 2.4rem;
                         text-decoration-line: underline;
                         color: #E30613;
+                        text-wrap: nowrap;
 
                         &::after {
                             content: '/';

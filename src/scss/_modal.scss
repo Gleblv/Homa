@@ -415,8 +415,11 @@
         &.modal-call-contacts,
         &.modal-feedback-contacts,
         &.modal-techsupport {
+            max-height: none;
+            padding-top: 60rem;
+
             .modal__container {
-                margin-top: 100rem;
+                margin-top: 60rem;
             }
         }
 

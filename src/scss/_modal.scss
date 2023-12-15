@@ -404,6 +404,22 @@
             width: calc(100% - 6rem);
         }
 
+        &.modal-techsupport-page,
+        &.modal-response-detail,
+        &.modal-response,
+        &.modal-techsupport-main,
+        &.modal-question,
+        &.modal-call,
+        &.modal-question-experts,
+        &.modal-question-contacts,
+        &.modal-call-contacts,
+        &.modal-feedback-contacts,
+        &.modal-techsupport {
+            .modal__container {
+                margin-top: 60vh;
+            }
+        }
+
         &__close-btn {
             top: 4rem;
             right: 4rem;

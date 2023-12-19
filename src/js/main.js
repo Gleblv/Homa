@@ -1,3 +1,17 @@
+function burgerMenuOverflow(height, isActive) {
+   if (isActive) {
+      document.querySelector(".footer").style.display = "none";
+      document.querySelector("main").style.height = `${height}px`;
+      document.querySelector("main").style.overflow = "hidden";
+      document.querySelector("main").style.visibility = "hidden";
+   } else {
+      document.querySelector(".footer").style.display = "block";
+      document.querySelector("main").style.height = "auto";
+      document.querySelector("main").style.overflow = "visible";
+      document.querySelector("main").style.visibility = "visible";
+   }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
    // переключаение языков
    const rusBtn = document.querySelector(".header__top-btns .rus");
@@ -205,14 +219,18 @@ document.addEventListener("DOMContentLoaded", function () {
    if (window.screen.width <= 768) {
       const openBurgerMenu = document.querySelector(".header__top-burger"),
          burgerMenu = document.querySelector(".header__menu"),
-         closeBurgerBtn = document.querySelector(".header__menu-close-burger");
+         closeBurgerBtn = document.querySelector(".header__menu-close-burger"),
+         header = document.querySelector(".header");
 
       openBurgerMenu.addEventListener("click", () => {
          burgerMenu.classList.add("active");
+         console.log(burgerMenu.scrollHeight);
+         burgerMenuOverflow(burgerMenu.scrollHeight - header.scrollHeight, true);
       });
 
       closeBurgerBtn.addEventListener("click", () => {
          burgerMenu.classList.remove("active");
+         burgerMenuOverflow(burgerMenu.scrollHeight - header.scrollHeight, false);
       });
 
       // ============================================================================

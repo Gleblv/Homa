@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="fonts/fonts.css" />
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="css/choices.min.css" />
+      <link rel="stylesheet" href="css/main.css" />
+      <title>Главная</title>
+   </head>
+
+   <body>
+      @@include('./templates/header.html')
+      <main>
+         <section class="not-found">
+            <div class="not-found__container container">
+               <div class="not-found__left">
+                  <img src="./images/swiper-polymer-img1.webp" alt="" />
+               </div>
+               <div class="not-found__right">
+                  <div class="not-found__title">404</div>
+                  <div class="not-found__subtitle">Страница не найдена</div>
+                  <div class="not-found__text">Такой страницы не существует либо она была удалена</div>
+                  <a href="#" class="link not-found__link"
+                     ><svg
+                        width="71"
+                        height="71"
+                        viewBox="0 0 71 71"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <circle
+                           cx="35.5"
+                           cy="35.5"
+                           r="34.5"
+                           fill="none"
+                           stroke="#E30613"
+                           stroke-width="2"
+                        ></circle>
+                     </svg>
+                     <span>Оставить заявку</span>
+                     <svg
+                        width="28"
+                        height="9"
+                        viewBox="0 0 28 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                     >
+                        <path
+                           d="M23.4037 0L22.0229 1.35198L24.2617 3.54397H-3V5.45597H24.2617L22.0229 7.64802L23.4037 9L28 4.49997L23.4037 0Z"
+                           fill="black"
+                        ></path>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </section>
+         @@include('./templates/partners.html')
+      </main>
+      @@include('./templates/footer.html')
+   </body>
+</html>

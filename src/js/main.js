@@ -853,4 +853,25 @@ document.addEventListener("DOMContentLoaded", function () {
          modal.classList.remove("active");
       });
    }
+
+   // Открытие модалки с изображением на странице товара
+
+   if (document.querySelector(".product-modal")) {
+      const initialImg = document.querySelector(".product__right-card__left-container img"),
+         modalImg = document.querySelector(".product-modal__content img"),
+         modal = document.querySelector(".product-modal"),
+         closeModalBtn = modal.querySelector(".product-modal__close");
+
+      initialImg.addEventListener("click", () => {
+         let imgSrc = initialImg.getAttribute("src");
+
+         modalImg.setAttribute("src", imgSrc);
+
+         modal.classList.add("active");
+      });
+
+      closeModalBtn.addEventListener("click", () => {
+         modal.classList.remove("active");
+      });
+   }
 });

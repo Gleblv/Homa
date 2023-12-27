@@ -874,4 +874,17 @@ document.addEventListener("DOMContentLoaded", function () {
          modal.classList.remove("active");
       });
    }
+
+   // Запуск видео для Safari
+
+   if (
+      document.querySelector(".intro__swiper-slide__top-right-video") &&
+      navigator.userAgent.indexOf("Safari") > -1
+   ) {
+      const videos = document.querySelectorAll(".intro__swiper-slide__top-right-video");
+
+      videos.forEach((video) => {
+         video.play();
+      });
+   }
 });

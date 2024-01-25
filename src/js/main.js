@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content.style.maxHeight = null;
          } else {
             content.classList.add("active");
-            content.style.maxHeight = content.scrollHeight / 5 + "rem";
+            content.style.maxHeight = content.scrollHeight + 20 + "px";
          }
       });
 
@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content.style.maxHeight = null;
          } else {
             content.classList.add("active");
-            content.style.maxHeight = content.scrollHeight / 5 + "rem";
+            content.style.maxHeight = content.scrollHeight + 20 + "px";
          }
       });
 
@@ -339,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function () {
             content.style.maxHeight = null;
          } else {
             content.classList.add("active");
-            content.style.maxHeight = content.scrollHeight / 5 + "rem";
+            content.style.maxHeight = content.scrollHeight + 20 + "px";
          }
       });
    }

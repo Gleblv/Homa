@@ -89,6 +89,27 @@
             margin-bottom: 7.3rem;
             font-size: 1.8rem;
             line-height: 2.7rem;
+
+            &.small-margin {
+                @media (min-width: 48em) {
+                    margin-bottom: 3.3rem;
+                }
+            }
+        }
+
+        .project-page-main__right-quality {
+            margin-bottom: 7.3rem;
+            padding-left: 4rem;
+
+            &.small-margin {
+                margin-bottom: 3.3rem;
+            }
+
+            li {
+                font-size: 1.8rem;
+                line-height: 2.7rem;
+                list-style: disc;
+            }
         }
 
         &-img {
@@ -457,6 +478,15 @@
                 span {
                     font-size: 3.2rem;
                     line-height: 4.8rem;
+                }
+            }
+
+            .project-page-main__right-quality {
+                padding-left: 2rem;
+    
+                li {
+                    font-size: 3.6rem;
+                    line-height: 5.4rem;
                 }
             }
         }

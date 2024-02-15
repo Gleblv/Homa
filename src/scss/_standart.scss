@@ -1,0 +1,22 @@
+.project-page-main__right {
+  & > ul,
+  & > ol {
+    padding-left: 40px;
+  }
+
+  & > ol {
+    li {
+      font-size: 14pt;
+
+      &::marker {
+        font-size: 14pt;
+      }
+    }
+  }
+
+  & > ul {
+    li {
+      list-style-type: disc;
+    }
+  }
+}

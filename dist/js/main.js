@@ -216,17 +216,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // применяем к изображениям размеры из админки
 
-  if (document.querySelector('.standart-style')) {
-    const images = document.querySelectorAll('.standart-style');
+  if (document.querySelector('img')) {
+    const images = document.querySelectorAll('img');
 
     images.forEach((img) => {
       let imgAdminWidth = img.getAttribute('width'),
         imgAdminHeight = img.getAttribute('height');
 
-      img.style.width = `${window.screen.width >= 768 ? imgAdminWidth / 10 : imgAdminWidth / 5}rem`;
-      img.style.height = `${
-        window.screen.width >= 768 ? imgAdminHeight / 10 : imgAdminHeight / 5
-      }rem`;
+      if (imgAdminHeight && imgAdminWidth) {
+        img.style.width = `${
+          window.screen.width >= 768 ? imgAdminWidth / 10 : imgAdminWidth / 5
+        }rem`;
+        img.style.height = `${
+          window.screen.width >= 768 ? imgAdminHeight / 10 : imgAdminHeight / 5
+        }rem`;
+
+        img.style.maxWidth = '100%';
+      }
     });
   }
 

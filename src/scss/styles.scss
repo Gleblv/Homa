@@ -1,78 +1,79 @@
-@import "set";
-@import "components";
-@import "../fonts/fonts";
+@import 'set';
+@import 'components';
+@import '../fonts/fonts';
 
-@import "header";
-@import "footer";
+@import 'header';
+@import 'footer';
 
-@import "popup";
+@import 'popup';
 
-@import "modal";
+@import 'modal';
 
-@import "intro";
-@import "production";
-@import "advantages";
-@import "support";
-@import "news";
-@import "recommendations";
-@import "reviews";
-@import "video";
-@import "social";
-@import "hero";
+@import 'intro';
+@import 'production';
+@import 'advantages';
+@import 'support';
+@import 'news';
+@import 'recommendations';
+@import 'reviews';
+@import 'video';
+@import 'social';
+@import 'hero';
 
-@import "timeline";
+@import 'timeline';
 
-@import "partners";
-@import "headlines";
-@import "catalog";
-@import "catalog-categories";
-@import "news-categories";
-@import "polymer-hero";
-@import "polymer-catalog";
-@import "categories";
-@import "article";
-@import "qa";
-@import "paints";
-@import "product";
-@import "science";
-@import "suggestion";
-@import "production-complex";
-@import "contacts";
+@import 'partners';
+@import 'headlines';
+@import 'catalog';
+@import 'catalog-categories';
+@import 'news-categories';
+@import 'polymer-hero';
+@import 'polymer-catalog';
+@import 'categories';
+@import 'article';
+@import 'qa';
+@import 'paints';
+@import 'product';
+@import 'science';
+@import 'suggestion';
+@import 'production-complex';
+@import 'contacts';
 
-@import "techsupport-hero";
-@import "techsupport-main";
+@import 'techsupport-hero';
+@import 'techsupport-main';
 
-@import "press-hero";
-@import "press-main";
+@import 'press-hero';
+@import 'press-main';
 @import 'press-modal';
 @import 'product-modal';
 
-@import "projects-main";
+@import 'projects-main';
 
-@import "project-page-main";
+@import 'project-page-main';
 
-@import "news-page-main";
+@import 'news-page-main';
 
-@import "videos-main";
+@import 'videos-main';
 
-@import "polygraphy-main";
+@import 'polygraphy-main';
 
-@import "vacancies-main";
+@import 'vacancies-main';
 
-@import "vacancy-page-main";
+@import 'vacancy-page-main';
 
-@import "reviews-main";
+@import 'reviews-main';
 
-@import "achievements-main";
+@import 'achievements-main';
 
-@import "achievements-page-main";
+@import 'achievements-page-main';
 
-@import "partners-main";
+@import 'partners-main';
 
-@import "search-main";
+@import 'search-main';
 
 @import 'not-found';
 
+@import 'standart';
 
 body.lock {
   overflow: hidden;

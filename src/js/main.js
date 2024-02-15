@@ -217,7 +217,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // применяем к изображениям размеры из админки
 
   if (document.querySelector('img')) {
-    const images = document.querySelectorAll('img');
+    const images = document.querySelectorAll(
+      '.article__right *:not(.project-page-main__right-block) img, .project-page-main__right *:not(.project-page-main__right-block) img',
+    );
 
     images.forEach((img) => {
       let imgAdminWidth = img.getAttribute('width'),

@@ -229,9 +229,8 @@ document.addEventListener('DOMContentLoaded', function () {
         img.style.width = `${
           window.screen.width >= 768 ? imgAdminWidth / 10 : imgAdminWidth / 5
         }rem`;
-        img.style.height = `${
-          window.screen.width >= 768 ? imgAdminHeight / 10 : imgAdminHeight / 5
-        }rem`;
+
+        img.style.height = window.screen.width >= 768 ? `${imgAdminHeight / 10}rem` : 'auto';
 
         img.style.maxWidth = '100%';
       }

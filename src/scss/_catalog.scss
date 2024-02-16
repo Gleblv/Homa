@@ -51,17 +51,19 @@
 
         &-heading {
           margin-bottom: 1.9rem;
-          display: inline-block;
           width: 32rem;
           font-weight: 700;
           font-size: 3rem;
           line-height: 3.3rem;
           color: #313131;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
           min-height: 10rem;
         }
 
         &-img {
-          margin-top: auto;
           margin-bottom: 1.7rem;
           width: 32rem;
           height: 18rem;
